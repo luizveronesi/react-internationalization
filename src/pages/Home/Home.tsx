@@ -82,6 +82,7 @@ export default function Home() {
               values={{ value: 10 }}
             />
           </p>
+          <p>{t('fallback:text.example')}</p>
         </div>
         <div className="footer">{t('footer:text.example')}</div>
       </div>

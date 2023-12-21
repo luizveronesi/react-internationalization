@@ -9,6 +9,6 @@ export const HomeTexts = {
     'label.choose.language': 'Escolha sua linguagem',
     'text.example': 'Exemplo de texto disponível no arquivo HomeTexts',
     'trans.example':
-      'Exte exemple possui um valor <bold>{{value}}</bold> em destaque no meio do texto.',
+      'Exte exemplo possui um valor <bold>{{value}}</bold> em destaque no meio do texto.',
   },
 };

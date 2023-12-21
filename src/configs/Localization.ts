@@ -2,7 +2,7 @@ import i18n from 'i18next';
 import languageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 import { HomeTexts } from './localization/HomeTexts';
-import { MessageTexts } from './localization/MessageTexts';
+import { FallbackTexts } from './localization/FallbackTexts';
 import { FooterTexts } from './localization/FooterTexts';
 
 export default function configLocalization() {
@@ -12,18 +12,18 @@ export default function configLocalization() {
     .init({
       resources: {
         en: {
-          message: MessageTexts.en,
+          fallback: FallbackTexts.en,
           home: HomeTexts.en,
           footer: FooterTexts.en,
         },
         'pt-BR': {
-          message: MessageTexts['pt-BR'],
+          fallback: FallbackTexts['pt-BR'],
           home: HomeTexts['pt-BR'],
           footer: FooterTexts['pt-BR'],
         },
       },
       fallbackLng: 'en',
-      defaultNS: 'message',
+      defaultNS: 'fallback',
       interpolation: {
         escapeValue: false,
       },
