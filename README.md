@@ -87,4 +87,4 @@ More information may be found at https://react.i18next.com/latest/trans-componen
 
 ## Demo
 
-https://services.texugo.com.br/demo/react-internationalization
+https://luizveronesi.s3.amazonaws.com/react-internationalization/index.html
