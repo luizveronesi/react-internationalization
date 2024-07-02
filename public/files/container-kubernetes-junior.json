@@ -1,0 +1,183 @@
+[
+  {
+    "question": "What is Kubernetes?",
+    "answers": [
+      "A type of database",
+      "A container orchestration platform",
+      "A cloud service provider",
+      "A version control system"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Che cos'è Kubernetes?",
+        "Un tipo di database",
+        "Una piattaforma di orchestrazione dei container",
+        "Un fornitore di servizi cloud",
+        "Un sistema di controllo versione"
+      ]
+    }
+  },
+  {
+    "question": "What is the main component of a Kubernetes cluster?",
+    "answers": ["Docker", "Pod", "Namespace", "Service"],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Qual è il componente principale di un cluster Kubernetes?",
+        "Docker",
+        "Pod",
+        "Namespace",
+        "Service"
+      ]
+    }
+  },
+  {
+    "question": "Which command is used to create a Kubernetes deployment?",
+    "answers": [
+      "kubectl apply",
+      "kubectl create namespace",
+      "kubectl create pod",
+      "kubectl run"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Quale comando viene utilizzato per creare un deployment Kubernetes?",
+        "kubectl apply",
+        "kubectl create namespace",
+        "kubectl create pod",
+        "kubectl run"
+      ]
+    }
+  },
+  {
+    "question": "What does a Kubernetes service do?",
+    "answers": [
+      "Manages the state of Pods",
+      "Provides networking and load balancing",
+      "Manages the cloud resources",
+      "Schedules the Pods to run on nodes"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Cosa fa un servizio Kubernetes?",
+        "Gestisce lo stato dei Pod",
+        "Fornisce rete e bilanciamento del carico",
+        "Gestisce le risorse cloud",
+        "Schedula i Pod da eseguire sui nodi"
+      ]
+    }
+  },
+  {
+    "question": "How do you get a list of all pods in a Kubernetes cluster?",
+    "answers": [
+      "kubectl pods list",
+      "kubectl get all",
+      "kubectl get pods",
+      "kubectl show pods"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Come ottenere un elenco di tutti i pod in un cluster Kubernetes?",
+        "kubectl pods list",
+        "kubectl get all",
+        "kubectl get pods",
+        "kubectl show pods"
+      ]
+    }
+  },
+  {
+    "question": "Which command retrieves the logs of a specific pod?",
+    "answers": [
+      "kubectl logs <pod-name>",
+      "kubectl get logs <pod-name>",
+      "kubectl fetch logs <pod-name>",
+      "kubectl show logs <pod-name>"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Quale comando recupera i log di un pod specifico?",
+        "kubectl logs <pod-name>",
+        "kubectl get logs <pod-name>",
+        "kubectl fetch logs <pod-name>",
+        "kubectl show logs <pod-name>"
+      ]
+    }
+  },
+  {
+    "question": "What does the status 'Pending' on a pod indicate?",
+    "answers": [
+      "The pod is running as expected",
+      "The pod is being deleted",
+      "The pod has encountered an error",
+      "The pod is waiting to be scheduled"
+    ],
+    "correct": 3,
+    "translations": {
+      "it": [
+        "Cosa indica lo stato 'Pending' di un pod?",
+        "Il pod è in esecuzione come previsto",
+        "Il pod sta per essere eliminato",
+        "Il pod ha incontrato un errore",
+        "Il pod sta aspettando di essere schedulato"
+      ]
+    }
+  },
+  {
+    "question": "What file format is commonly used for writing Kubernetes resource definitions?",
+    "answers": ["JSON", "YAML", "XML", "CSV"],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Quale formato di file è comunemente usato per scrivere definizioni delle risorse di Kubernetes?",
+        "JSON",
+        "YAML",
+        "XML",
+        "CSV"
+      ]
+    }
+  },
+  {
+    "question": "In which file is this Kubernetes configuration written?",
+    "answers": [
+      "config.json",
+      "deployment.yaml",
+      "settings.xml",
+      "kubernetes.conf"
+    ],
+    "correct": 1,
+    "code": "apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: nginx-deployment\nspec:\n  replicas: 2\n  selector:\n    matchLabels:\n      app: nginx",
+    "translations": {
+      "it": [
+        "In quale file è scritta questa configurazione di Kubernetes?",
+        "config.json",
+        "deployment.yaml",
+        "settings.xml",
+        "kubernetes.conf"
+      ]
+    }
+  },
+  {
+    "question": "Analyze the following command: kubectl create -f my-pod.yaml. What is the purpose of this command?",
+    "answers": [
+      "To delete a pod defined in my-pod.yaml",
+      "To create a pod as defined in my-pod.yaml",
+      "To update a pod as defined in my-pod.yaml",
+      "To describe a pod defined in my-pod.yaml"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Analizza il seguente comando: kubectl create -f my-pod.yaml. Qual è lo scopo di questo comando?",
+        "Per eliminare un pod definito in my-pod.yaml",
+        "Per creare un pod come definito in my-pod.yaml",
+        "Per aggiornare un pod come definito in my-pod.yaml",
+        "Per descrivere un pod definito in my-pod.yaml"
+      ]
+    }
+  }
+]

@@ -1,0 +1,191 @@
+[
+  {
+    "question": "Which annotation is commonly used to define repository interfaces in Spring Data?",
+    "answers": ["@Service", "@Repository", "@Autowired", "@Entity"],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Quale servizio AWS è progettato per analisi scalabili di data warehouse?",
+        "@Service",
+        "@Repository",
+        "@Autowired",
+        "@Entity"
+      ]
+    }
+  },
+  {
+    "question": "How can you customize query methods in Spring Data JPA repositories?",
+    "answers": [
+      "By using custom annotations.",
+      "By defining methods in repository interfaces with specific naming conventions.",
+      "By writing native SQL queries only.",
+      "By extending the JPARepository with new interfaces."
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Come puoi gestire in modo sicuro l'accesso ai servizi e alle risorse AWS?",
+        "Utilizzando annotazioni personalizzate.",
+        "Definendo metodi nelle interfacce dei repository con convenzioni di denominazione specifiche.",
+        "Scrivendo solo query SQL native.",
+        "Estendendo JPARepository con nuove interfacce."
+      ]
+    }
+  },
+  {
+    "question": "Which of the following statements about Spring Data REST is true?",
+    "answers": [
+      "It does not offer any built-in support for pagination.",
+      "It automatically exposes Spring Data repositories as RESTful endpoints.",
+      "It requires manual mapping of each repository method to a REST endpoint.",
+      "It is not compatible with Spring Security."
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Quale dei seguenti è un servizio di calcolo serverless completamente gestito in AWS?",
+        "Non offre alcun supporto integrato per la paginazione.",
+        "Espone automaticamente i repository Spring Data come endpoint RESTful.",
+        "Richiede la mappatura manuale di ogni metodo del repository su un endpoint REST.",
+        "Non è compatibile con Spring Security."
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of the @Query annotation in Spring Data JPA?",
+    "answers": [
+      "To define named queries.",
+      "To override default CRUD operations.",
+      "To specify a custom query string for a method.",
+      "To disable the transaction management."
+    ],
+    "correct": 3,
+    "code": "@Query(\"SELECT u FROM User u WHERE u.email = ?1\")",
+    "translations": {
+      "it": [
+        "Che tipo di servizio è Amazon EC2?",
+        "Definire query denominate.",
+        "Sostituire le operazioni CRUD predefinite.",
+        "Specificare una stringa di query personalizzata per un metodo.",
+        "Disabilitare la gestione delle transazioni."
+      ]
+    }
+  },
+  {
+    "question": "Identify the purpose of the PagingAndSortingRepository interface.",
+    "answers": [
+      "To add support for pagination and sorting.",
+      "To handle concurrency issues.",
+      "To support batch processing.",
+      "To improve the performance of queries."
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Cosa farà il seguente comando AWS CLI?",
+        "Aggiungere supporto per la paginazione e l'ordinamento.",
+        "Gestire i problemi di concorrenza.",
+        "Supportare l'elaborazione in batch.",
+        "Migliorare le prestazioni delle query."
+      ]
+    }
+  },
+  {
+    "question": "What does it mean if a Spring Data repository method is annotated with @Modifying?",
+    "answers": [
+      "It indicates that the method performs a read-only operation.",
+      "It locks the entity until the transaction is complete.",
+      "It indicates that the method modifies the database.",
+      "It enables batching for database writes."
+    ],
+    "correct": 2,
+    "code": "@Modifying\n@Query(\"UPDATE User u SET u.active = false WHERE u.lastLogin < ?1\")",
+    "translations": {
+      "it": [
+        "In un template CloudFormation, qual è lo scopo della sezione 'Resources'?",
+        "Indica che il metodo esegue un'operazione di sola lettura.",
+        "Blocca l'entità fino al completamento della transazione.",
+        "Indica che il metodo modifica il database.",
+        "Abilita il batching per le scritture nel database."
+      ]
+    }
+  },
+  {
+    "question": "In Spring Data, how can you create a custom repository?",
+    "answers": [
+      "By manually writing SQL queries only.",
+      "By extending the CrudRepository and implementing custom interface methods.",
+      "By adding custom annotations to the entity classes.",
+      "By using the @CustomRepository annotation."
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Quale sarà il risultato della seguente policy JSON?",
+        "Scrivendo manualmente solo query SQL.",
+        "Estendendo CrudRepository e implementando i metodi dell'interfaccia personalizzati.",
+        "Aggiungendo annotazioni personalizzate alle classi entità.",
+        "Utilizzando l'annotazione @CustomRepository."
+      ]
+    }
+  },
+  {
+    "question": "Which Spring Data annotation is used to define the query for a method in a repository?",
+    "answers": [
+      "@NamedQuery",
+      "@Query",
+      "@QueryDefinition",
+      "@RepositoryQuery"
+    ],
+    "correct": 1,
+    "code": "@Query(\"SELECT u FROM User u WHERE u.email = :email\")",
+    "translations": {
+      "it": [
+        "Cosa creerà il seguente codice CloudFormation?",
+        "@NamedQuery",
+        "@Query",
+        "@QueryDefinition",
+        "@RepositoryQuery"
+      ]
+    }
+  },
+  {
+    "question": "Why would you use the @EnableJpaRepositories annotation in a Spring Data application?",
+    "answers": [
+      "To disable the auto-configuration of JPA repositories.",
+      "To scan for repository interfaces and create Spring beans for them.",
+      "To enable the use of native SQL queries.",
+      "To provide support for JPA inheritance."
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Cosa ottiene la seguente policy AWS IAM?",
+        "Per disabilitare l'auto-configurazione dei repository JPA.",
+        "Per scansionare le interfacce dei repository e creare bean Spring per esse.",
+        "Per abilitare l'uso di query SQL native.",
+        "Per fornire supporto per l'ereditarietà di JPA."
+      ]
+    }
+  },
+  {
+    "question": "In which scenario would you use the @Lock annotation with Spring Data JPA?",
+    "answers": [
+      "When performing read-only operations.",
+      "When you need to lock entities to prevent concurrent updates.",
+      "When configuring lazy loading.",
+      "When using custom query methods."
+    ],
+    "correct": 1,
+    "code": "@Lock(LockModeType.PESSIMISTIC_WRITE)\n@Query(\"SELECT u FROM User u WHERE u.id = ?1\")",
+    "translations": {
+      "it": [
+        "Per cosa viene utilizzato Amazon S3?",
+        "Durante l'esecuzione di operazioni di sola lettura.",
+        "Quando è necessario bloccare le entità per prevenire aggiornamenti concorrenti.",
+        "Quando si configura il caricamento lazy.",
+        "Durante l'uso di metodi di query personalizzati."
+      ]
+    }
+  }
+]

@@ -1,0 +1,186 @@
+[
+  {
+    "question": "What is Amazon S3 primarily used for?",
+    "answers": [
+      "Running virtual machines",
+      "Storing data in scalable buckets",
+      "Managing databases",
+      "Hosting web applications"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Per cosa viene utilizzato principalmente Amazon S3?",
+        "Eseguire macchine virtuali",
+        "Memorizzare dati in bucket scalabili",
+        "Gestire database",
+        "Ospitare applicazioni web"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service is designed for scalable data warehouse analytics?",
+    "answers": ["Amazon RDS", "Amazon Redshift", "Amazon EC2", "Amazon Lambda"],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Quale servizio AWS è progettato per analisi scalabili di data warehouse?",
+        "Amazon RDS",
+        "Amazon Redshift",
+        "Amazon EC2",
+        "Amazon Lambda"
+      ]
+    }
+  },
+  {
+    "question": "How can you securely manage access to AWS services and resources?",
+    "answers": [
+      "Using AWS IAM",
+      "Using AWS CLI",
+      "Using AWS EC2",
+      "Using AWS Elastic Beanstalk"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Come puoi gestire in modo sicuro l'accesso ai servizi e alle risorse AWS?",
+        "Utilizzando AWS IAM",
+        "Utilizzando AWS CLI",
+        "Utilizzando AWS EC2",
+        "Utilizzando AWS Elastic Beanstalk"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following is a fully managed serverless compute service in AWS?",
+    "answers": ["AWS Lambda", "Amazon EMR", "Amazon S3", "Amazon SNS"],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Quale dei seguenti è un servizio di calcolo serverless completamente gestito in AWS?",
+        "AWS Lambda",
+        "Amazon EMR",
+        "Amazon S3",
+        "Amazon SNS"
+      ]
+    }
+  },
+  {
+    "question": "What type of service is Amazon EC2?",
+    "answers": [
+      "Storage Service",
+      "Compute Service",
+      "Database Service",
+      "Machine Learning Service"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Che tipo di servizio è Amazon EC2?",
+        "Servizio di archiviazione",
+        "Servizio di calcolo",
+        "Servizio di database",
+        "Servizio di apprendimento automatico"
+      ]
+    }
+  },
+  {
+    "question": "What will the following AWS CLI command do?",
+    "answers": [
+      "Copy file.txt to an EC2 instance",
+      "Copy file.txt to an RDS instance",
+      "Copy file.txt to an S3 bucket",
+      "Upload file.txt to EBS"
+    ],
+    "correct": 2,
+    "code": "aws s3 cp file.txt s3://my-bucket/",
+    "translations": {
+      "it": [
+        "Cosa farà il seguente comando AWS CLI?",
+        "Copiare file.txt su un'istanza EC2",
+        "Copiare file.txt su un'istanza RDS",
+        "Copiare file.txt su un bucket S3",
+        "Caricare file.txt su EBS"
+      ]
+    }
+  },
+  {
+    "question": "In a CloudFormation template, what is the purpose of the 'Resources' section?",
+    "answers": [
+      "To specify the AWS region",
+      "To define the stack name",
+      "To declare AWS resources and their properties",
+      "To set up billing alerts"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "In un template CloudFormation, qual è lo scopo della sezione 'Resources'?",
+        "Specificare la regione AWS",
+        "Definire il nome dello stack",
+        "Dichiarare le risorse AWS e le loro proprietà",
+        "Impostare avvisi di fatturazione"
+      ]
+    }
+  },
+  {
+    "question": "What will be the result of the following JSON policy?",
+    "answers": [
+      "Deny all actions on the example-bucket",
+      "Allow any action on any bucket",
+      "Allow putting objects into example-bucket",
+      "Deny putting objects into example-bucket"
+    ],
+    "correct": 2,
+    "code": "{\n   \"Effect\": \"Allow\",\n   \"Action\": \"s3:PutObject\",\n   \"Resource\": \"arn:aws:s3:::example-bucket/*\"\n}",
+    "translations": {
+      "it": [
+        "Quale sarà il risultato della seguente policy JSON?",
+        "Negare tutte le azioni sul bucket example",
+        "Permettere qualsiasi azione su qualsiasi bucket",
+        "Permettere di mettere oggetti nel bucket example",
+        "Negare di mettere oggetti nel bucket example"
+      ]
+    }
+  },
+  {
+    "question": "What will the following CloudFormation code create?",
+    "answers": [
+      "An EC2 instance",
+      "An S3 bucket named my-bucket",
+      "An RDS instance",
+      "A Lambda function"
+    ],
+    "correct": 1,
+    "code": "{\n   \"Type\" : \"AWS::S3::Bucket\",\n   \"Properties\" : {\n      \"BucketName\" : \"my-bucket\"\n   }\n}",
+    "translations": {
+      "it": [
+        "Cosa creerà il seguente codice CloudFormation?",
+        "Un'istanza EC2",
+        "Un bucket S3 chiamato my-bucket",
+        "Un'istanza RDS",
+        "Una funzione Lambda"
+      ]
+    }
+  },
+  {
+    "question": "What does the following AWS IAM policy achieve?",
+    "answers": [
+      "Deny all describe actions on EC2",
+      "Allow all describe actions on EC2",
+      "Create an EC2 instance",
+      "Allow all actions on EC2"
+    ],
+    "correct": 1,
+    "code": "{\n   \"Effect\": \"Allow\",\n   \"Action\": \"ec2:Describe*\",\n   \"Resource\": \"*\"\n}",
+    "translations": {
+      "it": [
+        "Cosa ottiene la seguente policy AWS IAM?",
+        "Negare tutte le azioni di descrizione su EC2",
+        "Permettete tutte le azioni di descrizione su EC2",
+        "Creare un'istanza EC2",
+        "Permettere tutte le azioni su EC2"
+      ]
+    }
+  }
+]

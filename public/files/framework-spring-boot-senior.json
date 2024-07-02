@@ -1,0 +1,184 @@
+[
+  {
+    "question": "What is the primary benefit of using Spring Boot for microservices architecture?",
+    "answers": [
+      "Improved security features",
+      "Simplified dependency management",
+      "Enhanced UI components",
+      "Increased testability"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Qual è il principale vantaggio di usare Spring Boot per un'architettura a microservizi?",
+        "Funzionalità di sicurezza migliorate",
+        "Gestione delle dipendenze semplificata",
+        "Componenti UI migliorati",
+        "Maggiore testabilità"
+      ]
+    }
+  },
+  {
+    "question": "What command can be used to run a Spring Boot application from a jar package?",
+    "answers": ["spring start", "java -jar", "mvn spring:run", "boot run"],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Quale comando può essere usato per eseguire un'applicazione Spring Boot da un pacchetto jar?",
+        "spring start",
+        "java -jar",
+        "mvn spring:run",
+        "boot run"
+      ]
+    }
+  },
+  {
+    "question": "In Spring Boot, which annotation is used to designate a Spring Boot application entry point?",
+    "answers": [
+      "@RestController",
+      "@SpringBootApplication",
+      "@EnableAutoConfiguration",
+      "@Component"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "In Spring Boot, quale annotazione viene utilizzata per designare un punto di ingresso dell'applicazione Spring Boot?",
+        "@RestController",
+        "@SpringBootApplication",
+        "@EnableAutoConfiguration",
+        "@Component"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following options is the correct way to handle custom exceptions in Spring Boot?",
+    "answers": [
+      "Using @ExceptionHandler annotation",
+      "Using @RestControllerAdvice annotation",
+      "Using @Controller annotation",
+      "Using @Service annotation"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Quale delle seguenti opzioni è il modo corretto per gestire le eccezioni personalizzate in Spring Boot?",
+        "Utilizzando l'annotazione @ExceptionHandler",
+        "Utilizzando l'annotazione @RestControllerAdvice",
+        "Utilizzando l'annotazione @Controller",
+        "Utilizzando l'annotazione @Service"
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of the application.properties file in a Spring Boot project?",
+    "answers": [
+      "To define the application's UI configurations",
+      "To set the database schema",
+      "To provide externalized configuration",
+      "To list all the Spring Beans"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Qual è lo scopo del file application.properties in un progetto Spring Boot?",
+        "Per definire le configurazioni UI dell'applicazione",
+        "Per impostare lo schema del database",
+        "Per fornire configurazioni esternalizzate",
+        "Per elencare tutti i Bean Spring"
+      ]
+    }
+  },
+  {
+    "question": "What does the following code snippet represent in a Spring Boot application?",
+    "answers": [
+      "A REST controller",
+      "A Service class",
+      "A Repository interface",
+      "A Configuration class"
+    ],
+    "correct": 0,
+    "code": "import org.springframework.web.bind.annotation.GetMapping;\nimport org.springframework.web.bind.annotation.RestController;\n\n@RestController\npublic class MyController {\n\n    @GetMapping(\"/greeting\")\n    public String greeting() {\n        return \"Hello, World!\";\n    }\n}",
+    "translations": {
+      "it": [
+        "Cosa rappresenta il seguente frammento di codice in un'applicazione Spring Boot?",
+        "Un controller REST",
+        "Una classe di servizio",
+        "Un'interfaccia repository",
+        "Una classe di configurazione"
+      ]
+    }
+  },
+  {
+    "question": "What kind of component is defined by the following code snippet?",
+    "answers": [
+      "A Spring Boot Application",
+      "A Service",
+      "A Data Transfer Object (DTO)",
+      "A Repository"
+    ],
+    "correct": 3,
+    "code": "import org.springframework.data.repository.CrudRepository;\n\npublic interface UserRepository extends CrudRepository<User, Long> {\n}",
+    "translations": {
+      "it": [
+        "Che tipo di componente è definito dal seguente frammento di codice?",
+        "Una applicazione Spring Boot",
+        "Un servizio",
+        "Un oggetto di trasferimento dati (DTO)",
+        "Un repository"
+      ]
+    }
+  },
+  {
+    "question": "What is the main advantage of using @ConfigurationProperties over @Value in Spring Boot?",
+    "answers": [
+      "Better support for complex properties",
+      "Easier to understand code",
+      "Requires less boilerplate code",
+      "Provides better security mechanisms"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Qual è il principale vantaggio di usare @ConfigurationProperties anziché @Value in Spring Boot?",
+        "Migliore supporto per proprietà complesse",
+        "Codice più facile da capire",
+        "Richiede meno codice boilerplate",
+        "Fornisce migliori meccanismi di sicurezza"
+      ]
+    }
+  },
+  {
+    "question": "In Spring Boot applications, which profile is activated by default?",
+    "answers": ["development", "production", "test", "default"],
+    "correct": 3,
+    "translations": {
+      "it": [
+        "Nelle applicazioni Spring Boot, quale profilo è attivato di default?",
+        "sviluppo",
+        "produzione",
+        "test",
+        "predefinito"
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of Spring Boot Actuator?",
+    "answers": [
+      "To provide a way to expose operational information about the running application",
+      "To manage application security",
+      "To facilitate database interactions",
+      "To handle user authentication and authorization"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Qual è lo scopo di Spring Boot Actuator?",
+        "Fornire un modo per esporre informazioni operative sull'applicazione in esecuzione",
+        "Gestire la sicurezza dell'applicazione",
+        "Facilitare le interazioni con il database",
+        "Gestire l'autenticazione e l'autorizzazione degli utenti"
+      ]
+    }
+  }
+]

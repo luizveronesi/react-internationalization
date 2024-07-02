@@ -1,0 +1,19 @@
+.modal-dropzone {
+  .dropzone-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .dropzone {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 64px;
+      border-radius: calc(var(--border-radius) / 2);
+      border: 2px dashed var(--color-primary-alternative);
+      background-color: var(--color-background);
+      cursor: pointer;
+    }
+  }
+}

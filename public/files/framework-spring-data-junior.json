@@ -1,0 +1,192 @@
+[
+  {
+    "question": "What is Spring Data?",
+    "answers": [
+      "A data processing library.",
+      "A data management and access framework.",
+      "A machine learning framework.",
+      "A graphics rendering engine."
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Per cosa viene utilizzato principalmente Amazon S3?",
+        "Una libreria per l'elaborazione dei dati.",
+        "Un framework per la gestione e l'accesso ai dati.",
+        "Un framework per l'apprendimento automatico.",
+        "Un motore di rendering grafico."
+      ]
+    }
+  },
+  {
+    "question": "Which interface is commonly used for defining repository interfaces in Spring Data?",
+    "answers": [
+      "JpaRepository",
+      "MongoRepository",
+      "CrudRepository",
+      "DataRepository"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Quale servizio AWS è progettato per analisi scalabili di data warehouse?",
+        "JpaRepository",
+        "MongoRepository",
+        "CrudRepository",
+        "DataRepository"
+      ]
+    }
+  },
+  {
+    "question": "What is pagination in Spring Data?",
+    "answers": [
+      "A technique for sorting data.",
+      "A technique for filtering data.",
+      "A technique for handling and displaying large sets of data.",
+      "A technique for indexing data."
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Come puoi gestire in modo sicuro l'accesso ai servizi e alle risorse AWS?",
+        "Una tecnica per ordinare i dati.",
+        "Una tecnica per filtrare i dati.",
+        "Una tecnica per gestire e visualizzare grandi set di dati.",
+        "Una tecnica per indicizzare i dati."
+      ]
+    }
+  },
+  {
+    "question": "Which annotation is used to specify custom query in Spring Data JPA?",
+    "answers": ["@Query", "@CustomQuery", "@NamedQuery", "@QueryParam"],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Quale dei seguenti è un servizio di calcolo serverless completamente gestito in AWS?",
+        "@Query",
+        "@CustomQuery",
+        "@NamedQuery",
+        "@QueryParam"
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of the CrudRepository interface?",
+    "answers": [
+      "To provide basic CRUD operations on the entity.",
+      "To perform complex data transformations.",
+      "To handle security in the repository layer.",
+      "To provide custom data validation."
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Che tipo di servizio è Amazon EC2?",
+        "Fornire operazioni CRUD di base sull'entità.",
+        "Eseguire trasformazioni complesse sui dati.",
+        "Gestire la sicurezza nel livello del repository.",
+        "Fornire la convalida personalizzata dei dati."
+      ]
+    }
+  },
+  {
+    "question": "What does the following Spring Data repository interface method do?",
+    "answers": [
+      "Find entity by its ID.",
+      "Delete all entities.",
+      "Find all entities.",
+      "Save an entity."
+    ],
+    "correct": 2,
+    "code": "List<MyEntity> findAll();",
+    "translations": {
+      "it": [
+        "Cosa farà il seguente comando AWS CLI?",
+        "Trova l'entità per il suo ID.",
+        "Elimina tutte le entità.",
+        "Trova tutte le entità.",
+        "Salva un'entità."
+      ]
+    }
+  },
+  {
+    "question": "What is returned by the following repository method in Spring Data?",
+    "answers": [
+      "A single entity.",
+      "A list of entities.",
+      "A paginated list of entities.",
+      "A count of entities."
+    ],
+    "correct": 1,
+    "code": "List<User> findByLastName(String lastName);",
+    "translations": {
+      "it": [
+        "In un template CloudFormation, qual è lo scopo della sezione 'Resources'?",
+        "Una singola entità.",
+        "Un elenco di entità.",
+        "Un elenco di entità paginato.",
+        "Un conteggio delle entità."
+      ]
+    }
+  },
+  {
+    "question": "What does this method declaration in a repository interface represent?",
+    "answers": [
+      "Updating an entity.",
+      "Finding an entity.",
+      "Deleting an entity.",
+      "Counting entities."
+    ],
+    "correct": 3,
+    "code": "long countByAge(int age);",
+    "translations": {
+      "it": [
+        "Quale sarà il risultato della seguente policy JSON?",
+        "Aggiornare un'entità.",
+        "Trovare un'entità.",
+        "Eliminare un'entità.",
+        "Contare entità."
+      ]
+    }
+  },
+  {
+    "question": "In Spring Data, what would be the return type of this custom repository method?",
+    "answers": [
+      "Optional<CustomEntity>",
+      "Optional<List<CustomEntity>>",
+      "Optional<Page<CustomEntity>>",
+      "Optional<Long>"
+    ],
+    "correct": 0,
+    "code": "Optional<CustomEntity> findByCustomAttribute(String customAttribute);",
+    "translations": {
+      "it": [
+        "Cosa creerà il seguente codice CloudFormation?",
+        "Optional<CustomEntity>",
+        "Optional<List<CustomEntity>>",
+        "Optional<Page<CustomEntity>>",
+        "Optional<Long>"
+      ]
+    }
+  },
+  {
+    "question": "What would be the purpose of the annotated method in a Spring Data repository?",
+    "answers": [
+      "Define a custom sorting order.",
+      "Run a native SQL query.",
+      "Define a custom data transformation.",
+      "Handle transactional operations."
+    ],
+    "correct": 1,
+    "code": "@Query(value = \"SELECT * FROM Users WHERE status = 'ACTIVE'\", nativeQuery = true)",
+    "translations": {
+      "it": [
+        "Cosa ottiene la seguente policy AWS IAM?",
+        "Definire un ordine di ordinamento personalizzato.",
+        "Eseguire una query SQL nativa.",
+        "Definire una trasformazione dati personalizzata.",
+        "Gestire operazioni transazionali."
+      ]
+    }
+  }
+]

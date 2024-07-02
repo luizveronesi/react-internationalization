@@ -1,0 +1,12 @@
+.answers-container {
+  .answer {
+    input[type='radio'] {
+      margin-right: 8px;
+      cursor: pointer;
+    }
+
+    > label {
+      cursor: pointer;
+    }
+  }
+}

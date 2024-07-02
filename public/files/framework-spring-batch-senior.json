@@ -1,0 +1,195 @@
+[
+  {
+    "question": "What is Spring Batch and when would you use it?",
+    "answers": [
+      "A framework for batch processing used for large-scale data processing.",
+      "A JMS library for real-time message processing.",
+      "A tool for managing distributed microservices.",
+      "A front-end framework for building reactive web applications."
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Per cosa viene utilizzato principalmente Amazon S3?",
+        "Un framework per l'elaborazione batch utilizzato per l'elaborazione di dati su larga scala.",
+        "Una libreria JMS per l'elaborazione di messaggi in tempo reale.",
+        "Uno strumento per la gestione di microservizi distribuiti.",
+        "Un framework front-end per costruire applicazioni web reattive."
+      ]
+    }
+  },
+  {
+    "question": "How does Spring Batch handle transaction management?",
+    "answers": [
+      "It uses JTA for transactional operations.",
+      "It relies on the Java EE container for transactions.",
+      "It uses a customizable transactional policy through Step and Job configurations.",
+      "Transactions are managed manually by the developer."
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Quale servizio AWS è progettato per analisi scalabili di data warehouse?",
+        "Utilizza JTA per le operazioni transazionali.",
+        "Si affida al contenitore Java EE per le transazioni.",
+        "Utilizza una politica transazionale personalizzabile tramite configurazioni di Step e Job.",
+        "Le transazioni sono gestite manualmente dallo sviluppatore."
+      ]
+    }
+  },
+  {
+    "question": "Analyze the following code: What is the purpose of the 'Step' in Spring Batch?",
+    "answers": [
+      "To define a unit of work within a job, which encapsulates the complete processing logic.",
+      "To schedule jobs to run at specific times.",
+      "To handle real-time HTTP requests.",
+      "To configure data validation rules."
+    ],
+    "correct": 0,
+    "code": "Step step = stepBuilderFactory.get(\"sampleStep\").tasklet(tasklet).build();",
+    "translations": {
+      "it": [
+        "Come puoi gestire in modo sicuro l'accesso ai servizi e alle risorse AWS?",
+        "Definire un'unità di lavoro all'interno di un job, che incapsula l'intera logica di elaborazione.",
+        "Schedulare i job per l'esecuzione in orari specifici.",
+        "Gestire le richieste HTTP in tempo reale.",
+        "Configurare le regole di validazione dei dati."
+      ]
+    }
+  },
+  {
+    "question": "What is a JobLauncher in Spring Batch?",
+    "answers": [
+      "A mechanism to execute a batch job.",
+      "A library for orchestrating multiple microservices.",
+      "A scheduler for running periodic tasks.",
+      "A framework for building UI components."
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Quale dei seguenti è un servizio di calcolo serverless completamente gestito in AWS?",
+        "Un meccanismo per eseguire un job batch.",
+        "Una libreria per orchestrare più microservizi.",
+        "Uno scheduler per eseguire attività periodiche.",
+        "Un framework per costruire componenti UI."
+      ]
+    }
+  },
+  {
+    "question": "Examine the following code: What does the ItemProcessor do in Spring Batch?",
+    "answers": [
+      "It processes an item and returns the transformed item.",
+      "It validates data consistency.",
+      "It reads data from an external source.",
+      "It writes processed data to a destination."
+    ],
+    "correct": 0,
+    "code": "public class CustomItemProcessor implements ItemProcessor<InputType, OutputType> { \n  @Override \n  public OutputType process(InputType item) throws Exception { \n    // transform the item \n    return transformedItem; \n  } \n}",
+    "translations": {
+      "it": [
+        "Che tipo di servizio è Amazon EC2?",
+        "Elabora un elemento e restituisce l'elemento trasformato.",
+        "Valida la coerenza dei dati.",
+        "Legge i dati da una fonte esterna.",
+        "Scrive i dati elaborati verso una destinazione."
+      ]
+    }
+  },
+  {
+    "question": "What role does the ItemReader play in Spring Batch?",
+    "answers": [
+      "It reads data from a specific source.",
+      "It transforms the item.",
+      "It handles the transaction management.",
+      "It writes data to a designated target."
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Cosa farà il seguente comando AWS CLI?",
+        "Legge i dati da una fonte specifica.",
+        "Trasforma l'elemento.",
+        "Gestisce la transazione.",
+        "Scrive i dati su una destinazione designata."
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of a JobRepository in Spring Batch?",
+    "answers": [
+      "It stores the metadata information of job executions.",
+      "It holds the user credentials for job execution.",
+      "It schedules jobs for execution.",
+      "It logs application errors during job processing."
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "In un template CloudFormation, qual è lo scopo della sezione 'Resources'?",
+        "Memorizza le informazioni di metadati delle esecuzioni di job.",
+        "Contiene le credenziali utente per l'esecuzione dei job.",
+        "Programma i job per l'esecuzione.",
+        "Registra gli errori dell'applicazione durante l'elaborazione del job."
+      ]
+    }
+  },
+  {
+    "question": "Analyze the following code: what does the Chunk-oriented processing strategy do in Spring Batch?",
+    "answers": [
+      "It processes a set of items as a single transaction.",
+      "It handles real-time data processing.",
+      "It schedules tasks to run periodically.",
+      "It only processes data in-memory."
+    ],
+    "correct": 0,
+    "code": "public BatchConfigurer batchConfigurer() {\n  return new DefaultBatchConfigurer() {\n    @Override\n    public JobLauncher getJobLauncher() {\n      return new SimpleJobLauncher();\n    }\n  };\n}",
+    "translations": {
+      "it": [
+        "Quale sarà il risultato della seguente policy JSON?",
+        "Elabora un insieme di elementi come una singola transazione.",
+        "Gestisce l'elaborazione dei dati in tempo reale.",
+        "Schedula le attività da eseguire periodicamente.",
+        "Elabora solo i dati in memoria."
+      ]
+    }
+  },
+  {
+    "question": "What is a StepExecution in Spring Batch?",
+    "answers": [
+      "It represents the execution context of a step within a job.",
+      "It defines the boundary of a transactional operation.",
+      "It configures the retry policy for a job.",
+      "It handles error logging for batch processes."
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Cosa creerà il seguente codice CloudFormation?",
+        "Rappresenta il contesto di esecuzione di un passo all'interno di un job.",
+        "Definisce il confine di un'operazione transazionale.",
+        "Configura la politica di riprova per un job.",
+        "Gestisce la registrazione degli errori per i processi batch."
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of a JobExecution in Spring Batch?",
+    "answers": [
+      "It represents the runtime context of a job execution.",
+      "It schedules jobs for execution.",
+      "It reads data from a source.",
+      "It writes processed data to a destination."
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Cosa ottiene la seguente policy AWS IAM?",
+        "Rappresenta il contesto runtime di un'esecuzione di un job.",
+        "Programma i job per l'esecuzione.",
+        "Legge i dati da una fonte.",
+        "Scrive i dati elaborati a una destinazione."
+      ]
+    }
+  }
+]

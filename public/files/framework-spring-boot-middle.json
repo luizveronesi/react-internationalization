@@ -1,0 +1,197 @@
+[
+  {
+    "question": "What is Spring Boot?",
+    "answers": [
+      "A framework for developing Python applications",
+      "An inversion of control container for the Java platform",
+      "A configuration management tool for Kubernetes",
+      "A frontend library for building dynamic user interfaces"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Cos'è Spring Boot?",
+        "Un framework per lo sviluppo di applicazioni Python",
+        "Un contenitore di inversione di controllo per la piattaforma Java",
+        "Uno strumento di gestione della configurazione per Kubernetes",
+        "Una libreria frontend per la costruzione di interfacce utente dinamiche"
+      ]
+    }
+  },
+  {
+    "question": "What is the primary purpose of Spring Boot?",
+    "answers": [
+      "To simplify the setup and development of new Spring applications",
+      "To manage database migrations",
+      "To provide caching mechanisms",
+      "To integrate with frontend JavaScript frameworks"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Qual è lo scopo principale di Spring Boot?",
+        "Per semplificare l'impostazione e lo sviluppo di nuove applicazioni Spring",
+        "Per gestire le migrazioni del database",
+        "Per fornire meccanismi di caching",
+        "Per integrare con i framework frontend JavaScript"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following is an annotation used to start a Spring Boot application?",
+    "answers": [
+      "@SpringBootApplication",
+      "@EnableAutoConfiguration",
+      "@ComponentScan",
+      "@Configuration"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Quale delle seguenti annotazioni viene utilizzata per avviare un'applicazione Spring Boot?",
+        "@SpringBootApplication",
+        "@EnableAutoConfiguration",
+        "@ComponentScan",
+        "@Configuration"
+      ]
+    }
+  },
+  {
+    "question": "Which file is used to configure a Spring Boot application?",
+    "answers": [
+      "application.properties",
+      "setup.yaml",
+      "config.json",
+      "settings.ini"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Quale file viene utilizzato per configurare un'applicazione Spring Boot?",
+        "application.properties",
+        "setup.yaml",
+        "config.json",
+        "settings.ini"
+      ]
+    }
+  },
+  {
+    "question": "What does @Autowired annotation indicate in Spring Boot?",
+    "answers": [
+      "The method should be called after bean creation",
+      "The field or constructor should be autowired by Spring’s dependency injection",
+      "The method should handle web requests",
+      "The class should be treated as a Spring Bean"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Cosa indica l'annotazione @Autowired in Spring Boot?",
+        "Il metodo deve essere chiamato dopo la creazione del bean",
+        "Il campo o il costruttore deve essere autowired dall'iniezione di dipendenze di Spring",
+        "Il metodo deve gestire le richieste web",
+        "La classe deve essere trattata come un Bean Spring"
+      ]
+    }
+  },
+  {
+    "question": "What will the following Spring Boot application return when accessed at the root URL (/)?",
+    "answers": [
+      "Hello, World!",
+      "Error 404",
+      "Empty Response",
+      "Welcome to Spring Boot!"
+    ],
+    "correct": 0,
+    "code": "import org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\nimport org.springframework.web.bind.annotation.GetMapping;\nimport org.springframework.web.bind.annotation.RestController;\n\n@SpringBootApplication\n@RestController\npublic class HelloWorldApplication {\n    public static void main(String[] args) {\n        SpringApplication.run(HelloWorldApplication.class, args);\n    }\n\n    @GetMapping(\"/\")\n    public String sayHello() {\n        return \"Hello, World!\";\n    }\n}",
+    "translations": {
+      "it": [
+        "Cosa restituirà la seguente applicazione Spring Boot quando si accede all'URL radice (/)?",
+        "Ciao, Mondo!",
+        "Errore 404",
+        "Risposta vuota",
+        "Benvenuto in Spring Boot!"
+      ]
+    }
+  },
+  {
+    "question": "What does the following Spring Boot application demonstrate?",
+    "answers": [
+      "A RESTful web service",
+      "A SOAP web service",
+      "A scheduled task",
+      "An embedded database"
+    ],
+    "correct": 0,
+    "code": "import org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\nimport org.springframework.web.bind.annotation.GetMapping;\nimport org.springframework.web.bind.annotation.RestController;\n\n@SpringBootApplication\n@RestController\npublic class ExampleApplication {\n    public static void main(String[] args) {\n        SpringApplication.run(ExampleApplication.class, args);\n    }\n\n    @GetMapping(\"/api\")\n    public String getApi() {\n        return \"This is a RESTful API\";\n    }\n}",
+    "translations": {
+      "it": [
+        "Cosa dimostra la seguente applicazione Spring Boot?",
+        "Un servizio web RESTful",
+        "Un servizio web SOAP",
+        "Un'attività programmata",
+        "Un database incorporato"
+      ]
+    }
+  },
+  {
+    "question": "In the provided application code, what is the role of @SpringBootApplication?",
+    "answers": [
+      "It marks the application as a Spring Boot application",
+      "It disables auto-configuration",
+      "It creates a component scan for the base package",
+      "It configures a different data source"
+    ],
+    "correct": 0,
+    "code": "import org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\n\n@SpringBootApplication\npublic class MyApp {\n    public static void main(String[] args) {\n        SpringApplication.run(MyApp.class, args);\n    }\n}",
+    "translations": {
+      "it": [
+        "Nel codice dell'applicazione fornito, qual è il ruolo di @SpringBootApplication?",
+        "Segna l'applicazione come un'applicazione Spring Boot",
+        "Disabilita l'auto-configurazione",
+        "Crea una scansione dei componenti per il pacchetto di base",
+        "Configura una sorgente dati diversa"
+      ]
+    }
+  },
+  {
+    "question": "What happens when the following Spring Boot application is run?",
+    "answers": [
+      "It throws a runtime error",
+      "It prints 'Hello Spring!' to the console",
+      "It starts the embedded Tomcat server",
+      "It executes a scheduled task"
+    ],
+    "correct": 2,
+    "code": "import org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\n\n@SpringBootApplication\npublic class MyApp {\n    public static void main(String[] args) {\n        SpringApplication.run(MyApp.class, args);\n    }\n}",
+    "translations": {
+      "it": [
+        "Cosa succede quando viene eseguita la seguente applicazione Spring Boot?",
+        "Genera un errore di runtime",
+        "Stampa 'Hello Spring!' nella console",
+        "Avvia il server Tomcat incorporato",
+        "Esegue un'attività programmata"
+      ]
+    }
+  },
+  {
+    "question": "What will the following Spring Boot application return when accessed at the URL /greeting?",
+    "answers": [
+      "Hello, World!",
+      "Greetings from Spring Boot!",
+      "Error 404",
+      "Empty Response"
+    ],
+    "correct": 1,
+    "code": "import org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\nimport org.springframework.web.bind.annotation.GetMapping;\nimport org.springframework.web.bind.annotation.RestController;\n\n@SpringBootApplication\n@RestController\npublic class GreetingApplication {\n    public static void main(String[] args) {\n        SpringApplication.run(GreetingApplication.class, args);\n    }\n\n    @GetMapping(\"/greeting\")\n    public String greet() {\n        return \"Greetings from Spring Boot!\";\n    }\n}",
+    "translations": {
+      "it": [
+        "Cosa restituirà la seguente applicazione Spring Boot quando si accede all'URL /greeting?",
+        "Ciao, Mondo!",
+        "Saluti da Spring Boot!",
+        "Errore 404",
+        "Risposta vuota"
+      ]
+    }
+  }
+]

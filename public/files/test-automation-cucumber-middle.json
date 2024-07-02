@@ -1,0 +1,186 @@
+[
+  {
+    "question": "Which language is primarily used to write Cucumber feature files?",
+    "answers": ["Python", "Gherkin", "Java", "HTML"],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Quale linguaggio è utilizzato principalmente per scrivere i file di funzionalità di Cucumber?",
+        "Python",
+        "Gherkin",
+        "Java",
+        "HTML"
+      ]
+    }
+  },
+  {
+    "question": "In Cucumber, what does a step definition do?",
+    "answers": [
+      "Defines the structure of feature files",
+      "Maps each step in a feature file to code",
+      "Provides test results",
+      "Compiles the feature files"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "In Cucumber, cosa fa una definizione di passo?",
+        "Definisce la struttura dei file di funzionalità",
+        "Mappa ogni passo in un file di funzionalità al codice",
+        "Fornisce i risultati dei test",
+        "Compila i file di funzionalità"
+      ]
+    }
+  },
+  {
+    "question": "What is the default extension of a Cucumber feature file?",
+    "answers": [".feature", ".cuke", ".test", ".gherkin"],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Qual è l'estensione predefinita di un file di funzionalità di Cucumber?",
+        ".feature",
+        ".cuke",
+        ".test",
+        ".gherkin"
+      ]
+    }
+  },
+  {
+    "question": "In which scenarios would you use Cucumber with Selenium?",
+    "answers": [
+      "To perform API testing",
+      "To execute unit tests",
+      "To automate UI testing with a clear understanding of requirements",
+      "To deploy applications"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "In quali scenari utilizzeresti Cucumber con Selenium?",
+        "Per eseguire test API",
+        "Per eseguire test unitari",
+        "Per automatizzare i test dell'interfaccia utente con una chiara comprensione dei requisiti",
+        "Per distribuire le applicazioni"
+      ]
+    }
+  },
+  {
+    "question": "Analyze the following Gherkin scenario and identify the error.",
+    "answers": [
+      "The scenario name is missing",
+      "The Given keyword is not required",
+      "The syntax is correct",
+      "The step definitions are not aligned"
+    ],
+    "correct": 2,
+    "code": "Feature: Login functionality\nScenario: User logs in successfully\nGiven the user is on the login page\nWhen the user enters valid credentials\nThen the user should see the dashboard",
+    "translations": {
+      "it": [
+        "Analizza il seguente scenario Gherkin e identifica l'errore.",
+        "Manca il nome dello scenario",
+        "La parola chiave 'Given' non è necessaria",
+        "La sintassi è corretta",
+        "Le definizioni di passo non sono allineate"
+      ]
+    }
+  },
+  {
+    "question": "What is wrong with the following step definition in Cucumber?",
+    "answers": [
+      "The annotation should be @When",
+      "The annotation should be @Given",
+      "The step definition has no body",
+      "The step text does not match the feature file"
+    ],
+    "correct": 0,
+    "code": "import org.junit.Assert;\nimport cucumber.api.java.en.Given;\n@Then(\"^the user should see the dashboard$\")\npublic void the_user_should_see_the_dashboard() {\n    // Check dashboard visibility\n}",
+    "translations": {
+      "it": [
+        "Cosa c'è di sbagliato in questa definizione di passo in Cucumber?",
+        "L'annotazione dovrebbe essere @When",
+        "L'annotazione dovrebbe essere @Given",
+        "La definizione di passo non ha corpo",
+        "Il testo del passo non corrisponde al file di funzionalità"
+      ]
+    }
+  },
+  {
+    "question": "Analyze the given Cucumber step definition and determine its purpose.",
+    "answers": [
+      "To define test setup steps",
+      "To automate interaction with a webpage",
+      "To validate user input",
+      "To map Gherkin steps to Java code"
+    ],
+    "correct": 3,
+    "code": "import cucumber.api.java.en.Given;\n@Given(\"^the user is on the login page$\")\npublic void the_user_is_on_the_login_page() {\n    System.out.println(\"User is on the login page\");\n}",
+    "translations": {
+      "it": [
+        "Analizza la definizione di passo Cucumber data e determina il suo scopo.",
+        "Definire i passaggi di configurazione del test",
+        "Automatizzare l'interazione con una pagina web",
+        "Validare l'input dell'utente",
+        "Mappare i passi Gherkin al codice Java"
+      ]
+    }
+  },
+  {
+    "question": "What is the function of the @CucumberOptions annotation?",
+    "answers": [
+      "To provide Selenium configurations",
+      "To link step definitions with the feature file",
+      "To configure Cucumber options",
+      "To define test execution order"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Qual è la funzione dell'annotazione @CucumberOptions?",
+        "Per fornire configurazioni Selenium",
+        "Per collegare le definizioni di passo con il file di funzionalità",
+        "Per configurare le opzioni di Cucumber",
+        "Per definire l'ordine di esecuzione dei test"
+      ]
+    }
+  },
+  {
+    "question": "Identify the issue with the following Gherkin scenario.",
+    "answers": [
+      "The `And` step is not allowed",
+      "The scenario outline keyword is missing",
+      "The `Given` step is incomplete",
+      "The step syntax is incorrect"
+    ],
+    "correct": 1,
+    "code": "Feature: User login feature\nScenario Outline: User logs in with <role>\nGiven the user is on the login page\nWhen the user enters <username> and <password>\nThen the user should be redirected to the <role> homepage\nExamples:\n| role  | username | password |\n| admin | admin1   | admin123 |\n| user  | user1    | user123  |",
+    "translations": {
+      "it": [
+        "Identifica il problema con il seguente scenario Gherkin.",
+        "Il passo `And` non è consentito",
+        "Manca la parola chiave scenario outline",
+        "Il passo `Given` è incompleto",
+        "La sintassi del passo è errata"
+      ]
+    }
+  },
+  {
+    "question": "What does the `Examples` keyword do in a Cucumber feature file?",
+    "answers": [
+      "Provides tags for the scenario",
+      "Lists the possible outcomes of the scenario",
+      "Defines data to be used in a scenario outline",
+      "Specifies the behavior of the scenario"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Cosa fa la parola chiave 'Examples' in un file di funzionalità di Cucumber?",
+        "Fornisce i tag per lo scenario",
+        "Elenca i possibili risultati dello scenario",
+        "Definisce i dati da utilizzare in un outline di scenario",
+        "Specifica il comportamento dello scenario"
+      ]
+    }
+  }
+]

@@ -1,0 +1,179 @@
+[
+  {
+    "question": "Which directive is used to create two-way data binding in Angular?",
+    "answers": ["ngBind", "ngModel", "ngClass", "ngStyle"],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Quale servizio AWS è progettato per analisi scalabili di data warehouse?",
+        "ngBind",
+        "ngModel",
+        "ngClass",
+        "ngStyle"
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of services in Angular?",
+    "answers": [
+      "To manipulate the DOM",
+      "To provide reusable business logic",
+      "To configure routes",
+      "To apply styles to components"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Come puoi gestire in modo sicuro l'accesso ai servizi e alle risorse AWS?",
+        "Per manipolare il DOM",
+        "Per fornire logica aziendale riutilizzabile",
+        "Per configurare le rotte",
+        "Per applicare stili ai componenti"
+      ]
+    }
+  },
+  {
+    "question": "Which package format is used by Angular for distributing packages?",
+    "answers": ["UMD", "CommonJS", "Webpack", "Angular Package Format (APF)"],
+    "correct": 3,
+    "translations": {
+      "it": [
+        "Quale dei seguenti è un servizio di calcolo serverless completamente gestito in AWS?",
+        "UMD",
+        "CommonJS",
+        "Webpack",
+        "Angular Package Format (APF)"
+      ]
+    }
+  },
+  {
+    "question": "In Angular, what is a component?",
+    "answers": [
+      "A directive that adds behavior to DOM elements",
+      "A service for handling asynchronous operations",
+      "A class that manages a view and its data",
+      "A module that bundles multiple features"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Che tipo di servizio è Amazon EC2?",
+        "Una direttiva che aggiunge un comportamento agli elementi DOM",
+        "Un servizio per gestire le operazioni asincrone",
+        "Una classe che gestisce una vista e i suoi dati",
+        "Un modulo che raggruppa più funzionalità"
+      ]
+    }
+  },
+  {
+    "question": "What will be the output of the following code in Angular?",
+    "answers": [
+      "Hello Angular",
+      "Hello World",
+      "Undefined",
+      "An error will occur"
+    ],
+    "correct": 1,
+    "code": "<h1>{{ title }}</h1>",
+    "translations": {
+      "it": [
+        "Cosa farà il seguente comando AWS CLI?",
+        "Ciao Angular",
+        "Ciao Mondo",
+        "Non definito",
+        "Si verificherà un errore"
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of the ngOnInit lifecycle hook?",
+    "answers": [
+      "To initialize data-bound properties in a directive",
+      "To detect changes in the view",
+      "To create components dynamically",
+      "To clean up resources when the component is destroyed"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "In un template CloudFormation, qual è lo scopo della sezione 'Resources'?",
+        "Per inizializzare le proprietà vincolate ai dati in una direttiva",
+        "Per rilevare modifiche nella vista",
+        "Per creare componenti dinamicamente",
+        "Per pulire le risorse quando il componente viene distrutto"
+      ]
+    }
+  },
+  {
+    "question": "How do you bind a button click event to a method in Angular?",
+    "answers": [
+      "(click)='method()'",
+      "(bind)='method()'",
+      "(onClick)='method()'",
+      "#click='method()'"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Quale sarà il risultato della seguente policy JSON?",
+        "(click)='metodo()'",
+        "(bind)='metodo()'",
+        "(onClick)='metodo()'",
+        "#click='metodo()'"
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of the HttpClient service in Angular?",
+    "answers": [
+      "To handle routing",
+      "To create and manipulate forms",
+      "To perform HTTP requests",
+      "To manage the application state"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Cosa creerà il seguente codice CloudFormation?",
+        "Per gestire il routing",
+        "Per creare e manipolare moduli",
+        "Per eseguire richieste HTTP",
+        "Per gestire lo stato dell'applicazione"
+      ]
+    }
+  },
+  {
+    "question": "What does the ngIf directive do in Angular?",
+    "answers": [
+      "It binds data to a specific HTML element",
+      "It applies a specific CSS class conditionally",
+      "It conditionally includes or excludes a part of the HTML",
+      "It repeats a set of HTML elements for each item in a collection"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Cosa ottiene la seguente policy AWS IAM?",
+        "Data binding a un elemento HTML specifico",
+        "Applica condizionalmente una classe CSS specifica",
+        "Include o esclude condizionivamente una parte dell'HTML",
+        "Ripete un insieme di elementi HTML per ogni elemento in una collezione"
+      ]
+    }
+  },
+  {
+    "question": "What is the output of the following Angular code?",
+    "answers": ["0", "1", "Will throw an error", "Undefined"],
+    "correct": 0,
+    "code": "let count = 0;\n<button (click)=\"count = count + 1\">Increment</button>\n<p>{{ count }}</p>",
+    "translations": {
+      "it": [
+        "Per cosa viene utilizzato Amazon S3?",
+        "0",
+        "1",
+        "Genererà un errore",
+        "Non definito"
+      ]
+    }
+  }
+]

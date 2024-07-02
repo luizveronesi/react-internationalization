@@ -1,0 +1,20 @@
+.modal-user {
+  .modal-content {
+    border-radius: 8px;
+    border: none;
+
+    .table {
+      tr td:not(:first-child) {
+        text-align: center;
+      }
+    }
+  }
+
+  .modal-footer {
+    justify-content: center;
+
+    button {
+      width: 200px;
+    }
+  }
+}

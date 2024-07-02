@@ -1,0 +1,179 @@
+[
+  {
+    "question": "What is the role of the POM file in a Maven project?",
+    "answers": [
+      "It defines project properties, configurations, and dependencies.",
+      "It only lists the project dependencies.",
+      "It provides a manual for the project.",
+      "It stores binary outputs of the project."
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Qual è il ruolo del file POM in un progetto Maven?",
+        "Definisce proprietà, configurazioni e dipendenze del progetto.",
+        "Elenca solo le dipendenze del progetto.",
+        "Fornisce un manuale per il progetto.",
+        "Memorizza i file binari del progetto."
+      ]
+    }
+  },
+  {
+    "question": "Which command is used to build a Maven project?",
+    "answers": ["mvn build", "mvn init", "mvn compile", "mvn install"],
+    "correct": 3,
+    "translations": {
+      "it": [
+        "Quale comando viene utilizzato per costruire un progetto Maven?",
+        "mvn build",
+        "mvn init",
+        "mvn compile",
+        "mvn install"
+      ]
+    }
+  },
+  {
+    "question": "Which phase is not part of the default Maven build lifecycle?",
+    "answers": ["deploy", "test", "initialize", "bundle"],
+    "correct": 3,
+    "translations": {
+      "it": [
+        "Quale fase non fa parte del ciclo di vita di build predefinito di Maven?",
+        "deploy",
+        "test",
+        "initialize",
+        "bundle"
+      ]
+    }
+  },
+  {
+    "question": "How does Maven manage project dependencies?",
+    "answers": [
+      "Using a centralized repository configuration only",
+      "Using both local and remote repositories",
+      "Using a dedicated dependency configuration file",
+      "Using manually downloaded jar files"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Come gestisce Maven le dipendenze del progetto?",
+        "Usando solo una configurazione di repository centralizzata",
+        "Usando sia repository locali che remoti",
+        "Usando un file di configurazione delle dipendenze dedicato",
+        "Usando file jar scaricati manualmente"
+      ]
+    }
+  },
+  {
+    "question": "What will be the result of running the command `mvn clean compile`?",
+    "answers": [
+      "Project and dependencies are compiled.",
+      "All compiled files are cleaned and then project is compiled.",
+      "Project is cleaned and dependencies are downloaded.",
+      "Project is cleaned and tests are run."
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Quale sarà il risultato dell'esecuzione del comando `mvn clean compile`?",
+        "Il progetto e le dipendenze vengono compilati.",
+        "Tutti i file compilati vengono puliti e poi il progetto viene compilato.",
+        "Il progetto viene pulito e le dipendenze vengono scaricate.",
+        "Il progetto viene pulito e i test vengono eseguiti."
+      ]
+    }
+  },
+  {
+    "question": "What is wrong with the following POM file?",
+    "answers": [
+      "It is missing the project version.",
+      "Repositories should be specified within the dependencies tag.",
+      "The artifactId is not specified.",
+      "The packaging type is incorrect."
+    ],
+    "correct": 0,
+    "code": "<project>\n  <modelVersion>4.0.0</modelVersion>\n  <groupId>com.example</groupId>\n  <artifactId>sample-project</artifactId>\n</project>",
+    "translations": {
+      "it": [
+        "Cosa c'è di sbagliato nel seguente file POM?",
+        "Manca la versione del progetto.",
+        "I repository dovrebbero essere specificati all'interno del tag dependencies.",
+        "Il 'artifactId' non è specificato.",
+        "Il tipo di packaging non è corretto."
+      ]
+    }
+  },
+  {
+    "question": "What will `mvn archetype:generate` do?",
+    "answers": [
+      "Generate JavaDocs for the project",
+      "Generate a new Maven project from an archetype",
+      "Compile the project",
+      "Deploy the project"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Cosa farà `mvn archetype:generate`?",
+        "Generare JavaDoc per il progetto",
+        "Generare un nuovo progetto Maven da un archetipo",
+        "Compilare il progetto",
+        "Distribuire il progetto"
+      ]
+    }
+  },
+  {
+    "question": "In which section of the POM file would you specify a dependency?",
+    "answers": ["properties", "licenses", "build", "dependencies"],
+    "correct": 3,
+    "translations": {
+      "it": [
+        "In quale sezione del file POM specificheresti una dipendenza?",
+        "properties",
+        "licenses",
+        "build",
+        "dependencies"
+      ]
+    }
+  },
+  {
+    "question": "Identify the problem in the given POM file.",
+    "answers": [
+      "The groupId is incorrect.",
+      "The scope for the dependency is missing.",
+      "The version tag for the dependency is missing.",
+      "The dependencies section is outside the project tag."
+    ],
+    "correct": 2,
+    "code": "<project>\n  <modelVersion>4.0.0</modelVersion>\n  <groupId>com.example</groupId>\n  <artifactId>sample-project</artifactId>\n  <version>1.0-SNAPSHOT</version>\n  <dependencies>\n    <dependency>\n      <groupId>junit</groupId>\n      <artifactId>junit</artifactId>\n    </dependency>\n  </dependencies>\n</project>",
+    "translations": {
+      "it": [
+        "Identificare il problema nel file POM fornito.",
+        "Il 'groupId' è errato.",
+        "Lo scopo per la dipendenza manca.",
+        "L'etichetta 'version' per la dipendenza manca.",
+        "La sezione delle dipendenze è fuori dal tag progetto."
+      ]
+    }
+  },
+  {
+    "question": "What does the `packaging` element define in a POM file?",
+    "answers": [
+      "The type of project being built (jar, war, pom, etc.).",
+      "The repository where the project will be deployed.",
+      "The build configuration for the project.",
+      "The list of dependencies required for the project."
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Cosa definisce l'elemento `packaging` in un file POM?",
+        "Il tipo di progetto in fase di costruzione (jar, war, pom, ecc.).",
+        "Il repository dove verrà distribuito il progetto.",
+        "La configurazione di build per il progetto.",
+        "L'elenco delle dipendenze richieste per il progetto."
+      ]
+    }
+  }
+]

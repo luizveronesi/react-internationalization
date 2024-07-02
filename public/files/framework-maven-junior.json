@@ -1,0 +1,177 @@
+[
+  {
+    "question": "What is Maven primarily used for in Java projects?",
+    "answers": [
+      "Version control",
+      "Build automation",
+      "Code analysis",
+      "Testing"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "A cosa serve Maven principalmente nei progetti Java?",
+        "Controllo delle versioni",
+        "Automazione della build",
+        "Analisi del codice",
+        "Test"
+      ]
+    }
+  },
+  {
+    "question": "Which file does Maven use to define a project's dependencies and build configurations?",
+    "answers": ["build.gradle", "settings.xml", "pom.xml", "package.json"],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Quale file usa Maven per definire le dipendenze e le configurazioni di build di un progetto?",
+        "build.gradle",
+        "settings.xml",
+        "pom.xml",
+        "package.json"
+      ]
+    }
+  },
+  {
+    "question": "How do you add a dependency in a Maven project?",
+    "answers": [
+      "By modifying the build.gradle file",
+      "By modifying the pom.xml file",
+      "By creating a new module",
+      "By updating the settings.xml file"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Come si aggiunge una dipendenza in un progetto Maven?",
+        "Modificando il file build.gradle",
+        "Modificando il file pom.xml",
+        "Creando un nuovo modulo",
+        "Aggiornando il file settings.xml"
+      ]
+    }
+  },
+  {
+    "question": "What Maven command is used to compile a project?",
+    "answers": ["mvn build", "mvn package", "mvn compile", "mvn install"],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Quale comando Maven viene utilizzato per compilare un progetto?",
+        "mvn build",
+        "mvn package",
+        "mvn compile",
+        "mvn install"
+      ]
+    }
+  },
+  {
+    "question": "Which Maven phase is responsible for running unit tests?",
+    "answers": ["compile", "package", "test", "install"],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Quale fase di Maven è responsabile dell'esecuzione dei test unitari?",
+        "compile",
+        "package",
+        "test",
+        "install"
+      ]
+    }
+  },
+  {
+    "question": "What will the following command do?",
+    "answers": [
+      "Clean the project and run tests",
+      "Remove the target directory and install the project",
+      "Clean the project and compile it",
+      "Remove the pom.xml file and install dependencies"
+    ],
+    "correct": 1,
+    "code": "mvn clean install",
+    "translations": {
+      "it": [
+        "Cosa farà il comando 'mvn clean install'?",
+        "Pulire il progetto ed eseguire i test",
+        "Rimuovere la directory target e installare il progetto",
+        "Pulire il progetto e compilarlo",
+        "Rimuovere il file pom.xml e installare le dipendenze"
+      ]
+    }
+  },
+  {
+    "question": "What would be the scope of a dependency if not specified in the pom.xml?",
+    "answers": ["compile", "test", "runtime", "provided"],
+    "correct": 0,
+    "code": "<dependency>\n  <groupId>com.example</groupId>\n  <artifactId>example</artifactId>\n  <version>1.0</version>\n</dependency>",
+    "translations": {
+      "it": [
+        "Quale sarà l'ambito di una dipendenza se non specificata nel pom.xml?",
+        "compile",
+        "test",
+        "runtime",
+        "provided"
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of the 'repository' element in pom.xml?",
+    "answers": [
+      "To define local modules",
+      "To specify the version of dependencies",
+      "To define the remote repositories to fetch dependencies from",
+      "To specify the project's name"
+    ],
+    "correct": 2,
+    "code": "<repositories>\n  <repository>\n    <id>central</id>\n    <url>http://repo.maven.apache.org/maven2</url>\n  </repository>\n</repositories>",
+    "translations": {
+      "it": [
+        "Qual è lo scopo dell'elemento 'repository' nel pom.xml?",
+        "Per definire i moduli locali",
+        "Per specificare la versione delle dipendenze",
+        "Per definire i repository remoti da cui recuperare le dipendenze",
+        "Per specificare il nome del progetto"
+      ]
+    }
+  },
+  {
+    "question": "How can you activate a Maven profile?",
+    "answers": [
+      "By including it in the dependency list",
+      "By specifying it in the POM file",
+      "By passing the profile ID to the mvn command",
+      "By setting it in the settings.xml file"
+    ],
+    "correct": 2,
+    "code": "mvn clean install -Pprofile-id",
+    "translations": {
+      "it": [
+        "Come è possibile attivare un profilo Maven?",
+        "Includendolo nell'elenco delle dipendenze",
+        "Specificandolo nel file POM",
+        "Passando l'ID del profilo al comando mvn",
+        "Impostandolo nel file settings.xml"
+      ]
+    }
+  },
+  {
+    "question": "What will the following command do?",
+    "answers": [
+      "Validates the project structure and configuration",
+      "Compiles the source code",
+      "Runs the test cases",
+      "Packages the compiled code into a JAR"
+    ],
+    "correct": 0,
+    "code": "mvn validate",
+    "translations": {
+      "it": [
+        "Cosa fa il comando 'mvn validate'?",
+        "Valida la struttura e la configurazione del progetto",
+        "Compila il codice sorgente",
+        "Esegue i casi di test",
+        "Impacchetta il codice compilato in un JAR"
+      ]
+    }
+  }
+]

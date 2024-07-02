@@ -1,0 +1,192 @@
+[
+  {
+    "question": "What is a Docker container?",
+    "answers": [
+      "A lightweight, standalone, and executable software package",
+      "A virtual machine",
+      "A physical server",
+      "A software development kit"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Per cosa viene utilizzato principalmente Amazon S3?",
+        "Un pacchetto software leggero, autonomo e eseguibile",
+        "Una macchina virtuale",
+        "Un server fisico",
+        "Un kit di sviluppo software"
+      ]
+    }
+  },
+  {
+    "question": "Which command is used to list all running Docker containers?",
+    "answers": ["docker ps", "docker ls", "docker list", "docker containers"],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Quale servizio AWS è progettato per analisi scalabili di data warehouse?",
+        "docker ps",
+        "docker ls",
+        "docker list",
+        "docker containers"
+      ]
+    }
+  },
+  {
+    "question": "What does the 'docker run' command do?",
+    "answers": [
+      "Creates a new container and starts it",
+      "Stops a running container",
+      "Removes a container",
+      "Updates an existing container"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Come puoi gestire in modo sicuro l'accesso ai servizi e alle risorse AWS?",
+        "Crea un nuovo container e lo avvia",
+        "Ferma un container in esecuzione",
+        "Rimuove un container",
+        "Aggiorna un container esistente"
+      ]
+    }
+  },
+  {
+    "question": "How can you remove all stopped Docker containers?",
+    "answers": [
+      "docker container prune",
+      "docker container remove",
+      "docker container clean",
+      "docker container delete"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Quale dei seguenti è un servizio di calcolo serverless completamente gestito in AWS?",
+        "docker container prune",
+        "docker container remove",
+        "docker container clean",
+        "docker container delete"
+      ]
+    }
+  },
+  {
+    "question": "What is a Docker image?",
+    "answers": [
+      "A lightweight, standalone package that includes everything needed to run a piece of software",
+      "A script to build containers",
+      "A virtual machine",
+      "A type of physical storage"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Che tipo di servizio è Amazon EC2?",
+        "Un pacchetto leggero e autonomo che include tutto il necessario per eseguire un software",
+        "Uno script per costruire container",
+        "Una macchina virtuale",
+        "Un tipo di storage fisico"
+      ]
+    }
+  },
+  {
+    "question": "What will the following Docker command do?",
+    "answers": [
+      "It will create and start a new container from the 'nginx' image",
+      "It will stop and remove a container",
+      "It will build an image",
+      "It will list all containers"
+    ],
+    "correct": 0,
+    "code": "docker run nginx",
+    "translations": {
+      "it": [
+        "Cosa farà il seguente comando AWS CLI?",
+        "Creerà e avvierà un nuovo container dall'immagine 'nginx'",
+        "Fermerà e rimuoverà un container",
+        "Costruirà un'immagine",
+        "Elencherà tutti i container"
+      ]
+    }
+  },
+  {
+    "question": "What does the following Dockerfile command do?",
+    "answers": [
+      "It sets the base image to 'ubuntu:18.04'",
+      "It runs a command in the container",
+      "It exposes a port",
+      "It sets an environment variable"
+    ],
+    "correct": 0,
+    "code": "FROM ubuntu:18.04",
+    "translations": {
+      "it": [
+        "In un template CloudFormation, qual è lo scopo della sezione 'Resources'?",
+        "Imposta l'immagine base su 'ubuntu:18.04'",
+        "Esegue un comando nel container",
+        "Espone una porta",
+        "Imposta una variabile d'ambiente"
+      ]
+    }
+  },
+  {
+    "question": "What does the following Dockerfile command do?",
+    "answers": [
+      "It copies files from the host to the container",
+      "It runs a command in the container",
+      "It sets the working directory",
+      "It adds metadata to the image"
+    ],
+    "correct": 0,
+    "code": "COPY . /app",
+    "translations": {
+      "it": [
+        "Quale sarà il risultato della seguente policy JSON?",
+        "Copia i file dall'host al container",
+        "Esegue un comando nel container",
+        "Imposta la directory di lavoro",
+        "Aggiunge metadati all'immagine"
+      ]
+    }
+  },
+  {
+    "question": "What does the following Docker command do?",
+    "answers": [
+      "It creates a new image from a Dockerfile",
+      "It stops the container",
+      "It executes a command in a running container",
+      "It adds metadata to an image"
+    ],
+    "correct": 0,
+    "code": "docker build -t myimage .",
+    "translations": {
+      "it": [
+        "Cosa creerà il seguente codice CloudFormation?",
+        "Crea una nuova immagine da un Dockerfile",
+        "Ferma il container",
+        "Esegue un comando in un container in esecuzione",
+        "Aggiunge metadati a un'immagine"
+      ]
+    }
+  },
+  {
+    "question": "What does the following Docker command do?",
+    "answers": [
+      "Lists all containers, both running and stopped",
+      "Lists all running containers",
+      "Lists all Docker images",
+      "Lists all Docker networks"
+    ],
+    "correct": 0,
+    "code": "docker ps -a",
+    "translations": {
+      "it": [
+        "Cosa ottiene la seguente policy AWS IAM?",
+        "Elenca tutti i container, sia in esecuzione che stoppati",
+        "Elenca tutti i container in esecuzione",
+        "Elenca tutte le immagini Docker",
+        "Elenca tutte le reti Docker"
+      ]
+    }
+  }
+]

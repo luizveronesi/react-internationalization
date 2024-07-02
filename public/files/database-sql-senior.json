@@ -1,0 +1,186 @@
+[
+  {
+    "question": "What is the difference between INNER JOIN and OUTER JOIN in SQL?",
+    "answers": [
+      "INNER JOIN returns rows when there is a match in both tables, whereas OUTER JOIN returns rows when there is a match in one of the tables.",
+      "INNER JOIN returns rows when there is a match in one of the tables, whereas OUTER JOIN returns rows when there is a match in both tables.",
+      "INNER JOIN returns all rows from the first table, whereas OUTER JOIN only returns matching rows.",
+      "INNER JOIN only returns matching rows, whereas OUTER JOIN returns rows when there is a match or even if there is no match in one of the tables."
+    ],
+    "correct": 3,
+    "translations": {
+      "it": [
+        "INNER JOIN restituisce righe quando c'è una corrispondenza in entrambe le tabelle, mentre OUTER JOIN restituisce righe quando c'è una corrispondenza in una delle tabelle.",
+        "INNER JOIN restituisce righe quando c'è una corrispondenza in una delle tabelle, mentre OUTER JOIN restituisce righe quando c'è una corrispondenza in entrambe le tabelle.",
+        "INNER JOIN restituisce tutte le righe dalla prima tabella, mentre OUTER JOIN restituisce solo le righe corrispondenti.",
+        "INNER JOIN restituisce solo le righe corrispondenti, mentre OUTER JOIN restituisce righe quando c'è una corrispondenza o anche se non c'è una corrispondenza in una delle tabelle."
+      ]
+    }
+  },
+  {
+    "question": "What is a CTE (Common Table Expression) in SQL?",
+    "answers": [
+      "A CTE is a temporary result set that is defined within the execution scope of a single SELECT, INSERT, UPDATE, or DELETE statement.",
+      "A CTE is a permanent result set stored in the database for future queries.",
+      "A CTE is a special type of index used to optimize complex queries.",
+      "A CTE is a function that is predefined and stored in the database."
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Un CTE è un set di risultati temporaneo definito all'interno dell'ambito di esecuzione di una singola istruzione SELECT, INSERT, UPDATE o DELETE.",
+        "Un CTE è un set di risultati permanenti memorizzato nel database per future query.",
+        "Un CTE è un tipo speciale di indice utilizzato per ottimizzare query complesse.",
+        "Un CTE è una funzione predefinita e memorizzata nel database."
+      ]
+    }
+  },
+  {
+    "question": "Consider the following SQL code. What does it do?",
+    "answers": [
+      "It selects all rows from the employees table.",
+      "It selects rows from the employees table where the department is 'Sales'.",
+      "It updates the salary of all employees in the 'Sales' department.",
+      "It deletes rows from the employees table where the department is 'Sales'."
+    ],
+    "correct": 1,
+    "code": "SELECT * FROM employees WHERE department = 'Sales';",
+    "translations": {
+      "it": [
+        "Seleziona tutte le righe dalla tabella degli impiegati.",
+        "Seleziona le righe dalla tabella degli impiegati dove il dipartimento è 'Sales'.",
+        "Aggiorna lo stipendio di tutti gli impiegati nel dipartimento 'Sales'.",
+        "Elimina le righe dalla tabella degli impiegati dove il dipartimento è 'Sales'."
+      ]
+    }
+  },
+  {
+    "question": "What does the SQL clause 'GROUP BY' do?",
+    "answers": [
+      "It sorts the result set by one or more columns.",
+      "It groups rows that have the same values into summary rows.",
+      "It filters the rows based on a condition.",
+      "It selects only distinct (different) values."
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Ordina il set di risultati per una o più colonne.",
+        "Raggruppa le righe che hanno gli stessi valori in righe riassuntive.",
+        "Filtra le righe in base a una condizione.",
+        "Seleziona solo valori distinti (diversi)."
+      ]
+    }
+  },
+  {
+    "question": "Consider the following SQL code. What will be the result?",
+    "answers": [
+      "It will count the number of employees with each title.",
+      "It will sum the salaries of all employees.",
+      "It will list each employee along with their salary.",
+      "It will find the maximum salary in the employees table."
+    ],
+    "correct": 3,
+    "code": "SELECT MAX(salary) FROM employees;",
+    "translations": {
+      "it": [
+        "Conteggia il numero di dipendenti con ogni titolo.",
+        "Somma gli stipendi di tutti i dipendenti.",
+        "Elenca ogni dipendente insieme al loro stipendio.",
+        "Trova lo stipendio massimo nella tabella degli impiegati."
+      ]
+    }
+  },
+  {
+    "question": "Explain the difference between the WHERE and HAVING clauses in SQL.",
+    "answers": [
+      "WHERE is used before the GROUP BY clause, HAVING is used after the GROUP BY clause.",
+      "WHERE is used to filter rows, HAVING is used to filter columns.",
+      "WHERE cannot be used with aggregate functions, HAVING can.",
+      "WHERE is used to sort the results, HAVING is used to limit rows."
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "WHERE è utilizzato prima della clausola GROUP BY, HAVING è utilizzato dopo la clausola GROUP BY.",
+        "WHERE è utilizzato per filtrare le righe, HAVING è utilizzato per filtrare le colonne.",
+        "WHERE non può essere utilizzato con funzioni aggreganti, HAVING può.",
+        "WHERE è utilizzato per ordinare i risultati, HAVING è utilizzato per limitare le righe."
+      ]
+    }
+  },
+  {
+    "question": "Consider the following SQL code. What does it accomplish?",
+    "answers": [
+      "It creates a new user in the database.",
+      "It changes the password of an existing user.",
+      "It modifies the privileges of a user.",
+      "It removes a user from the database."
+    ],
+    "correct": 2,
+    "code": "GRANT SELECT, INSERT ON database_name.* TO 'username'@'hostname';",
+    "translations": {
+      "it": [
+        "Crea un nuovo utente nel database.",
+        "Cambia la password di un utente esistente.",
+        "Modifica i privilegi di un utente.",
+        "Rimuove un utente dal database."
+      ]
+    }
+  },
+  {
+    "question": "What is a primary key in SQL?",
+    "answers": [
+      "A field in a table which uniquely identifies each row/record in that table.",
+      "A field in a table that can be used to enforce referential integrity.",
+      "A field used primarily for indexing purposes.",
+      "A special key defined by SQL standards."
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Un campo in una tabella che identifica univocamente ogni riga/record in quella tabella.",
+        "Un campo in una tabella che può essere utilizzato per applicare l'integrità referenziale.",
+        "Un campo utilizzato principalmente per scopi di indicizzazione.",
+        "Una chiave speciale definita dagli standard SQL."
+      ]
+    }
+  },
+  {
+    "question": "Consider the following SQL code snippet. What will it return?",
+    "answers": [
+      "The total number of departments in the employees table.",
+      "The average salary of all employees.",
+      "The total number of employees receiving each salary.",
+      "The maximum salary of each department."
+    ],
+    "correct": 0,
+    "code": "SELECT COUNT(department) FROM employees;",
+    "translations": {
+      "it": [
+        "Il numero totale di dipartimenti nella tabella degli impiegati.",
+        "Lo stipendio medio di tutti i dipendenti.",
+        "Il numero totale di dipendenti che ricevono ogni stipendio.",
+        "Lo stipendio massimo di ogni dipartimento."
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of using the 'LIMIT' clause in SQL?",
+    "answers": [
+      "To specify the number of columns to be displayed.",
+      "To restrict the number of rows returned by the query.",
+      "To limit the number of databases that can be queried.",
+      "To set a maximum execution time for the query."
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Specificare il numero di colonne da visualizzare.",
+        "Limitare il numero di righe restituite dalla query.",
+        "Limitare il numero di database che possono essere interrogati.",
+        "Impostare un tempo massimo di esecuzione per la query."
+      ]
+    }
+  }
+]

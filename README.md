@@ -1,90 +1,79 @@
-# React Internationalization
+# Action ICT Interviews
 
-React example containing an internationalization implementation using react-i18next and react-country-flag.
+React application used to realize interviews.
 
 ## Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/luizveronesi/react-internationalization.git
+git clone https://github.com/luizveronesi/react-interviews.git
 
 # Navigate to the project directory
-cd react-internationalization
+cd react-interviews
 
 # Install dependencies
 npm install
-```
 
-```bash
-# Docker installation
-docker build . -t react-internationalization:latest
-docker create --name react-internationalization --network your-network --ip x.x.x.x --restart unless-stopped roboto-node:latest
-docker start react-internationalization
+# Build
+npm run build
 ```
 
 ## Usage
 
 ```bash
-# Run the application
+# Run the application for development
 npm start
 ```
 
-To use in your code, add the next import to each file and create a constant variable using the hook, which represents the available function to reach the texts.
+To use in your code, add the following import statement to each file and create a constant variable using the hook, which represents the function available to access texts.
+
+## Generating questions
+
+Go to: https://platform.openai.com/playground/chat
+
+Add the following system prompt:
 
 ```bash
-import { useTranslation, Trans } from 'react-i18next';
+You are a software developer
+You are creating questions for a technical interview
+You are given a level: junior, middle, senior
+You are given a theme
+You are given the a number of questions
+There are two types of questions: theoretical or code
+The question and the answers must be given in english
+You are given a language to output the translations (the question and the answers)
+Half of the questions must be theoretical, half should have a code to be analyzed
+All questions must have 4 answers
+Output in json format with this structure:
+[{
+  question: string;
+  answers: string[];
+  correct: number; // correspond to the index of the array of answers
+  code?: string; // if there is code to be analyzed
+  translations: Record<string, string[]>; // key is the international code for the language
+
+}]
 ```
 
-### Regular Usage
-
-#### Single file:
+Add the following user prompt (change the information as needed):
 
 ```bash
-const { t } = useTranslation('home');
-const text = t('label.choose.language');
+Theme: Cloud AWS
+Level: junior
+Translation: italian
+Number of questions: 10
 ```
 
-#### Multiple files:
+Add a new record for the theme in /files/index.json. The code attribute specifies the type of formatting used to display the code, if any.
+
+```json
+{ "id": 1, "name": "Cloud - AWS", "code": "json" }
+```
+
+Add files for each level (junior, middle, senior) in the 'files' folder using the following pattern:
 
 ```bash
-const { t } = useTranslation(['home', 'footer']);
-const text = t('home:label.choose.language');
+theme-name-level.json
 ```
 
-The 't' function requires one single parameter which corresponds to the key defined in one or multiple files.
-
-At this example, useTranslation requires the definition 'home' and the message 'label.choose.language'.
-
-|                       Action |            Type             | Location                                                                                                                                                                                                                                   |
-| ---------------------------: | :-------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-|                       `home` |       File definition       | Defined at file src/configs/Localization.ts for each language.                                                                                                                                                                             |
-|      `label.choose.language` |  Message for a single file  | Key for the message set at each file defined at Localization.ts. This message must exist in at least one of the files set on the hook. In this example, the key is at src/configs/localization/HomeTexts.ts                                |
-| `home:label.choose.language` | Message for a multiple file | When using multiple files, the message must define to which file it corresponds. The prefix 'home:' indicates the source.                                                                                                                  |
-|      `fallback:text.example` |      Fallback message       | It is possible to use a fallback message source, which does not need to be declared at the hook. The prefix 'fallback' is an example, any value may be used, as long as it is set as src/configs/Localization.ts at attribute 'defaultNS'. |
-
-### Trans Usage
-
-The trans component is used to inject HTML code in the middle of the text message.
-
-The user defined tag in the example (<bold>) is replaced by another tag as defined in the attribute components.
-
-Any value may be passed to be used in the message and must be referenced with double brackes ({{ value }}).
-
-```bash
-<Trans
-    t={t}
-    i18nKey="home:trans.example"
-    components={{ bold: <span className="bold" /> }}
-    values={{ value: 10 }}
-/>
-```
-
-```bash
-'This example has a dynamic destacable <bold>{{value}}</bold> value in the middle of the text.',
-```
-
-More information may be found at https://react.i18next.com/latest/trans-component
-
-## Demo
-
-https://luizveronesi.s3.amazonaws.com/react-internationalization/index.html
+Replace any spaces in the theme name with hyphens.

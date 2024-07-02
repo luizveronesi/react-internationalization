@@ -1,14 +1,43 @@
 export const HomeTexts = {
   en: {
-    'label.choose.language': 'Choose your language',
-    'text.example': 'Text example available at file HomeTexts',
-    'trans.example':
-      'This example has a dynamic destacable <bold>{{value}}</bold> value in the middle of the text.',
+    'dropzone.text.default': 'Click or drop your json file to import',
+    'sidebar.button.import': 'import',
+    'sidebar.button.results': 'view results',
+    'sidebar.label.candidate': 'Candidate',
+    'sidebar.label.themes': 'Themes',
+    'sidebar.placeholder.name': 'Enter name',
+    'modal.user.table.theme': 'theme',
+    'modal.user.table.total': 'total',
+    'modal.user.table.total_c': 'Total',
+    'modal.user.table.percent': 'Percent',
+    'modal.user.button.export': 'Export',
+    'home.button.prev': 'previous',
+    'home.button.next': 'next',
+    'modal.recover.button.restore': 'Restore',
+    'modal.recover.button.discard': 'Discard',
+    'modal.recover.title': 'Continue last interview',
+    'modal.recover.text':
+      'Oops! It looks like your browser closed unexpectedly. Would you like to continue where you left off?',
   },
-  'pt-BR': {
-    'label.choose.language': 'Escolha sua linguagem',
-    'text.example': 'Exemplo de texto disponível no arquivo HomeTexts',
-    'trans.example':
-      'Exte exemplo possui um valor <bold>{{value}}</bold> em destaque no meio do texto.',
+  it: {
+    'dropzone.text.default':
+      'Clicca o trascina il tuo file JSON per importarlo',
+    'sidebar.button.import': 'importa',
+    'sidebar.button.results': 'visualizza risultati',
+    'sidebar.label.candidate': 'Candidato',
+    'sidebar.label.themes': 'Temi',
+    'sidebar.placeholder.name': 'Inserisci il nome',
+    'modal.user.table.theme': 'tema',
+    'modal.user.table.total': 'totale',
+    'modal.user.table.total_c': 'Totale',
+    'modal.user.table.percent': 'Percentuale',
+    'modal.user.button.export': 'Esporta',
+    'home.button.prev': 'precedente',
+    'home.button.next': 'successivo',
+    'modal.recover.button.restore': 'Ripristina',
+    'modal.recover.button.discard': 'Scarta',
+    'modal.recover.title': "Continua l'ultimo colloquio",
+    'modal.recover.text':
+      'Oops! Sembra che il tuo browser si sia chiuso inaspettatamente. Vorresti continuare da dove avevi lasciato?',
   },
 };

@@ -1,0 +1,185 @@
+[
+  {
+    "question": "Which element in JMeter is used to represent a user action?",
+    "answers": ["Listener", "Thread Group", "Sampler", "Controller"],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Quale elemento in JMeter rappresenta un'azione dell'utente?",
+        "Ascoltatore",
+        "Gruppo di thread",
+        "Campionatore",
+        "Controllore"
+      ]
+    }
+  },
+  {
+    "question": "How can you simulate multiple users in JMeter?",
+    "answers": [
+      "Create multiple Samplers",
+      "Use multiple Listeners",
+      "Increase the number of threads in a Thread Group",
+      "Use a Controller to duplicate Samplers"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Come si possono simulare più utenti in JMeter?",
+        "Creare più campionatori",
+        "Utilizzare più ascoltatori",
+        "Aumentare il numero di thread in un gruppo di thread",
+        "Usare un controllore per duplicare campionatori"
+      ]
+    }
+  },
+  {
+    "question": "Which function in JMeter allows you to use dynamic data within your tests?",
+    "answers": [
+      "Regular Expression Extractor",
+      "CSV Data Set Config",
+      "HTTP Request Defaults",
+      "Assertion"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Quale funzione in JMeter consente di utilizzare dati dinamici nei tuoi test?",
+        "Estrattore di espressioni regolari",
+        "Configurazione del set di dati CSV",
+        "Default delle richieste HTTP",
+        "Asserzione"
+      ]
+    }
+  },
+  {
+    "question": "Identify the purpose of the Regular Expression Extractor in JMeter.",
+    "answers": [
+      "To send HTTP requests",
+      "To extract data from responses",
+      "To add delays between actions",
+      "To manage user sessions"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Individua lo scopo dell'Estrattore di Espressioni Regolari in JMeter.",
+        "Per inviare richieste HTTP",
+        "Per estrarre dati dalle risposte",
+        "Per aggiungere ritardi tra le azioni",
+        "Per gestire le sessioni utente"
+      ]
+    }
+  },
+  {
+    "question": "Given the following Thread Group configuration, what is the total number of requests sent?",
+    "answers": ["10 requests", "50 requests", "100 requests", "200 requests"],
+    "correct": 3,
+    "code": "<ThreadGroup num_threads=\"20\" ramp_time=\"10\" loops=\"10\"/>",
+    "translations": {
+      "it": [
+        "Data la seguente configurazione del Gruppo di Thread, qual'è il numero totale di richieste inviate?",
+        "10 richieste",
+        "50 richieste",
+        "100 richieste",
+        "200 richieste"
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of an Assertion in JMeter?",
+    "answers": [
+      "To control the number of threads",
+      "To validate the response data",
+      "To send HTTP requests",
+      "To manage test plans"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Qual è lo scopo di un'Asserzione in JMeter?",
+        "Per controllare il numero di thread",
+        "Per validare i dati di risposta",
+        "Per inviare richieste HTTP",
+        "Per gestire i piani di test"
+      ]
+    }
+  },
+  {
+    "question": "In the context of JMeter, what is a 'Thread Group'?",
+    "answers": [
+      "A set of test actions",
+      "A collection of Samplers",
+      "A collection of virtual users executing a test plan",
+      "A group of HTTP requests"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Nel contesto di JMeter, che cos'è un 'Gruppo di Thread'?",
+        "Un insieme di azioni di test",
+        "Una collezione di campionatori",
+        "Una collezione di utenti virtuali che eseguono un piano di test",
+        "Un gruppo di richieste HTTP"
+      ]
+    }
+  },
+  {
+    "question": "Analyze the following code snippet and identify what it does.",
+    "answers": [
+      "Creates a Sampler to send HTTP requests",
+      "Sets up a CSV data source",
+      "Adds an HTTP request header",
+      "Handles the responses"
+    ],
+    "correct": 2,
+    "code": "<CSVDataSet filename=\"testdata.csv\" variableNames=\"username,password\"/>",
+    "translations": {
+      "it": [
+        "Analizza il seguente frammento di codice e identificare cosa fa.",
+        "Crea un campionatore per inviare richieste HTTP",
+        "Imposta una fonte di dati CSV",
+        "Aggiunge un'intestazione di richiesta HTTP",
+        "Gestisce le risposte"
+      ]
+    }
+  },
+  {
+    "question": "In JMeter, what does the 'Controller' element do?",
+    "answers": [
+      "Directs the order of Samplers",
+      "Adds dynamic variables",
+      "Stores test data",
+      "Extracts response data"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "In JMeter, cosa fa l'elemento 'Controller'?",
+        "Dirige l'ordine dei campionatori",
+        "Aggiunge variabili dinamiche",
+        "Memorizza i dati dei test",
+        "Estrae dati di risposta"
+      ]
+    }
+  },
+  {
+    "question": "Identify what this JMeter configuration does.",
+    "answers": [
+      "Increases the number of threads",
+      "Extracts variables from responses",
+      "Sets a constant throughput timer",
+      "Sets the loop count"
+    ],
+    "correct": 2,
+    "code": "<ConstantThroughputTimer throughput=\"60\"/>",
+    "translations": {
+      "it": [
+        "Identifica cosa fa questa configurazione di JMeter.",
+        "Aumenta il numero di thread",
+        "Estrae variabili dalle risposte",
+        "Imposta un timer di throughput costante",
+        "Imposta il conteggio dei cicli"
+      ]
+    }
+  }
+]

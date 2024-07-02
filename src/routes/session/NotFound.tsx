@@ -5,13 +5,9 @@ import { useRouteError } from 'react-router-dom';
 import './style.scss';
 
 export default function NotFound() {
-  const { t } = useTranslation('login');
+  const { t } = useTranslation('message');
   const error = useRouteError();
   const [show, setShow] = useState(false);
-
-  const handleRedirect = () => {
-    window.location.href = '/catalog';
-  };
 
   return (
     <div className="box-container">
@@ -19,18 +15,11 @@ export default function NotFound() {
         <img src={logo} />
         <h1 className="title">{t('notfound.label.disclaimer')}</h1>
         <div
-          className="disclaimer"
-          onClick={handleRedirect}
-          role="presentation"
-        >
-          {t('notfound.label.redirect')}
-        </div>
-        <div
           className="error-details"
           onClick={() => setShow((prevState) => !prevState)}
           role="presentation"
         >
-          click here for error details
+          {t('notfound.label.errors')}
         </div>
       </div>
       {show && (

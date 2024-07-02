@@ -18,6 +18,13 @@ export default ({ mode }: { mode: any }) => {
       open: true,
       port: 3000,
     },
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks: undefined,
+        },
+      },
+    },
     resolve: {
       alias: [{ find: '@', replacement: path.resolve(__dirname, 'src') }],
     },

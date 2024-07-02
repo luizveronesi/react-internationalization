@@ -1,91 +1,178 @@
-import { useState } from 'react';
-import { OverlayTrigger, Popover } from 'react-bootstrap';
-import ReactCountryFlag from 'react-country-flag';
-import { useTranslation, Trans } from 'react-i18next';
+import Header from '@/components/Header';
+import RadioButtonChoices from '@/components/RadioButtonChoices';
+import Sidebar from '@/components/Sidebar';
+import StringUtils from '@/functions/StringUtils';
+import { Language, languages } from '@/types/Language';
+import { Question } from '@/types/Question';
+import { levels, Theme } from '@/types/Theme';
+import { EMPTY_USER, UserData } from '@/types/UserData';
+import cx from 'classnames';
+import { useCallback, useEffect, useState } from 'react';
+import { Button, Col, Container, Row } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import './style.scss';
 
-type Language = {
-  value: string;
-  label: string;
-  iso2: string;
-};
-
-const languages: Language[] = [
-  { value: 'en', label: 'English', iso2: 'us' },
-  { value: 'pt-BR', label: 'Português (Brasil)', iso2: 'br' },
-];
-
 export default function Home() {
-  const { t } = useTranslation(['home', 'footer']);
-  const { i18n } = useTranslation();
-  const [language, setLanguage] = useState<Language>(languages[0]);
+  const { t } = useTranslation('home');
+  const [questions, setQuestions] = useState<Question[]>([]);
+  const [index, setIndex] = useState(0);
+  const [level, setLevel] = useState('junior');
+  const [theme, setTheme] = useState<Theme>();
+  const [language, setLanguage] = useState<Language>();
+  const [user, setUser] = useState<UserData>(EMPTY_USER);
 
-  const changeLanguageHandler = (lang: any) => {
-    setLanguage(lang);
-    i18n.changeLanguage(lang.value);
-    document.body.click();
+  const loadQuestions = useCallback(() => {
+    if (!theme || !level) return;
+
+    const filename = theme.name
+      .replace(/-/g, '')
+      .replace(/\s+/g, '-')
+      .toLowerCase();
+
+    fetch(`files/${filename}-${level}.json`)
+      .then((response) => response.json())
+      .then((data) => setQuestions(data))
+      .catch((error) => {
+        console.error(error);
+        alert(`t('alert.loading.file') ${filename}-${level}.json`);
+      });
+  }, [theme, level]);
+
+  const getLevelState = (thisLevel: string) => {
+    return cx({
+      primary: thisLevel === level,
+      secondary: thisLevel !== level,
+    });
   };
 
-  const popover = (
-    <Popover className="popover-language">
-      <Popover.Body className="list-languages">
-        <ul>
-          {languages.map((lang: any, idx: number) => (
-            <li key={idx.valueOf()}>
-              <span
-                onClick={() => changeLanguageHandler(lang)}
-                onKeyDown={() => changeLanguageHandler(lang)}
-                role="button"
-                tabIndex={0}
-                className="d-flex align-items-center"
-              >
-                <ReactCountryFlag
-                  countryCode={lang.iso2}
-                  className="flag"
-                  svg
-                />
-                <span className="name">{lang.label}</span>
-              </span>
-            </li>
-          ))}
-        </ul>
-      </Popover.Body>
-    </Popover>
-  );
+  const getTranslatedQuestion = (q: Question): string => {
+    if (!language || language === languages[0]) return q.question;
+    return q.translations[language.code][0];
+  };
+
+  const getIndexStyle = (q: Question, idx: number) => {
+    return cx('index', {
+      answered: user.choices.some(
+        (c) =>
+          theme &&
+          c.theme === theme.id &&
+          c.level === level &&
+          c.question === idx
+      ),
+      active: idx === index,
+    });
+  };
+
+  const getQuestionStyle = (idx: number) => {
+    return cx('question', {
+      'd-none': idx !== index,
+    });
+  };
+
+  useEffect(() => {
+    if (theme && !user.name) {
+      setTheme(undefined);
+      alert(t('message:alert.candidate.name'));
+      return;
+    }
+
+    setIndex(0);
+    setLevel(levels[0]);
+    loadQuestions();
+  }, [theme]);
+
+  useEffect(() => {
+    setIndex(0);
+    loadQuestions();
+  }, [level]);
 
   return (
-    <div className="home-container">
-      <div className="box">
-        <div className="header">
-          <OverlayTrigger
-            placement="bottom"
-            trigger="click"
-            overlay={popover}
-            rootClose
-          >
-            <span className="language-selected">
-              <h3>{t('home:label.choose.language')}</h3>
-              <div className="flag">
-                <ReactCountryFlag countryCode={language.iso2} svg />
-                <span className="name">{language.label}</span>
-              </div>
-            </span>
-          </OverlayTrigger>
-        </div>
-        <div className="body">
-          <p>{t('home:text.example')}</p>
-          <p>
-            <Trans
-              t={t}
-              i18nKey="home:trans.example"
-              components={{ bold: <span className="bold" /> }}
-              values={{ value: 10 }}
+    <>
+      <Header language={language} setLanguage={setLanguage} />
+      <Container fluid className="home-container">
+        <Row>
+          <Col xs={2} className="sidebar">
+            <Sidebar
+              user={user}
+              setUser={setUser}
+              theme={theme}
+              setTheme={setTheme}
             />
-          </p>
-          <p>{t('fallback:text.example')}</p>
-        </div>
-        <div className="footer">{t('footer:text.example')}</div>
-      </div>
-    </div>
+          </Col>
+          <Col xs={10} className="questions">
+            <div className="levels">
+              {levels.map((level, idx) => (
+                <Button
+                  variant={getLevelState(level)}
+                  onClick={() => {
+                    setLevel(level);
+                    setIndex(0);
+                  }}
+                  key={idx.valueOf()}
+                >
+                  {StringUtils.capitalize(level)}
+                </Button>
+              ))}
+            </div>
+            <Row>
+              <Col xs={1} className="indexes">
+                {questions.map((q, idx) => (
+                  <div
+                    className={getIndexStyle(q, idx)}
+                    key={idx.valueOf()}
+                    onClick={() => setIndex(idx)}
+                  >
+                    {idx + 1}
+                  </div>
+                ))}
+              </Col>
+
+              <Col xs={11} className="d-flex">
+                {questions.map((q, idx) => (
+                  <div className={getQuestionStyle(idx)} key={idx.valueOf()}>
+                    <div className="mb-2">
+                      <b className="me-2">{idx + 1})</b>
+                      <span>{getTranslatedQuestion(q)}</span>
+                    </div>
+                    {theme && q.code && (
+                      <SyntaxHighlighter language={theme.code} style={docco}>
+                        {q.code}
+                      </SyntaxHighlighter>
+                    )}
+
+                    {theme && language && (
+                      <RadioButtonChoices
+                        theme={theme}
+                        level={level}
+                        question={q}
+                        idx={idx}
+                        user={user}
+                        language={language}
+                      />
+                    )}
+                    <div className="actions">
+                      <Button
+                        onClick={() => setIndex((prevState) => prevState - 1)}
+                        disabled={index === 0}
+                      >
+                        {t('home.button.prev')}
+                      </Button>
+                      <Button
+                        onClick={() => setIndex((prevState) => prevState + 1)}
+                        disabled={index === questions.length - 1}
+                      >
+                        {t('home.button.next')}
+                      </Button>
+                    </div>
+                  </div>
+                ))}
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 }

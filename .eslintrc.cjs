@@ -34,6 +34,7 @@ module.exports = {
     '@typescript-eslint/no-unsafe-assignment': 'off',
     '@typescript-eslint/no-unsafe-argument': 'off',
     '@typescript-eslint/no-unsafe-return': 'off',
+    'react-hooks/exhaustive-deps': 'off',
     '@typescript-eslint/no-misused-promises': [
       2,
       {

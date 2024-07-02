@@ -1,0 +1,196 @@
+[
+  {
+    "question": "What is a Maven lifecycle phase?",
+    "answers": [
+      "A stage in the build process that can be externally triggered",
+      "A command used to clean the project",
+      "A parameter passed to the compiler",
+      "A type of plugin"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Qual è una fase del ciclo di vita di Maven?",
+        "Una fase del processo di build che può essere attivata esternamente",
+        "Un comando utilizzato per pulire il progetto",
+        "Un parametro passato al compilatore",
+        "Un tipo di plugin"
+      ]
+    }
+  },
+  {
+    "question": "How can you exclude a specific dependency in a Maven project?",
+    "answers": [
+      "By adding an <exclusion> element within the <dependency>",
+      "By deleting the dependency from the local repository",
+      "By using the mvn exclude command",
+      "By setting the exclude property to true in pom.xml"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Come si può escludere una dipendenza specifica in un progetto Maven?",
+        "Aggiungendo un elemento <exclusion> all'interno della <dependency>",
+        "Eliminandola dipendenza dal repository locale",
+        "Usando il comando mvn exclude",
+        "Impostando la proprietà exclude su true in pom.xml"
+      ]
+    }
+  },
+  {
+    "question": "What is the role of the Maven 'settings.xml' file?",
+    "answers": [
+      "To define global configurations and repository configurations",
+      "To specify project-level dependency versions",
+      "To store database connection strings",
+      "To manage Java Runtime Environment settings"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Qual è il ruolo del file 'settings.xml' di Maven?",
+        "Definire configurazioni globali e configurazioni del repository",
+        "Specificare le versioni delle dipendenze a livello di progetto",
+        "Memorizzare le stringhe di connessione al database",
+        "Gestire le impostazioni del Java Runtime Environment"
+      ]
+    }
+  },
+  {
+    "question": "In Maven, what is the purpose of the 'dependencyManagement' section?",
+    "answers": [
+      "To centrally manage versions of dependencies across multiple modules",
+      "To define the build lifecycle of the project",
+      "To configure the logging level for Maven builds",
+      "To specify the project's main class"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "In Maven, qual è lo scopo della sezione 'dependencyManagement'?",
+        "Gestire centralmente le versioni delle dipendenze attraverso più moduli",
+        "Definire il ciclo di vita della build del progetto",
+        "Configurare il livello di log per le build Maven",
+        "Specificare la classe principale del progetto"
+      ]
+    }
+  },
+  {
+    "question": "Consider the following snippet. What will be the output of 'mvn clean verify'?",
+    "answers": [
+      "Tests are run, and the target directory is created",
+      "The project is compiled but tests are not run",
+      "All artifacts are removed and tests are run",
+      "The target directory is cleaned and tests are run"
+    ],
+    "correct": 3,
+    "code": "mvn clean verify",
+    "translations": {
+      "it": [
+        "Considera il seguente snippet. Quale sarà il risultato di 'mvn clean verify'?",
+        "I test vengono eseguiti e la directory target viene creata",
+        "Il progetto viene compilato ma i test non vengono eseguiti",
+        "Tutti gli artefatti vengono rimossi e i test vengono eseguiti",
+        "La directory target viene pulita e i test vengono eseguiti"
+      ]
+    }
+  },
+  {
+    "question": "Given the following 'pom.xml', which version of 'junit' will be used?",
+    "answers": [
+      "4.12",
+      "4.11",
+      "The project will fail due to a version conflict",
+      "Latest version available in the repository"
+    ],
+    "correct": 0,
+    "code": "<dependencyManagement>\n  <dependencies>\n    <dependency>\n      <groupId>junit</groupId>\n      <artifactId>junit</artifactId>\n      <version>4.12</version>\n    </dependency>\n  </dependencies>\n</dependencyManagement>\n<dependencies>\n  <dependency>\n    <groupId>junit</groupId>\n    <artifactId>junit</artifactId>\n  </dependency>\n</dependencies>",
+    "translations": {
+      "it": [
+        "Dato il seguente 'pom.xml', quale versione di 'junit' sarà utilizzata?",
+        "4.12",
+        "4.11",
+        "Il progetto fallirà a causa di un conflitto di versioni",
+        "Ultima versione disponibile nel repository"
+      ]
+    }
+  },
+  {
+    "question": "How can you create a new Maven project with a specific archetype?",
+    "answers": [
+      "By using the 'mvn archetype:generate' command",
+      "By manually editing the 'pom.xml' file",
+      "By running the 'mvn create:archetype' command",
+      "By copying an existing 'pom.xml' from another project"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Come si può creare un nuovo progetto Maven con un'archetipo specifico?",
+        "Usando il comando 'mvn archetype:generate'",
+        "Modificando manualmente il file 'pom.xml'",
+        "Eseguendo il comando 'mvn create:archetype'",
+        "Copiare un 'pom.xml' esistente da un altro progetto"
+      ]
+    }
+  },
+  {
+    "question": "Review the given 'pom.xml'. Which plugin is used for running integration tests?",
+    "answers": [
+      "Failsafe Plugin",
+      "Surefire Plugin",
+      "Compiler Plugin",
+      "Exec Plugin"
+    ],
+    "correct": 0,
+    "code": "<plugins>\n  <plugin>\n    <groupId>org.apache.maven.plugins</groupId>\n    <artifactId>maven-failsafe-plugin</artifactId>\n    <version>2.22.2</version>\n  </plugin>\n  <plugin>\n    <groupId>org.apache.maven.plugins</groupId>\n    <artifactId>maven-compiler-plugin</artifactId>\n    <version>3.8.1</version>\n  </plugin>\n</plugins>",
+    "translations": {
+      "it": [
+        "Rivedi il 'pom.xml' dato. Quale plugin viene utilizzato per l'esecuzione dei test di integrazione?",
+        "Plugin di Failsafe",
+        "Plugin di Surefire",
+        "Plugin di Compiler",
+        "Plugin di Exec"
+      ]
+    }
+  },
+  {
+    "question": "Analyze the following 'pom.xml'. Which module will be built first?",
+    "answers": [
+      "module1",
+      "module2",
+      "Both modules are built simultaneously",
+      "The module with the shortest name"
+    ],
+    "correct": 0,
+    "code": "<modules>\n  <module>module1</module>\n  <module>module2</module>\n</modules>",
+    "translations": {
+      "it": [
+        "Analizza il 'pom.xml' seguente. Quale modulo sarà costruito per primo?",
+        "module1",
+        "module2",
+        "Entrambi i moduli vengono costruiti contemporaneamente",
+        "Il modulo con il nome più corto"
+      ]
+    }
+  },
+  {
+    "question": "What is the effect of using the 'clean' goal in Maven?",
+    "answers": [
+      "It deletes the target directory",
+      "It compiles the project's sources",
+      "It packages the compiled code into a JAR file",
+      "It deploys the project to the repository"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Qual è l'effetto dell'uso del goal 'clean' in Maven?",
+        "Elimina la directory target",
+        "Compila le fonti del progetto",
+        "Impacchetta il codice compilato in un file JAR",
+        "Distribuisce il progetto nel repository"
+      ]
+    }
+  }
+]
