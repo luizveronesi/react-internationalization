@@ -10,7 +10,7 @@
     "correct": 1,
     "translations": {
       "it": [
-        "Qual è il principale vantaggio di usare Spring Boot per un'architettura a microservizi?",
+        "Qual è il principale vantaggio dell'utilizzo di Spring Boot per un'architettura a microservizi?",
         "Funzionalità di sicurezza migliorate",
         "Gestione delle dipendenze semplificata",
         "Componenti UI migliorati",
@@ -24,7 +24,7 @@
     "correct": 1,
     "translations": {
       "it": [
-        "Quale comando può essere usato per eseguire un'applicazione Spring Boot da un pacchetto jar?",
+        "Quale comando può essere utilizzato per eseguire un'applicazione Spring Boot da un pacchetto jar?",
         "spring start",
         "java -jar",
         "mvn spring:run",
@@ -81,7 +81,7 @@
     "correct": 2,
     "translations": {
       "it": [
-        "Qual è lo scopo del file application.properties in un progetto Spring Boot?",
+        "Qual è lo scopo del file `application.properties` in un progetto Spring Boot?",
         "Per definire le configurazioni UI dell'applicazione",
         "Per impostare lo schema del database",
         "Per fornire configurazioni esternalizzate",
@@ -140,7 +140,7 @@
     "correct": 0,
     "translations": {
       "it": [
-        "Qual è il principale vantaggio di usare @ConfigurationProperties anziché @Value in Spring Boot?",
+        "Qual è il principale vantaggio dell'uso di @ConfigurationProperties rispetto a @Value in Spring Boot?",
         "Migliore supporto per proprietà complesse",
         "Codice più facile da capire",
         "Richiede meno codice boilerplate",
@@ -154,7 +154,7 @@
     "correct": 3,
     "translations": {
       "it": [
-        "Nelle applicazioni Spring Boot, quale profilo è attivato di default?",
+        "Nelle applicazioni Spring Boot, quale profilo è attivato per impostazione predefinita?",
         "sviluppo",
         "produzione",
         "test",

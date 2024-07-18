@@ -48,7 +48,7 @@
     "correct": 2,
     "translations": {
       "it": [
-        "Cosa succede se un controller di transazione viene utilizzato in modalità 'Genera campione principale'?",
+        "Cosa succede se si usa un Transaction Controller in modalità 'Generate Parent Sample'?",
         "Genera un campione separato per ogni richiesta figlio",
         "Non genera alcun campione",
         "Combina i risultati dai campioni figli in uno solo",
@@ -68,6 +68,7 @@
     "code": "log.info('This is a log message');",
     "translations": {
       "it": [
+        "Identifica lo scopo del seguente snippet di codice JSR223:",
         "Che tipo di servizio è Amazon EC2?",
         "Identificare lo scopo del seguente frammento di codice JSR223:",
         "Inviare un'email",
@@ -89,7 +90,7 @@
     "correct": 1,
     "translations": {
       "it": [
-        "Che effetto ha il 'Throughput Shaping Timer' in un test JMeter?",
+        "Quale effetto ha il 'Throughput Shaping Timer' in un test JMeter?",
         "Mette in pausa il test fino a quando una condizione specificata non è soddisfatta",
         "Modella il traffico per raggiungere una velocità specifica",
         "Imposta la durata di ciascun campionatore",
@@ -109,6 +110,7 @@
     "code": "if (prev.isError()) {\n    log.error('Test failed, stopping the test');\n    ctx.getEngine().stopTest();\n}",
     "translations": {
       "it": [
+        "Cosa fa il seguente script Beanshell listener?",
         "In un template CloudFormation, qual è lo scopo della sezione 'Resources'?",
         "Cosa fa il seguente script BeanShell listener?",
         "Registra un messaggio di successo",
@@ -130,7 +132,7 @@
     "correct": 0,
     "translations": {
       "it": [
-        "In JMeter, qual è lo scopo dell'uso delle asserzioni?",
+        "In JMeter, qual è lo scopo di usare le assertions?",
         "Per convalidare le risposte",
         "Per parametrizzare i dati di prova",
         "Per aggiungere ritardo tra le richieste",
@@ -149,7 +151,7 @@
     "correct": 0,
     "translations": {
       "it": [
-        "Qual è l'uso del listener 'Visualizza l'albero dei risultati'?",
+        "Qual è l'uso del listener 'View Results Tree'?",
         "Per visualizzare i dettagli della richiesta e della risposta",
         "Per controllare il flusso di esecuzione",
         "Per registrare gli errori",
@@ -169,6 +171,7 @@
     "code": "<RegularExpressionExtractor guiclass=\"RegexExtractorGui\"\n     testclass=\"RegexExtractor\"\n     testname=\"Regular Expression Extractor\"\n     enabled=\"true\">\n    <stringProp name=\"RegexExtractor.useHeaders\">false</stringProp>\n    <stringProp name=\"RegexExtractor.refname\">auth_token</stringProp>\n    <stringProp name=\"RegexExtractor.regex\">token=(.+?)&</stringProp>\n    <stringProp name=\"RegexExtractor.template\">$1$</stringProp>\n    <stringProp name=\"RegexExtractor.default\"></stringProp>\n    <stringProp name=\"RegexExtractor.match_number\">1</stringProp>\n</RegularExpressionExtractor>",
     "translations": {
       "it": [
+        "Analizza lo scopo di questa configurazione del Regular Expression Extractor in JMeter:",
         "Cosa ottiene la seguente policy AWS IAM?",
         "Analizzare lo scopo di questa configurazione dell'estrattore di espressioni regolari di JMeter:",
         "Estrae un token per l'autenticazione",
@@ -191,7 +194,7 @@
     "code": "HTTP Request\n{\n   Name: API Test\n   Server Name or IP: example.com\n   Port Number: 443\n   Method: GET\n   Path: /api/data\n}",
     "translations": {
       "it": [
-        "Individua l'errore nella seguente configurazione di JMeter per una richiesta HTTP.",
+        "Identifica l'errore nella seguente configurazione di una richiesta HTTP in JMeter.",
         "Il metodo è impostato su GET anziché su POST",
         "L'indirizzo IP è impostato in modo errato",
         "Il protocollo è mancante",

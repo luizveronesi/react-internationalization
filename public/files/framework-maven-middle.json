@@ -24,7 +24,7 @@
     "correct": 3,
     "translations": {
       "it": [
-        "Quale comando viene utilizzato per costruire un progetto Maven?",
+        "Quale comando viene utilizzato per buildare un progetto Maven?",
         "mvn build",
         "mvn init",
         "mvn compile",
@@ -57,7 +57,7 @@
     "correct": 1,
     "translations": {
       "it": [
-        "Come gestisce Maven le dipendenze del progetto?",
+        "Come gestisce Maven le dipendenze di progetto?",
         "Usando solo una configurazione di repository centralizzata",
         "Usando sia repository locali che remoti",
         "Usando un file di configurazione delle dipendenze dedicato",
@@ -149,7 +149,7 @@
     "code": "<project>\n  <modelVersion>4.0.0</modelVersion>\n  <groupId>com.example</groupId>\n  <artifactId>sample-project</artifactId>\n  <version>1.0-SNAPSHOT</version>\n  <dependencies>\n    <dependency>\n      <groupId>junit</groupId>\n      <artifactId>junit</artifactId>\n    </dependency>\n  </dependencies>\n</project>",
     "translations": {
       "it": [
-        "Identificare il problema nel file POM fornito.",
+        "Identifica il problema nel file POM dato.",
         "Il 'groupId' è errato.",
         "Lo scopo per la dipendenza manca.",
         "L'etichetta 'version' per la dipendenza manca.",

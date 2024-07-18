@@ -5,7 +5,7 @@
     "correct": 2,
     "translations": {
       "it": [
-        "Quale elemento in JMeter rappresenta un'azione dell'utente?",
+        "Quale elemento in JMeter è utilizzato per rappresentare un'azione dell'utente?",
         "Ascoltatore",
         "Gruppo di thread",
         "Campionatore",
@@ -24,7 +24,7 @@
     "correct": 2,
     "translations": {
       "it": [
-        "Come si possono simulare più utenti in JMeter?",
+        "Come puoi simulare più utenti in JMeter?",
         "Creare più campionatori",
         "Utilizzare più ascoltatori",
         "Aumentare il numero di thread in un gruppo di thread",
@@ -43,7 +43,7 @@
     "correct": 1,
     "translations": {
       "it": [
-        "Quale funzione in JMeter consente di utilizzare dati dinamici nei tuoi test?",
+        "Quale funzione in JMeter ti permette di utilizzare dati dinamici all'interno dei tuoi test?",
         "Estrattore di espressioni regolari",
         "Configurazione del set di dati CSV",
         "Default delle richieste HTTP",
@@ -62,7 +62,7 @@
     "correct": 1,
     "translations": {
       "it": [
-        "Individua lo scopo dell'Estrattore di Espressioni Regolari in JMeter.",
+        "Identifica lo scopo del Regular Expression Extractor in JMeter.",
         "Per inviare richieste HTTP",
         "Per estrarre dati dalle risposte",
         "Per aggiungere ritardi tra le azioni",
@@ -77,7 +77,7 @@
     "code": "<ThreadGroup num_threads=\"20\" ramp_time=\"10\" loops=\"10\"/>",
     "translations": {
       "it": [
-        "Data la seguente configurazione del Gruppo di Thread, qual'è il numero totale di richieste inviate?",
+        "Dato il seguente Thread Group configuration, qual è il numero totale di richieste inviate?",
         "10 richieste",
         "50 richieste",
         "100 richieste",
@@ -96,7 +96,7 @@
     "correct": 1,
     "translations": {
       "it": [
-        "Qual è lo scopo di un'Asserzione in JMeter?",
+        "Qual è lo scopo di un'Assertion in JMeter?",
         "Per controllare il numero di thread",
         "Per validare i dati di risposta",
         "Per inviare richieste HTTP",
@@ -115,7 +115,7 @@
     "correct": 2,
     "translations": {
       "it": [
-        "Nel contesto di JMeter, che cos'è un 'Gruppo di Thread'?",
+        "Nel contesto di JMeter, cos'è un 'Thread Group'?",
         "Un insieme di azioni di test",
         "Una collezione di campionatori",
         "Una collezione di utenti virtuali che eseguono un piano di test",
@@ -135,7 +135,7 @@
     "code": "<CSVDataSet filename=\"testdata.csv\" variableNames=\"username,password\"/>",
     "translations": {
       "it": [
-        "Analizza il seguente frammento di codice e identificare cosa fa.",
+        "Analizza il seguente snippet di codice e identifica cosa fa.",
         "Crea un campionatore per inviare richieste HTTP",
         "Imposta una fonte di dati CSV",
         "Aggiunge un'intestazione di richiesta HTTP",

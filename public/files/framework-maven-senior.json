@@ -10,7 +10,7 @@
     "correct": 0,
     "translations": {
       "it": [
-        "Qual è una fase del ciclo di vita di Maven?",
+        "Che cos'è una fase del ciclo di vita di Maven?",
         "Una fase del processo di build che può essere attivata esternamente",
         "Un comando utilizzato per pulire il progetto",
         "Un parametro passato al compilatore",
@@ -29,7 +29,7 @@
     "correct": 0,
     "translations": {
       "it": [
-        "Come si può escludere una dipendenza specifica in un progetto Maven?",
+        "Come puoi escludere una dipendenza specifica in un progetto Maven?",
         "Aggiungendo un elemento <exclusion> all'interno della <dependency>",
         "Eliminandola dipendenza dal repository locale",
         "Usando il comando mvn exclude",
@@ -67,7 +67,7 @@
     "correct": 0,
     "translations": {
       "it": [
-        "In Maven, qual è lo scopo della sezione 'dependencyManagement'?",
+        "Qual è lo scopo della sezione 'dependencyManagement' in Maven?",
         "Gestire centralmente le versioni delle dipendenze attraverso più moduli",
         "Definire il ciclo di vita della build del progetto",
         "Configurare il livello di log per le build Maven",
@@ -87,7 +87,7 @@
     "code": "mvn clean verify",
     "translations": {
       "it": [
-        "Considera il seguente snippet. Quale sarà il risultato di 'mvn clean verify'?",
+        "Considera il seguente frammento. Quale sarà l'output di 'mvn clean verify'?",
         "I test vengono eseguiti e la directory target viene creata",
         "Il progetto viene compilato ma i test non vengono eseguiti",
         "Tutti gli artefatti vengono rimossi e i test vengono eseguiti",
@@ -126,7 +126,7 @@
     "correct": 0,
     "translations": {
       "it": [
-        "Come si può creare un nuovo progetto Maven con un'archetipo specifico?",
+        "Come puoi creare un nuovo progetto Maven con un archetipo specifico?",
         "Usando il comando 'mvn archetype:generate'",
         "Modificando manualmente il file 'pom.xml'",
         "Eseguendo il comando 'mvn create:archetype'",
@@ -146,7 +146,7 @@
     "code": "<plugins>\n  <plugin>\n    <groupId>org.apache.maven.plugins</groupId>\n    <artifactId>maven-failsafe-plugin</artifactId>\n    <version>2.22.2</version>\n  </plugin>\n  <plugin>\n    <groupId>org.apache.maven.plugins</groupId>\n    <artifactId>maven-compiler-plugin</artifactId>\n    <version>3.8.1</version>\n  </plugin>\n</plugins>",
     "translations": {
       "it": [
-        "Rivedi il 'pom.xml' dato. Quale plugin viene utilizzato per l'esecuzione dei test di integrazione?",
+        "Rivedi il seguente 'pom.xml'. Quale plugin viene utilizzato per eseguire i test di integrazione?",
         "Plugin di Failsafe",
         "Plugin di Surefire",
         "Plugin di Compiler",
@@ -166,7 +166,7 @@
     "code": "<modules>\n  <module>module1</module>\n  <module>module2</module>\n</modules>",
     "translations": {
       "it": [
-        "Analizza il 'pom.xml' seguente. Quale modulo sarà costruito per primo?",
+        "Analizza il seguente 'pom.xml'. Quale modulo sarà buildato per primo?",
         "module1",
         "module2",
         "Entrambi i moduli vengono costruiti contemporaneamente",

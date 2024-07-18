@@ -1,1 +1,196 @@
-[{"question":"What is Angular's Dependency Injection and how does it work?","answers":["A design pattern to achieve Inversion of Control","A method to integrate third-party libraries","A function to manage DOM manipulation","A way to manage state in Angular"],"correct":0,"translations":{"it":["Che cos'è l'Iniezione di Dipendenze di Angular e come funziona?","Un pattern di design per ottenere l'Inversion of Control","Un metodo per integrare librerie di terze parti","Una funzione per gestire la manipolazione del DOM","Un modo per gestire lo stato in Angular"]}},{"question":"In Angular, what is a service and how is it different from a component?","answers":["A reusable code abstraction for business logic","An Angular module used for routing","A directive to manipulate the DOM","A special type of Angular component"],"correct":0,"translations":{"it":["In Angular, che cos'è un servizio e in cosa differisce da un componente?","Un'astrazione del codice riusabile per la logica di business","Un modulo Angular utilizzato per il routing","Una direttiva per manipolare il DOM","Un tipo speciale di componente Angular"]}},{"question":"Analyze the following Angular component and identify the error:","answers":["No error","The template selector is incorrect","The component metadata is missing","The class is not exported"],"correct":1,"code":"import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-header',\n  template: '<h1>Header</h1>'\n})\nclass HeaderComponent {}","translations":{"it":["Analizza il seguente componente Angular e identifica l'errore:","Nessun errore","Il selettore del template è errato","I metadata del componente mancano","La classe non è esportata"]}},{"question":"What is the purpose of Angular's NgModule?","answers":["To organize an application into cohesive blocks of functionality","To manage state in Angular","To handle HTTP requests","To define templates and styles for components"],"correct":0,"translations":{"it":["Qual è lo scopo di NgModule in Angular?","Organizzare un'applicazione in blocchi coesi di funzionalità","Gestire lo stato in Angular","Gestire le richieste HTTP","Definire template e stili per i componenti"]}},{"question":"What is Angular's Change Detection Strategy, and how does it improve performance?","answers":["OnPush strategy improves performance by only checking component changes","Default strategy checks changes in the entire application","Both strategies are the same in terms of performance","The Change Detection Strategy is unrelated to performance"],"correct":0,"translations":{"it":["Qual è la Change Detection Strategy di Angular e come migliora le prestazioni?","La strategia OnPush migliora le prestazioni controllando solo i cambiamenti del componente","La strategia Default controlla i cambiamenti in tutta l'applicazione","Entrambe le strategie sono equivalenti in termini di prestazioni","La Change Detection Strategy non è correlata alle prestazioni"]}},{"question":"Identify the mistake in the Angular service below:","answers":["The service should be provided in 'root'","No error","Incorrect dependency injection","The function has an incorrect return type"],"correct":0,"code":"import { Injectable } from '@angular/core';\n\n@Injectable()\nexport class DataService {\n  fetchData() {\n    return fetch('https://api.example.com/data');\n  }\n}","translations":{"it":["Identifica l'errore nel servizio Angular qui sotto:","Il servizio dovrebbe essere fornito in 'root'","Nessun errore","Iniezione di dipendenza errata","La funzione ha un tipo di ritorno errato"]}},{"question":"What does the async pipe in Angular do?","answers":["Unwraps a value from a promise or an observable","Executes a function asynchronously","Handles HTTP requests automatically","Decorates a component or directive"],"correct":0,"translations":{"it":["Cosa fa l'async pipe in Angular?","Scarta un valore da una promessa o da un osservabile","Esegue una funzione in modo asincrono","Gestisce le richieste HTTP automaticamente","Decora un componente o una direttiva"]}},{"question":"Identify the output of the Angular component below:","answers":["<h1>Hello World</h1>","<h1>Header</h1>","Error","Nothing will be displayed"],"correct":2,"code":"import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-header',\n  template: '{{ title }}'\n})\nexport class HeaderComponent {\n  title = 'Hello World';\n}","translations":{"it":["Identifica l'output del seguente componente Angular:","<h1>Ciao Mondo</h1>","<h1>Header</h1>","Errore","Non verrà mostrato nulla"]}},{"question":"What is Angular's Ahead-of-Time (AOT) compilation?","answers":["A method of compiling Angular templates and components at build time","A runtime compiler for Angular applications","An optimization tool for build size reduction","A command to start the Angular development server"],"correct":0,"translations":{"it":["Che cos'è la compilazione Ahead-of-Time (AOT) di Angular?","Un metodo di compilazione dei template e dei componenti Angular al momento della build","Un compilatore runtime per applicazioni Angular","Uno strumento di ottimizzazione per la riduzione delle dimensioni della build","Un comando per avviare il server di sviluppo Angular"]}},{"question":"Determine the error in the following Angular directive:","answers":["Missing host binding for directive property","No error","Incorrect import statement","Directive selector is incorrectly defined"],"correct":0,"code":"import { Directive } from '@angular/core';\n\n@Directive({\n  selector: '[appHighlight]'\n})\nexport class HighlightDirective {\n  backgroundColor: string;\n}","translations":{"it":["Determina l'errore nella seguente direttiva Angular:","Manca il binding dell'host per la proprietà della direttiva","Nessun errore","Dichiarazione di import errata","Il selettore della direttiva è definito in modo errato"]}}]
+[
+  {
+    "question": "What is Angular's Dependency Injection and how does it work?",
+    "answers": [
+      "A design pattern to achieve Inversion of Control",
+      "A method to integrate third-party libraries",
+      "A function to manage DOM manipulation",
+      "A way to manage state in Angular"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Cos'è l'Iniezione delle Dipendenze (Dependency Injection) di Angular e come funziona?",
+        "Un pattern di design per ottenere l'Inversion of Control",
+        "Un metodo per integrare librerie di terze parti",
+        "Una funzione per gestire la manipolazione del DOM",
+        "Un modo per gestire lo stato in Angular"
+      ]
+    }
+  },
+  {
+    "question": "In Angular, what is a service and how is it different from a component?",
+    "answers": [
+      "A reusable code abstraction for business logic",
+      "An Angular module used for routing",
+      "A directive to manipulate the DOM",
+      "A special type of Angular component"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "In Angular, cos'è un servizio e in cosa si differenzia da un componente?",
+        "Un'astrazione del codice riusabile per la logica di business",
+        "Un modulo Angular utilizzato per il routing",
+        "Una direttiva per manipolare il DOM",
+        "Un tipo speciale di componente Angular"
+      ]
+    }
+  },
+  {
+    "question": "Analyze the following Angular component and identify the error:",
+    "answers": [
+      "No error",
+      "The template selector is incorrect",
+      "The component metadata is missing",
+      "The class is not exported"
+    ],
+    "correct": 1,
+    "code": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-header',\n  template: '<h1>Header</h1>'\n})\nclass HeaderComponent {}",
+    "translations": {
+      "it": [
+        "Analizza il seguente componente Angular e identifica l'errore:",
+        "Nessun errore",
+        "Il selettore del template è errato",
+        "I metadata del componente mancano",
+        "La classe non è esportata"
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of Angular's NgModule?",
+    "answers": [
+      "To organize an application into cohesive blocks of functionality",
+      "To manage state in Angular",
+      "To handle HTTP requests",
+      "To define templates and styles for components"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Qual è lo scopo del NgModule di Angular?",
+        "Organizzare un'applicazione in blocchi coesi di funzionalità",
+        "Gestire lo stato in Angular",
+        "Gestire le richieste HTTP",
+        "Definire template e stili per i componenti"
+      ]
+    }
+  },
+  {
+    "question": "What is Angular's Change Detection Strategy, and how does it improve performance?",
+    "answers": [
+      "OnPush strategy improves performance by only checking component changes",
+      "Default strategy checks changes in the entire application",
+      "Both strategies are the same in terms of performance",
+      "The Change Detection Strategy is unrelated to performance"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Cos'è la Strategia di Rilevamento dei Cambiamenti (Change Detection Strategy) di Angular e come migliora le prestazioni?",
+        "La strategia OnPush migliora le prestazioni controllando solo i cambiamenti del componente",
+        "La strategia Default controlla i cambiamenti in tutta l'applicazione",
+        "Entrambe le strategie sono equivalenti in termini di prestazioni",
+        "La Change Detection Strategy non è correlata alle prestazioni"
+      ]
+    }
+  },
+  {
+    "question": "Identify the mistake in the Angular service below:",
+    "answers": [
+      "The service should be provided in 'root'",
+      "No error",
+      "Incorrect dependency injection",
+      "The function has an incorrect return type"
+    ],
+    "correct": 0,
+    "code": "import { Injectable } from '@angular/core';\n\n@Injectable()\nexport class DataService {\n  fetchData() {\n    return fetch('https://api.example.com/data');\n  }\n}",
+    "translations": {
+      "it": [
+        "Identifica l'errore nel seguente servizio Angular:",
+        "Il servizio dovrebbe essere fornito in 'root'",
+        "Nessun errore",
+        "Iniezione di dipendenza errata",
+        "La funzione ha un tipo di ritorno errato"
+      ]
+    }
+  },
+  {
+    "question": "What does the async pipe in Angular do?",
+    "answers": [
+      "Unwraps a value from a promise or an observable",
+      "Executes a function asynchronously",
+      "Handles HTTP requests automatically",
+      "Decorates a component or directive"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Cosa fa la pipe `async` in Angular?",
+        "Scarta un valore da una promessa o da un osservabile",
+        "Esegue una funzione in modo asincrono",
+        "Gestisce le richieste HTTP automaticamente",
+        "Decora un componente o una direttiva"
+      ]
+    }
+  },
+  {
+    "question": "Identify the output of the Angular component below:",
+    "answers": [
+      "<h1>Hello World</h1>",
+      "<h1>Header</h1>",
+      "Error",
+      "Nothing will be displayed"
+    ],
+    "correct": 2,
+    "code": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-header',\n  template: '{{ title }}'\n})\nexport class HeaderComponent {\n  title = 'Hello World';\n}",
+    "translations": {
+      "it": [
+        "Identifica l'output del seguente componente Angular:",
+        "<h1>Ciao Mondo</h1>",
+        "<h1>Header</h1>",
+        "Errore",
+        "Non verrà mostrato nulla"
+      ]
+    }
+  },
+  {
+    "question": "What is Angular's Ahead-of-Time (AOT) compilation?",
+    "answers": [
+      "A method of compiling Angular templates and components at build time",
+      "A runtime compiler for Angular applications",
+      "An optimization tool for build size reduction",
+      "A command to start the Angular development server"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Cos'è la compilazione Ahead-of-Time (AOT) di Angular?",
+        "Un metodo di compilazione dei template e dei componenti Angular al momento della build",
+        "Un compilatore runtime per applicazioni Angular",
+        "Uno strumento di ottimizzazione per la riduzione delle dimensioni della build",
+        "Un comando per avviare il server di sviluppo Angular"
+      ]
+    }
+  },
+  {
+    "question": "Determine the error in the following Angular directive:",
+    "answers": [
+      "Missing host binding for directive property",
+      "No error",
+      "Incorrect import statement",
+      "Directive selector is incorrectly defined"
+    ],
+    "correct": 0,
+    "code": "import { Directive } from '@angular/core';\n\n@Directive({\n  selector: '[appHighlight]'\n})\nexport class HighlightDirective {\n  backgroundColor: string;\n}",
+    "translations": {
+      "it": [
+        "Determina l'errore nella seguente direttiva Angular:",
+        "Manca il binding dell'host per la proprietà della direttiva",
+        "Nessun errore",
+        "Dichiarazione di import errata",
+        "Il selettore della direttiva è definito in modo errato"
+      ]
+    }
+  }
+]

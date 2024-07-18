@@ -5,7 +5,7 @@
     "correct": 1,
     "translations": {
       "it": [
-        "Quale linguaggio è utilizzato principalmente per scrivere i file di funzionalità di Cucumber?",
+        "Quale linguaggio è utilizzato principalmente per scrivere i file di feature di Cucumber?",
         "Python",
         "Gherkin",
         "Java",
@@ -24,7 +24,7 @@
     "correct": 1,
     "translations": {
       "it": [
-        "In Cucumber, cosa fa una definizione di passo?",
+        "In Cucumber, cosa fa una definizione di step?",
         "Definisce la struttura dei file di funzionalità",
         "Mappa ogni passo in un file di funzionalità al codice",
         "Fornisce i risultati dei test",
@@ -38,7 +38,7 @@
     "correct": 0,
     "translations": {
       "it": [
-        "Qual è l'estensione predefinita di un file di funzionalità di Cucumber?",
+        "Qual è l'estensione predefinita di un file di feature Cucumber?",
         ".feature",
         ".cuke",
         ".test",
@@ -57,7 +57,7 @@
     "correct": 2,
     "translations": {
       "it": [
-        "In quali scenari utilizzeresti Cucumber con Selenium?",
+        "In quali scenari si utilizzerebbe Cucumber con Selenium?",
         "Per eseguire test API",
         "Per eseguire test unitari",
         "Per automatizzare i test dell'interfaccia utente con una chiara comprensione dei requisiti",
@@ -97,7 +97,7 @@
     "code": "import org.junit.Assert;\nimport cucumber.api.java.en.Given;\n@Then(\"^the user should see the dashboard$\")\npublic void the_user_should_see_the_dashboard() {\n    // Check dashboard visibility\n}",
     "translations": {
       "it": [
-        "Cosa c'è di sbagliato in questa definizione di passo in Cucumber?",
+        "Qual è il problema con la seguente definizione di step in Cucumber?",
         "L'annotazione dovrebbe essere @When",
         "L'annotazione dovrebbe essere @Given",
         "La definizione di passo non ha corpo",
@@ -117,7 +117,7 @@
     "code": "import cucumber.api.java.en.Given;\n@Given(\"^the user is on the login page$\")\npublic void the_user_is_on_the_login_page() {\n    System.out.println(\"User is on the login page\");\n}",
     "translations": {
       "it": [
-        "Analizza la definizione di passo Cucumber data e determina il suo scopo.",
+        "Analizza la seguente definizione di step di Cucumber e determina il suo scopo.",
         "Definire i passaggi di configurazione del test",
         "Automatizzare l'interazione con una pagina web",
         "Validare l'input dell'utente",
@@ -175,7 +175,7 @@
     "correct": 2,
     "translations": {
       "it": [
-        "Cosa fa la parola chiave 'Examples' in un file di funzionalità di Cucumber?",
+        "Cosa fa la parola chiave `Examples` in un file di feature di Cucumber?",
         "Fornisce i tag per lo scenario",
         "Elenca i possibili risultati dello scenario",
         "Definisce i dati da utilizzare in un outline di scenario",

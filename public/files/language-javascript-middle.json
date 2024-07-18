@@ -1,1 +1,167 @@
-[{"question":"What is the purpose of the 'use strict' directive in Javascript?","answers":["Enable module imports","Enable strict mode that catches common coding mistakes","Enable debugging mode","Enable asynchronous programming"],"correct":1,"translations":{"it":["Per cosa viene utilizzato principalmente Amazon S3?","Abilitare importazioni di moduli","Abilitare la modalità rigorosa che cattura errori comuni di codifica","Abilitare la modalità di debug","Abilitare la programmazione asincrona"]}},{"question":"What is a Closure in Javascript?","answers":["A function inside another function","A scope within another scope","A function bundled together with references to its lexical environment","An object method"],"correct":2,"translations":{"it":["Quale servizio AWS è progettato per analisi scalabili di data warehouse?","Una funzione dentro un'altra funzione","Un ambito all'interno di un altro ambito","Una funzione insieme ai riferimenti al suo ambiente lessicale","Un metodo dell'oggetto"]}},{"question":"Which of the following methods is used to iterate through an array?","answers":["Array.slice()","Array.concat()","Array.map()","Array.indexOf()"],"correct":2,"translations":{"it":["Come puoi gestire in modo sicuro l'accesso ai servizi e alle risorse AWS?","Array.slice()","Array.concat()","Array.map()","Array.indexOf()"]}},{"question":"Which of the following is true about the 'let' keyword?","answers":["'let' has function-level scope","'let' has block-level scope","'let' variables are hoisted to the top of their block","'let' variables have immutable bindings"],"correct":1,"translations":{"it":["Quale dei seguenti è un servizio di calcolo serverless completamente gestito in AWS?","'let' ha scope a livello di funzione","'let' ha scope a livello di blocco","'let' le variabili sono sollevate in cima al loro blocco","'let' le variabili hanno binding immutabili"]}},{"question":"What is the output of the following code?","answers":["10","Error","undefined","NaN"],"correct":0,"code":"let x = 10;\nconsole.log(x);","translations":{"it":["Che tipo di servizio è Amazon EC2?","10","Errore","undefined","NaN"]}},{"question":"What is the result of the following code?","answers":["2","3","4","Undefined"],"correct":1,"code":"const arr = [1, 2, 3];\nconsole.log(arr.length);","translations":{"it":["Cosa farà il seguente comando AWS CLI?","2","3","4","Non definito"]}},{"question":"What will be logged to the console?","answers":["ReferenceError","TypeError","Undefined","10"],"correct":3,"code":"console.log(a);\nvar a = 10;","translations":{"it":["In un template CloudFormation, qual è lo scopo della sezione 'Resources'?","ReferenceError","TypeError","Non definito","10"]}},{"question":"What is the output of this code snippet?","answers":["foo","bar","undefined","ReferenceError"],"correct":3,"code":"console.log(foo);\nlet foo = 'bar';","translations":{"it":["Quale sarà il risultato della seguente policy JSON?","foo","bar","undefined","ReferenceError"]}},{"question":"What will be the console output for the following code?","answers":["12","3.14159","TypeError","Undefined"],"correct":1,"code":"const PI = 3.14159;\nconsole.log(PI);","translations":{"it":["Cosa creerà il seguente codice CloudFormation?","12","3.14159","TypeError","Non definito"]}},{"question":"What is the result of the expression '2' + 2 in JavaScript?","answers":["4","22","NaN","'2 2'"],"correct":1,"translations":{"it":["Cosa ottiene la seguente policy AWS IAM?","4","22","NaN","'2 2'"]}}]
+[
+  {
+    "question": "What is the purpose of the 'use strict' directive in Javascript?",
+    "answers": [
+      "Enable module imports",
+      "Enable strict mode that catches common coding mistakes",
+      "Enable debugging mode",
+      "Enable asynchronous programming"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Qual è lo scopo della direttiva 'use strict' in JavaScript?",
+        "Abilitare importazioni di moduli",
+        "Abilitare la modalità rigorosa che cattura errori comuni di codifica",
+        "Abilitare la modalità di debug",
+        "Abilitare la programmazione asincrona"
+      ]
+    }
+  },
+  {
+    "question": "What is a Closure in Javascript?",
+    "answers": [
+      "A function inside another function",
+      "A scope within another scope",
+      "A function bundled together with references to its lexical environment",
+      "An object method"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Cos'è una Closure in JavaScript?",
+        "Una funzione dentro un'altra funzione",
+        "Un ambito all'interno di un altro ambito",
+        "Una funzione insieme ai riferimenti al suo ambiente lessicale",
+        "Un metodo dell'oggetto"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following methods is used to iterate through an array?",
+    "answers": [
+      "Array.slice()",
+      "Array.concat()",
+      "Array.map()",
+      "Array.indexOf()"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Quale dei seguenti metodi viene utilizzato per iterare attraverso un array?",
+        "Array.slice()",
+        "Array.concat()",
+        "Array.map()",
+        "Array.indexOf()"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following is true about the 'let' keyword?",
+    "answers": [
+      "'let' has function-level scope",
+      "'let' has block-level scope",
+      "'let' variables are hoisted to the top of their block",
+      "'let' variables have immutable bindings"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Quale delle seguenti affermazioni è vera riguardo alla parola chiave 'let'?",
+        "'let' ha scope a livello di funzione",
+        "'let' ha scope a livello di blocco",
+        "'let' le variabili sono sollevate in cima al loro blocco",
+        "'let' le variabili hanno binding immutabili"
+      ]
+    }
+  },
+  {
+    "question": "What is the output of the following code?",
+    "answers": ["10", "Error", "undefined", "NaN"],
+    "correct": 0,
+    "code": "let x = 10;\nconsole.log(x);",
+    "translations": {
+      "it": [
+        "Qual è l'output del seguente codice?",
+        "10",
+        "Errore",
+        "undefined",
+        "NaN"
+      ]
+    }
+  },
+  {
+    "question": "What is the result of the following code?",
+    "answers": ["2", "3", "4", "Undefined"],
+    "correct": 1,
+    "code": "const arr = [1, 2, 3];\nconsole.log(arr.length);",
+    "translations": {
+      "it": [
+        "Qual è il risultato del seguente codice?",
+        "2",
+        "3",
+        "4",
+        "Undefined"
+      ]
+    }
+  },
+  {
+    "question": "What will be logged to the console?",
+    "answers": ["ReferenceError", "TypeError", "Undefined", "10"],
+    "correct": 3,
+    "code": "console.log(a);\nvar a = 10;",
+    "translations": {
+      "it": [
+        "Cosa verrà registrato nella console?",
+        "ReferenceError",
+        "TypeError",
+        "Undefined",
+        "10"
+      ]
+    }
+  },
+  {
+    "question": "What is the output of this code snippet?",
+    "answers": ["foo", "bar", "undefined", "ReferenceError"],
+    "correct": 3,
+    "code": "console.log(foo);\nlet foo = 'bar';",
+    "translations": {
+      "it": [
+        "Qual è l'output di questo frammento di codice?",
+        "foo",
+        "bar",
+        "undefined",
+        "ReferenceError"
+      ]
+    }
+  },
+  {
+    "question": "What will be the console output for the following code?",
+    "answers": ["12", "3.14159", "TypeError", "Undefined"],
+    "correct": 1,
+    "code": "const PI = 3.14159;\nconsole.log(PI);",
+    "translations": {
+      "it": [
+        "Quale sarà l'output della console per il seguente codice?",
+        "12",
+        "3.14159",
+        "TypeError",
+        "Undefined"
+      ]
+    }
+  },
+  {
+    "question": "What is the result of the expression '2' + 2 in JavaScript?",
+    "answers": ["4", "22", "NaN", "'2 2'"],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Qual è il risultato dell'espressione '2' + 2 in JavaScript?",
+        "4",
+        "22",
+        "NaN",
+        "'2 2'"
+      ]
+    }
+  }
+]

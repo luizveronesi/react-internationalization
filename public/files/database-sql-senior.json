@@ -10,6 +10,7 @@
     "correct": 3,
     "translations": {
       "it": [
+        "Qual è la differenza tra INNER JOIN e OUTER JOIN in SQL?",
         "INNER JOIN restituisce righe quando c'è una corrispondenza in entrambe le tabelle, mentre OUTER JOIN restituisce righe quando c'è una corrispondenza in una delle tabelle.",
         "INNER JOIN restituisce righe quando c'è una corrispondenza in una delle tabelle, mentre OUTER JOIN restituisce righe quando c'è una corrispondenza in entrambe le tabelle.",
         "INNER JOIN restituisce tutte le righe dalla prima tabella, mentre OUTER JOIN restituisce solo le righe corrispondenti.",
@@ -28,6 +29,7 @@
     "correct": 0,
     "translations": {
       "it": [
+        "Che cos'è una CTE (Common Table Expression) in SQL?",
         "Un CTE è un set di risultati temporaneo definito all'interno dell'ambito di esecuzione di una singola istruzione SELECT, INSERT, UPDATE o DELETE.",
         "Un CTE è un set di risultati permanenti memorizzato nel database per future query.",
         "Un CTE è un tipo speciale di indice utilizzato per ottimizzare query complesse.",
@@ -47,6 +49,7 @@
     "code": "SELECT * FROM employees WHERE department = 'Sales';",
     "translations": {
       "it": [
+        "Considera il seguente codice SQL. Cosa fa?",
         "Seleziona tutte le righe dalla tabella degli impiegati.",
         "Seleziona le righe dalla tabella degli impiegati dove il dipartimento è 'Sales'.",
         "Aggiorna lo stipendio di tutti gli impiegati nel dipartimento 'Sales'.",
@@ -65,6 +68,7 @@
     "correct": 1,
     "translations": {
       "it": [
+        "Cosa fa la clausola SQL 'GROUP BY'?",
         "Ordina il set di risultati per una o più colonne.",
         "Raggruppa le righe che hanno gli stessi valori in righe riassuntive.",
         "Filtra le righe in base a una condizione.",
@@ -84,6 +88,7 @@
     "code": "SELECT MAX(salary) FROM employees;",
     "translations": {
       "it": [
+        "Considera il seguente codice SQL. Quale sarà il risultato?",
         "Conteggia il numero di dipendenti con ogni titolo.",
         "Somma gli stipendi di tutti i dipendenti.",
         "Elenca ogni dipendente insieme al loro stipendio.",
@@ -102,6 +107,7 @@
     "correct": 0,
     "translations": {
       "it": [
+        "Spiega la differenza tra le clausole WHERE e HAVING in SQL.",
         "WHERE è utilizzato prima della clausola GROUP BY, HAVING è utilizzato dopo la clausola GROUP BY.",
         "WHERE è utilizzato per filtrare le righe, HAVING è utilizzato per filtrare le colonne.",
         "WHERE non può essere utilizzato con funzioni aggreganti, HAVING può.",
@@ -121,6 +127,7 @@
     "code": "GRANT SELECT, INSERT ON database_name.* TO 'username'@'hostname';",
     "translations": {
       "it": [
+        "Considera il seguente codice SQL. Cosa ottiene?",
         "Crea un nuovo utente nel database.",
         "Cambia la password di un utente esistente.",
         "Modifica i privilegi di un utente.",
@@ -139,6 +146,7 @@
     "correct": 0,
     "translations": {
       "it": [
+        "Cos'è una chiave primaria in SQL?",
         "Un campo in una tabella che identifica univocamente ogni riga/record in quella tabella.",
         "Un campo in una tabella che può essere utilizzato per applicare l'integrità referenziale.",
         "Un campo utilizzato principalmente per scopi di indicizzazione.",
@@ -158,6 +166,7 @@
     "code": "SELECT COUNT(department) FROM employees;",
     "translations": {
       "it": [
+        "Considera il seguente frammento di codice SQL. Cosa restituirà?",
         "Il numero totale di dipartimenti nella tabella degli impiegati.",
         "Lo stipendio medio di tutti i dipendenti.",
         "Il numero totale di dipendenti che ricevono ogni stipendio.",
@@ -176,6 +185,7 @@
     "correct": 1,
     "translations": {
       "it": [
+        "Qual è lo scopo dell'utilizzo della clausola 'LIMIT' in SQL?",
         "Specificare il numero di colonne da visualizzare.",
         "Limitare il numero di righe restituite dalla query.",
         "Limitare il numero di database che possono essere interrogati.",

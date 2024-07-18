@@ -1,1 +1,185 @@
-[{"question":"What is the primary purpose of React?","answers":["To build user interfaces","To manage databases","To handle server-side routing","To create mobile applications"],"correct":0,"translations":{"it":["Per cosa viene utilizzato principalmente Amazon S3?","Per costruire interfacce utente","Per gestire database","Per gestire il routing lato server","Per creare applicazioni mobile"]}},{"question":"Which method in a React component is used to change the state?","answers":["changeState()","setState()","modifyState()","updateState()"],"correct":1,"translations":{"it":["Quale servizio AWS è progettato per analisi scalabili di data warehouse?","changeState()","setState()","modifyState()","updateState()"]}},{"question":"What is JSX?","answers":["A CSS framework","A syntax extension for JavaScript","A type of HTML","A package manager"],"correct":1,"translations":{"it":["Come puoi gestire in modo sicuro l'accesso ai servizi e alle risorse AWS?","Un framework CSS","Un'estensione di sintassi per JavaScript","Un tipo di HTML","Un gestore di pacchetti"]}},{"question":"Which hook is used to read and update the state in a functional component?","answers":["useFetch","useContext","useState","useReducer"],"correct":2,"translations":{"it":["Quale dei seguenti è un servizio di calcolo serverless completamente gestito in AWS?","useFetch","useContext","useState","useReducer"]}},{"question":"What is the primary use of the useEffect hook?","answers":["Fetching data from an API","Tracking the state","Scheduling updates to the state","Performing side effects in functional components"],"correct":3,"translations":{"it":["Che tipo di servizio è Amazon EC2?","Recuperare dati da un'API","Monitorare lo stato","Pianificare aggiornamenti allo stato","Eseguire effetti collaterali nei componenti funzionali"]}},{"question":"What will be the output of the following code?","answers":["A button that increases the count each second","A button that doesn't change the count","An error","A frozen browser"],"correct":0,"code":"import React, { useState, useEffect } from 'react';\n\nfunction Counter() {\n    const [count, setCount] = useState(0);\n\n    useEffect(() => {\n        const interval = setInterval(() => {\n            setCount(count + 1);\n        }, 1000);\n\n        return () => clearInterval(interval);\n    }, [count]);\n\n    return (\n        <div>\n            <p>Count: {count}</p>\n            <button onClick={() => setCount(count + 1)}>Increase</button>\n        </div>\n    );\n}\n\nexport default Counter;","translations":{"it":["Cosa farà il seguente comando AWS CLI?","Un pulsante che aumenta il conteggio ogni secondo","Un pulsante che non cambia il conteggio","Un errore","Un browser bloccato"]}},{"question":"In React, what does the term 'lifting state up' refer to?","answers":["Using state in class components","Managing global state with Redux","Moving state to a common ancestor component to share data","Adding state to functional components"],"correct":2,"translations":{"it":["In un template CloudFormation, qual è lo scopo della sezione 'Resources'?","Utilizzare lo stato nei componenti di classe","Gestire lo stato globale con Redux","Spostare lo stato in un componente antenato comune per condividere i dati","Aggiungere stato ai componenti funzionali"]}},{"question":"What will the console output be for the following code?","answers":["Hello, Jane!","Hello, World!","Hello, John!","Hello, undefined!"],"correct":2,"code":"import React from 'react';\n\nclass Welcome extends React.Component {\n    render() {\n        return <h1>Hello, {this.props.name}!</h1>;\n    };\n}\n\nconst element = <Welcome name='John' />;\n\nconsole.log(element);","translations":{"it":["Quale sarà il risultato della seguente policy JSON?","Ciao, Jane!","Ciao, Mondo!","Ciao, John!","Ciao, undefined!"]}},{"question":"What does React use to optimize DOM manipulation?","answers":["Virtual DOM","Real DOM","Shadow DOM","Fake DOM"],"correct":0,"translations":{"it":["Cosa creerà il seguente codice CloudFormation?","DOM virtuale","DOM reale","Shadow DOM","DOM finto"]}},{"question":"What will be the result of the click event in the following React component?","answers":["The count will be logged once","The count will be logged twice","The count will not be logged","An error will occur"],"correct":0,"code":"import React, { useState } from 'react';\n\nfunction ClickCounter() {\n    const [count, setCount] = useState(0);\n\n    const handleClick = () => {\n        setCount(count + 1);\n        console.log(count);\n    };\n\n    return <button onClick={handleClick}>Click me</button>;\n}\n\nexport default ClickCounter;","translations":{"it":["Cosa ottiene la seguente policy AWS IAM?","Il conteggio sarà registrato una volta","Il conteggio sarà registrato due volte","Il conteggio non sarà registrato","Si verificherà un errore"]}}]
+[
+  {
+    "question": "What is the primary purpose of React?",
+    "answers": [
+      "To build user interfaces",
+      "To manage databases",
+      "To handle server-side routing",
+      "To create mobile applications"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Qual è lo scopo principale di React?",
+        "Per costruire interfacce utente",
+        "Per gestire database",
+        "Per gestire il routing lato server",
+        "Per creare applicazioni mobile"
+      ]
+    }
+  },
+  {
+    "question": "Which method in a React component is used to change the state?",
+    "answers": [
+      "changeState()",
+      "setState()",
+      "modifyState()",
+      "updateState()"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Quale metodo in un componente React viene utilizzato per cambiare lo stato?",
+        "changeState()",
+        "setState()",
+        "modifyState()",
+        "updateState()"
+      ]
+    }
+  },
+  {
+    "question": "What is JSX?",
+    "answers": [
+      "A CSS framework",
+      "A syntax extension for JavaScript",
+      "A type of HTML",
+      "A package manager"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Cos'è JSX?",
+        "Un framework CSS",
+        "Un'estensione di sintassi per JavaScript",
+        "Un tipo di HTML",
+        "Un gestore di pacchetti"
+      ]
+    }
+  },
+  {
+    "question": "Which hook is used to read and update the state in a functional component?",
+    "answers": ["useFetch", "useContext", "useState", "useReducer"],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Quale hook viene utilizzato per leggere e aggiornare lo stato in un componente funzionale?",
+        "useFetch",
+        "useContext",
+        "useState",
+        "useReducer"
+      ]
+    }
+  },
+  {
+    "question": "What is the primary use of the useEffect hook?",
+    "answers": [
+      "Fetching data from an API",
+      "Tracking the state",
+      "Scheduling updates to the state",
+      "Performing side effects in functional components"
+    ],
+    "correct": 3,
+    "translations": {
+      "it": [
+        "Qual è l'uso principale dell'hook useEffect?",
+        "Recuperare dati da un'API",
+        "Monitorare lo stato",
+        "Pianificare aggiornamenti allo stato",
+        "Eseguire effetti collaterali nei componenti funzionali"
+      ]
+    }
+  },
+  {
+    "question": "What will be the output of the following code?",
+    "answers": [
+      "A button that increases the count each second",
+      "A button that doesn't change the count",
+      "An error",
+      "A frozen browser"
+    ],
+    "correct": 0,
+    "code": "import React, { useState, useEffect } from 'react';\n\nfunction Counter() {\n    const [count, setCount] = useState(0);\n\n    useEffect(() => {\n        const interval = setInterval(() => {\n            setCount(count + 1);\n        }, 1000);\n\n        return () => clearInterval(interval);\n    }, [count]);\n\n    return (\n        <div>\n            <p>Count: {count}</p>\n            <button onClick={() => setCount(count + 1)}>Increase</button>\n        </div>\n    );\n}\n\nexport default Counter;",
+    "translations": {
+      "it": [
+        "Quale sarà l'output del seguente codice?",
+        "Un pulsante che aumenta il conteggio ogni secondo",
+        "Un pulsante che non cambia il conteggio",
+        "Un errore",
+        "Un browser bloccato"
+      ]
+    }
+  },
+  {
+    "question": "In React, what does the term 'lifting state up' refer to?",
+    "answers": [
+      "Using state in class components",
+      "Managing global state with Redux",
+      "Moving state to a common ancestor component to share data",
+      "Adding state to functional components"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "In React, cosa significa 'lifting state up'?",
+        "Utilizzare lo stato nei componenti di classe",
+        "Gestire lo stato globale con Redux",
+        "Spostare lo stato in un componente antenato comune per condividere i dati",
+        "Aggiungere stato ai componenti funzionali"
+      ]
+    }
+  },
+  {
+    "question": "What will the console output be for the following code?",
+    "answers": [
+      "Hello, Jane!",
+      "Hello, World!",
+      "Hello, John!",
+      "Hello, undefined!"
+    ],
+    "correct": 2,
+    "code": "import React from 'react';\n\nclass Welcome extends React.Component {\n    render() {\n        return <h1>Hello, {this.props.name}!</h1>;\n    };\n}\n\nconst element = <Welcome name='John' />;\n\nconsole.log(element);",
+    "translations": {
+      "it": [
+        "Quale sarà l'output della console per il seguente codice?",
+        "Hello, Jane!",
+        "Hello, World!",
+        "Hello, John!",
+        "Hello, undefined!"
+      ]
+    }
+  },
+  {
+    "question": "What does React use to optimize DOM manipulation?",
+    "answers": ["Virtual DOM", "Real DOM", "Shadow DOM", "Fake DOM"],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Cosa utilizza React per ottimizzare la manipolazione del DOM?",
+        "DOM virtuale",
+        "DOM reale",
+        "Shadow DOM",
+        "DOM finto"
+      ]
+    }
+  },
+  {
+    "question": "What will be the result of the click event in the following React component?",
+    "answers": [
+      "The count will be logged once",
+      "The count will be logged twice",
+      "The count will not be logged",
+      "An error will occur"
+    ],
+    "correct": 0,
+    "code": "import React, { useState } from 'react';\n\nfunction ClickCounter() {\n    const [count, setCount] = useState(0);\n\n    const handleClick = () => {\n        setCount(count + 1);\n        console.log(count);\n    };\n\n    return <button onClick={handleClick}>Click me</button>;\n}\n\nexport default ClickCounter;",
+    "translations": {
+      "it": [
+        "Quale sarà il risultato dell'evento click nel seguente componente React?",
+        "Il conteggio sarà registrato una volta",
+        "Il conteggio sarà registrato due volte",
+        "Il conteggio non sarà registrato",
+        "Si verificherà un errore"
+      ]
+    }
+  }
+]

@@ -1,1 +1,180 @@
-[{"question":"What is the role of the kube-apiserver in a Kubernetes cluster?","answers":["To manage the state of the container applications","To control the network communication within the cluster","To expose the Kubernetes API endpoints and process API requests","To schedule the pods on the available nodes"],"correct":2,"translations":{"it":["Per cosa viene utilizzato principalmente Amazon S3?","Gestire lo stato delle applicazioni containerizzate","Controllare la comunicazione di rete all'interno del cluster","Esporre gli endpoint dell'API di Kubernetes ed elaborare le richieste API","Schedulare i pod sui nodi disponibili"]}},{"question":"How does Kubernetes ensure high availability of applications?","answers":["By using auto-scaling capabilities","By deploying applications across multiple nodes and using replica sets","By utilizing CI/CD pipelines","By implementing network policies"],"correct":1,"translations":{"it":["Quale servizio AWS è progettato per analisi scalabili di data warehouse?","Utilizzando le capacità di auto-scaling","Distribuendo le applicazioni su più nodi e utilizzando set di repliche","Utilizzando pipeline CI/CD","Implementando politiche di rete"]}},{"question":"Which component in Kubernetes is responsible for maintaining a record of all Kubernetes objects in the cluster?","answers":["kube-scheduler","kube-controller-manager","etcd","kubelet"],"correct":2,"translations":{"it":["Come puoi gestire in modo sicuro l'accesso ai servizi e alle risorse AWS?","kube-scheduler","kube-controller-manager","etcd","kubelet"]}},{"question":"What is the main difference between a StatefulSet and a Deployment in Kubernetes?","answers":["StatefulSet provides unique network identities to its pods while Deployment does not","Deployment ensures fixed IP addresses for its pods while StatefulSet does not","StatefulSet supports horizontal scaling while Deployment does not","Deployment can be used only for stateful applications while StatefulSet is for stateless applications"],"correct":0,"translations":{"it":["Quale dei seguenti è un servizio di calcolo serverless completamente gestito in AWS?","StatefulSet fornisce identità di rete uniche ai suoi pod mentre Deployment no","Deployment garantisce indirizzi IP fissi per i suoi pod mentre StatefulSet no","StatefulSet supporta lo scaling orizzontale mentre Deployment no","Deployment può essere utilizzato solo per applicazioni stateful mentre StatefulSet è per applicazioni stateless"]}},{"question":"In Kubernetes, what command would you use to get a list of all pods running in a namespace?","answers":["kubectl get services","kubectl get nodes","kubectl get pods","kubectl get deployments"],"correct":2,"translations":{"it":["Che tipo di servizio è Amazon EC2?","kubectl get services","kubectl get nodes","kubectl get pods","kubectl get deployments"]}},{"question":"Given the following pod definition, what will be the name of the pod?","answers":["my-nginx","nginx-pod","nginx","pod-nginx"],"correct":1,"code":"apiVersion: v1\nkind: Pod\nmetadata:\n  name: nginx-pod\nspec:\n  containers:\n  - name: nginx\n    image: nginx:1.14.2","translations":{"it":["Cosa farà il seguente comando AWS CLI?","my-nginx","nginx-pod","nginx","pod-nginx"]}},{"question":"What does the following Kubernetes YAML definition do?","answers":["Creates a Deployment","Creates an Ingress","Creates a Service","Creates a ConfigMap"],"correct":0,"code":"apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: nginx-deployment\nspec:\n  replicas: 3\n  selector:\n    matchLabels:\n      app: nginx\n  template:\n    metadata:\n      labels:\n        app: nginx\n    spec:\n      containers:\n      - name: nginx\n        image: nginx:1.14.2","translations":{"it":["In un template CloudFormation, qual è lo scopo della sezione 'Resources'?","Crea un Deployment","Crea un Ingress","Crea un Service","Crea una ConfigMap"]}},{"question":"How would you describe a DaemonSet in Kubernetes?","answers":["It ensures a specified number of pod replicas are running at any given time","It deploys one pod per node within a cluster","It manages horizontal scaling of an application","It provides load balancing across multiple nodes"],"correct":1,"translations":{"it":["Quale sarà il risultato della seguente policy JSON?","Garantisce che un numero specificato di repliche di pod sia in esecuzione in qualsiasi momento","Distribuisce un pod per nodo all'interno di un cluster","Gestisce lo scaling orizzontale di un'applicazione","Offre il bilanciamento del carico tra più nodi"]}},{"question":"Given the following deployment YAML, how many replicas of the nginx pods will be running?","answers":["1","2","3","4"],"correct":2,"code":"apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: nginx-deployment\nspec:\n  replicas: 3\n  selector:\n    matchLabels:\n      app: nginx\n  template:\n    metadata:\n      labels:\n        app: nginx\n    spec:\n      containers:\n      - name: nginx\n        image: nginx:1.14.2","translations":{"it":["Cosa creerà il seguente codice CloudFormation?","1","2","3","4"]}},{"question":"What is a Kubernetes namespace used for?","answers":["To provide high availability to applications","To isolate groups of resources within a single cluster","To enable node to node communication within a cluster","To provide network policies to pods"],"correct":1,"translations":{"it":["Cosa ottiene la seguente policy AWS IAM?","Fornire alta disponibilità alle applicazioni","Isolare gruppi di risorse all'interno di un unico cluster","Consentire la comunicazione tra nodi all'interno di un cluster","Fornire politiche di rete ai pod"]}}]
+[
+  {
+    "question": "What is the role of the kube-apiserver in a Kubernetes cluster?",
+    "answers": [
+      "To manage the state of the container applications",
+      "To control the network communication within the cluster",
+      "To expose the Kubernetes API endpoints and process API requests",
+      "To schedule the pods on the available nodes"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Qual è il ruolo del kube-apiserver in un cluster Kubernetes?",
+        "Gestire lo stato delle applicazioni containerizzate",
+        "Controllare la comunicazione di rete all'interno del cluster",
+        "Esporre gli endpoint dell'API di Kubernetes ed elaborare le richieste API",
+        "Schedulare i pod sui nodi disponibili"
+      ]
+    }
+  },
+  {
+    "question": "How does Kubernetes ensure high availability of applications?",
+    "answers": [
+      "By using auto-scaling capabilities",
+      "By deploying applications across multiple nodes and using replica sets",
+      "By utilizing CI/CD pipelines",
+      "By implementing network policies"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Come garantisce Kubernetes l'alta disponibilità delle applicazioni?",
+        "Utilizzando le capacità di auto-scaling",
+        "Distribuendo le applicazioni su più nodi e utilizzando set di repliche",
+        "Utilizzando pipeline CI/CD",
+        "Implementando politiche di rete"
+      ]
+    }
+  },
+  {
+    "question": "Which component in Kubernetes is responsible for maintaining a record of all Kubernetes objects in the cluster?",
+    "answers": ["kube-scheduler", "kube-controller-manager", "etcd", "kubelet"],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Quale componente in Kubernetes è responsabile di mantenere un record di tutti gli oggetti Kubernetes nel cluster?",
+        "kube-scheduler",
+        "kube-controller-manager",
+        "etcd",
+        "kubelet"
+      ]
+    }
+  },
+  {
+    "question": "What is the main difference between a StatefulSet and a Deployment in Kubernetes?",
+    "answers": [
+      "StatefulSet provides unique network identities to its pods while Deployment does not",
+      "Deployment ensures fixed IP addresses for its pods while StatefulSet does not",
+      "StatefulSet supports horizontal scaling while Deployment does not",
+      "Deployment can be used only for stateful applications while StatefulSet is for stateless applications"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Qual è la principale differenza tra un StatefulSet e un Deployment in Kubernetes?",
+        "StatefulSet fornisce identità di rete uniche ai suoi pod mentre Deployment no",
+        "Deployment garantisce indirizzi IP fissi per i suoi pod mentre StatefulSet no",
+        "StatefulSet supporta lo scaling orizzontale mentre Deployment no",
+        "Deployment può essere utilizzato solo per applicazioni stateful mentre StatefulSet è per applicazioni stateless"
+      ]
+    }
+  },
+  {
+    "question": "In Kubernetes, what command would you use to get a list of all pods running in a namespace?",
+    "answers": [
+      "kubectl get services",
+      "kubectl get nodes",
+      "kubectl get pods",
+      "kubectl get deployments"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "In Kubernetes, quale comando utilizzeresti per ottenere un elenco di tutti i pod in esecuzione in un namespace?",
+        "kubectl get services",
+        "kubectl get nodes",
+        "kubectl get pods",
+        "kubectl get deployments"
+      ]
+    }
+  },
+  {
+    "question": "Given the following pod definition, what will be the name of the pod?",
+    "answers": ["my-nginx", "nginx-pod", "nginx", "pod-nginx"],
+    "correct": 1,
+    "code": "apiVersion: v1\nkind: Pod\nmetadata:\n  name: nginx-pod\nspec:\n  containers:\n  - name: nginx\n    image: nginx:1.14.2",
+    "translations": {
+      "it": [
+        "Data la seguente definizione di pod, quale sarà il nome del pod?",
+        "my-nginx",
+        "nginx-pod",
+        "nginx",
+        "pod-nginx"
+      ]
+    }
+  },
+  {
+    "question": "What does the following Kubernetes YAML definition do?",
+    "answers": [
+      "Creates a Deployment",
+      "Creates an Ingress",
+      "Creates a Service",
+      "Creates a ConfigMap"
+    ],
+    "correct": 0,
+    "code": "apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: nginx-deployment\nspec:\n  replicas: 3\n  selector:\n    matchLabels:\n      app: nginx\n  template:\n    metadata:\n      labels:\n        app: nginx\n    spec:\n      containers:\n      - name: nginx\n        image: nginx:1.14.2",
+    "translations": {
+      "it": [
+        "Cosa fa la seguente definizione YAML di Kubernetes?",
+        "Crea un Deployment",
+        "Crea un Ingress",
+        "Crea un Service",
+        "Crea una ConfigMap"
+      ]
+    }
+  },
+  {
+    "question": "How would you describe a DaemonSet in Kubernetes?",
+    "answers": [
+      "It ensures a specified number of pod replicas are running at any given time",
+      "It deploys one pod per node within a cluster",
+      "It manages horizontal scaling of an application",
+      "It provides load balancing across multiple nodes"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Come descriveresti un DaemonSet in Kubernetes?",
+        "Garantisce che un numero specificato di repliche di pod sia in esecuzione in qualsiasi momento",
+        "Distribuisce un pod per nodo all'interno di un cluster",
+        "Gestisce lo scaling orizzontale di un'applicazione",
+        "Offre il bilanciamento del carico tra più nodi"
+      ]
+    }
+  },
+  {
+    "question": "Given the following deployment YAML, how many replicas of the nginx pods will be running?",
+    "answers": ["1", "2", "3", "4"],
+    "correct": 2,
+    "code": "apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: nginx-deployment\nspec:\n  replicas: 3\n  selector:\n    matchLabels:\n      app: nginx\n  template:\n    metadata:\n      labels:\n        app: nginx\n    spec:\n      containers:\n      - name: nginx\n        image: nginx:1.14.2",
+    "translations": {
+      "it": [
+        "Dato il seguente YAML di deployment, quante repliche dei pod nginx saranno in esecuzione?",
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    }
+  },
+  {
+    "question": "What is a Kubernetes namespace used for?",
+    "answers": [
+      "To provide high availability to applications",
+      "To isolate groups of resources within a single cluster",
+      "To enable node to node communication within a cluster",
+      "To provide network policies to pods"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "A cosa serve un namespace in Kubernetes?",
+        "Fornire alta disponibilità alle applicazioni",
+        "Isolare gruppi di risorse all'interno di un unico cluster",
+        "Consentire la comunicazione tra nodi all'interno di un cluster",
+        "Fornire politiche di rete ai pod"
+      ]
+    }
+  }
+]

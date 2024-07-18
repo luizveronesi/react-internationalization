@@ -10,7 +10,7 @@
     "correct": 1,
     "translations": {
       "it": [
-        "A cosa serve Maven principalmente nei progetti Java?",
+        "A cosa serve principalmente Maven nei progetti Java?",
         "Controllo delle versioni",
         "Automazione della build",
         "Analisi del codice",
@@ -24,7 +24,7 @@
     "correct": 2,
     "translations": {
       "it": [
-        "Quale file usa Maven per definire le dipendenze e le configurazioni di build di un progetto?",
+        "Quale file utilizza Maven per definire le dipendenze e le configurazioni di build di un progetto?",
         "build.gradle",
         "settings.xml",
         "pom.xml",
@@ -71,7 +71,7 @@
     "correct": 2,
     "translations": {
       "it": [
-        "Quale fase di Maven è responsabile dell'esecuzione dei test unitari?",
+        "Quale fase Maven è responsabile dell'esecuzione dei test unitari?",
         "compile",
         "package",
         "test",
@@ -91,7 +91,7 @@
     "code": "mvn clean install",
     "translations": {
       "it": [
-        "Cosa farà il comando 'mvn clean install'?",
+        "Cosa farà il seguente comando?",
         "Pulire il progetto ed eseguire i test",
         "Rimuovere la directory target e installare il progetto",
         "Pulire il progetto e compilarlo",
@@ -106,7 +106,7 @@
     "code": "<dependency>\n  <groupId>com.example</groupId>\n  <artifactId>example</artifactId>\n  <version>1.0</version>\n</dependency>",
     "translations": {
       "it": [
-        "Quale sarà l'ambito di una dipendenza se non specificata nel pom.xml?",
+        "Quale sarebbe l'ambito di una dipendenza se non specificato nel pom.xml?",
         "compile",
         "test",
         "runtime",
@@ -146,7 +146,7 @@
     "code": "mvn clean install -Pprofile-id",
     "translations": {
       "it": [
-        "Come è possibile attivare un profilo Maven?",
+        "Come si può attivare un profilo Maven?",
         "Includendolo nell'elenco delle dipendenze",
         "Specificandolo nel file POM",
         "Passando l'ID del profilo al comando mvn",
@@ -166,7 +166,7 @@
     "code": "mvn validate",
     "translations": {
       "it": [
-        "Cosa fa il comando 'mvn validate'?",
+        "Cosa farà il seguente comando?",
         "Valida la struttura e la configurazione del progetto",
         "Compila il codice sorgente",
         "Esegue i casi di test",

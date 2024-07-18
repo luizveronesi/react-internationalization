@@ -1,1 +1,166 @@
-[{"question":"What is the correct syntax to print a message in the console in JavaScript?","answers":["print('Hello World');","console.log('Hello World');","echo('Hello World');","write('Hello World');"],"correct":1,"translations":{"it":["Qual è la sintassi corretta per stampare un messaggio nella console in JavaScript?","print('Ciao Mondo');","console.log('Ciao Mondo');","echo('Ciao Mondo');","write('Ciao Mondo');"]}},{"question":"Which data type is NOT supported in JavaScript?","answers":["String","Boolean","Float","Integer"],"correct":3,"translations":{"it":["Quale tipo di dato NON è supportato in JavaScript?","Stringa","Booleano","Virgola mobile","Intero"]}},{"question":"How can you create a variable in JavaScript?","answers":["variable x = 10;","var x = 10;","dim x = 10;","int x = 10;"],"correct":1,"translations":{"it":["Come puoi creare una variabile in JavaScript?","variable x = 10;","var x = 10;","dim x = 10;","int x = 10;"]}},{"question":"Which of the following is NOT a valid JavaScript looping construct?","answers":["for","repeat-until","while","do-while"],"correct":1,"translations":{"it":["Quale dei seguenti non è un costrutto di loop valido in JavaScript?","for","repeat-until","while","do-while"]}},{"question":"What does this JavaScript code print to the console?","answers":["true","false","SyntaxError","TypeError"],"correct":0,"code":"let x = 10;\nlet y = '10';\nconsole.log(x == y);","translations":{"it":["Che tipo di servizio è Amazon EC2?","Cosa stampa questo codice JavaScript sulla console?","let x = 10;\nlet y = '10';\nconsole.log(x == y);","vero","falso","Errore di sintassi","Errore di tipo"]}},{"question":"What does this JavaScript code output?","answers":["Alice","undefined","null","Bob"],"correct":3,"code":"let a = {name: 'Alice'};\nlet b = a;\nb.name = 'Bob';\nconsole.log(a.name);","translations":{"it":["Cosa farà il seguente comando AWS CLI?","Cosa stampa questo codice JavaScript?","let a = {name: 'Alice'};\nlet b = a;\nb.name = 'Bob';\nconsole.log(a.name);","Alice","non definito","nullo","Bob"]}},{"question":"What is the result of the following JavaScript code?","answers":["object","null","undefined","number"],"correct":0,"code":"console.log(typeof null);","translations":{"it":["In un template CloudFormation, qual è lo scopo della sezione 'Resources'?","Qual è il risultato del seguente codice JavaScript?","console.log(typeof null);","oggetto","null","non definito","numero"]}},{"question":"What is the purpose of the 'use strict' directive in JavaScript?","answers":["To define global variables","To enforce stricter parsing and error handling","To use modern JavaScript features","To enable debugging mode"],"correct":1,"translations":{"it":["Qual è lo scopo della direttiva 'use strict' in JavaScript?","Per definire variabili globali","Per imporre una verifica e una gestione degli errori più rigorosa","Per utilizzare le funzionalità moderne di JavaScript","Per abilitare la modalità di debug"]}},{"question":"Which of the following is correct about JavaScript closures?","answers":["Closures are only used with classes","Closures store references to outer function's scope","Closures cannot access outer function's variables","Closures are used to create global variables"],"correct":1,"translations":{"it":["Quale delle seguenti opzioni è corretta riguardo alle chiusure in JavaScript?","Le chiusure sono utilizzate solo con le classi","Le chiusure memorizzano riferimenti all'ambito della funzione esterna","Le chiusure non possono accedere alle variabili della funzione esterna","Le chiusure sono utilizzate per creare variabili globali"]}},{"question":"What will the following JavaScript code output?","answers":["10, 10","20, 20","20, 10","10, 20"],"correct":2,"code":"function test() { \n let a = 10;\n if (true) {\n let a = 20; \n console.log(a); \n }\n console.log(a); \n}\ntest();","translations":{"it":["Cosa ottiene la seguente policy AWS IAM?","Cosa stamperà il seguente codice JavaScript?","function test() { \n let a = 10;\n if (true) {\n let a = 20;\n console.log(a); \n}\n console.log(a); \n}\ntest();","10, 10","20, 20","20, 10","10, 20"]}}]
+[
+  {
+    "question": "What is the correct syntax to print a message in the console in JavaScript?",
+    "answers": [
+      "print('Hello World');",
+      "console.log('Hello World');",
+      "echo('Hello World');",
+      "write('Hello World');"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Qual è la sintassi corretta per stampare un messaggio nella console in JavaScript?",
+        "print('Hello World');",
+        "console.log('Hello World');",
+        "echo('Hello World');",
+        "write('Hello World');"
+      ]
+    }
+  },
+  {
+    "question": "Which data type is NOT supported in JavaScript?",
+    "answers": ["String", "Boolean", "Float", "Integer"],
+    "correct": 3,
+    "translations": {
+      "it": [
+        "Quale tipo di dato NON è supportato in JavaScript?",
+        "String",
+        "Boolean",
+        "Float",
+        "Integer"
+      ]
+    }
+  },
+  {
+    "question": "How can you create a variable in JavaScript?",
+    "answers": [
+      "variable x = 10;",
+      "var x = 10;",
+      "dim x = 10;",
+      "int x = 10;"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Come si può creare una variabile in JavaScript?",
+        "variable x = 10;",
+        "var x = 10;",
+        "dim x = 10;",
+        "int x = 10;"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following is NOT a valid JavaScript looping construct?",
+    "answers": ["for", "repeat-until", "while", "do-while"],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Quale delle seguenti non è una struttura di loop valida in JavaScript?",
+        "for",
+        "repeat-until",
+        "while",
+        "do-while"
+      ]
+    }
+  },
+  {
+    "question": "What does this JavaScript code print to the console?",
+    "answers": ["true", "false", "SyntaxError", "TypeError"],
+    "correct": 0,
+    "code": "let x = 10;\nlet y = '10';\nconsole.log(x == y);",
+    "translations": {
+      "it": [
+        "Cosa stampa questo codice JavaScript sulla console?",
+        "vero",
+        "falso",
+        "Errore di sintassi",
+        "Errore di tipo"
+      ]
+    }
+  },
+  {
+    "question": "What does this JavaScript code output?",
+    "answers": ["Alice", "undefined", "null", "Bob"],
+    "correct": 3,
+    "code": "let a = {name: 'Alice'};\nlet b = a;\nb.name = 'Bob';\nconsole.log(a.name);",
+    "translations": {
+      "it": [
+        "Cosa stampa questo codice JavaScript?",
+        "Alice",
+        "undefined",
+        "null",
+        "Bob"
+      ]
+    }
+  },
+  {
+    "question": "What is the result of the following JavaScript code?",
+    "answers": ["object", "null", "undefined", "number"],
+    "correct": 0,
+    "code": "console.log(typeof null);",
+    "translations": {
+      "it": [
+        "Qual è il risultato del seguente codice JavaScript?",
+        "object",
+        "null",
+        "undefined",
+        "number"
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of the 'use strict' directive in JavaScript?",
+    "answers": [
+      "To define global variables",
+      "To enforce stricter parsing and error handling",
+      "To use modern JavaScript features",
+      "To enable debugging mode"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Qual è lo scopo della direttiva 'use strict' in JavaScript?",
+        "Per definire variabili globali",
+        "Per imporre una verifica e una gestione degli errori più rigorosa",
+        "Per utilizzare le funzionalità moderne di JavaScript",
+        "Per abilitare la modalità di debug"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following is correct about JavaScript closures?",
+    "answers": [
+      "Closures are only used with classes",
+      "Closures store references to outer function's scope",
+      "Closures cannot access outer function's variables",
+      "Closures are used to create global variables"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Quale delle seguenti affermazioni è corretta riguardo alle closure in JavaScript?",
+        "Le chiusure sono utilizzate solo con le classi",
+        "Le chiusure memorizzano riferimenti all'ambito della funzione esterna",
+        "Le chiusure non possono accedere alle variabili della funzione esterna",
+        "Le chiusure sono utilizzate per creare variabili globali"
+      ]
+    }
+  },
+  {
+    "question": "What will the following JavaScript code output?",
+    "answers": ["10, 10", "20, 20", "20, 10", "10, 20"],
+    "correct": 2,
+    "code": "function test() { \n let a = 10;\n if (true) {\n let a = 20; \n console.log(a); \n }\n console.log(a); \n}\ntest();",
+    "translations": {
+      "it": [
+        "Cosa stamperà il seguente codice JavaScript?",
+        "10, 10",
+        "20, 20",
+        "20, 10",
+        "10, 20"
+      ]
+    }
+  }
+]

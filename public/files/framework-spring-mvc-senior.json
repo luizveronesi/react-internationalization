@@ -1,1 +1,200 @@
-[{"question":"Which annotation is used to map web requests onto specific handler methods in Spring MVC?","answers":["@RequestBody","@ModelAttribute","@RequestMapping","@Autowired"],"correct":2,"translations":{"it":["Quale annotazione viene utilizzata per mappare le richieste web su metodi handler specifici in Spring MVC?","@RequestBody","@ModelAttribute","@RequestMapping","@Autowired"]}},{"question":"What is a DispatcherServlet in Spring MVC?","answers":["A servlet used to handle security configurations","A convenience class used to create service objects","A central servlet that dispatches requests to the appropriate handlers","A support class for handling database transactions"],"correct":2,"translations":{"it":["Che cos'è un DispatcherServlet in Spring MVC?","Un servlet utilizzato per gestire le configurazioni di sicurezza","Una classe di convenienza usata per creare oggetti di servizio","Un servlet centrale che instrada le richieste ai gestori appropriati","Una classe di supporto per gestire le transazioni del database"]}},{"question":"How can you handle exceptions in Spring MVC?","answers":["Using @ExceptionHandler in the controller","Using @ControllerAdvice for global exception handling","Configuring exception resolvers in the application context","All of the above"],"correct":3,"translations":{"it":["Come puoi gestire le eccezioni in Spring MVC?","Usando @ExceptionHandler nel controller","Usando @ControllerAdvice per la gestione globale delle eccezioni","Configurando i risolutori di eccezioni nel contesto dell'applicazione","Tutte le precedenti"]}},{"question":"Which class would you extend to create a custom HandlerInterceptor in Spring MVC?","answers":["HandlerInterceptorAdapter","RequestMappingHandlerAdapter","SimpleUrlHandlerMapping","AbstractHandlerMapping"],"correct":0,"translations":{"it":["Quale classe estenderesti per creare un HandlerInterceptor personalizzato in Spring MVC?","HandlerInterceptorAdapter","RequestMappingHandlerAdapter","SimpleUrlHandlerMapping","AbstractHandlerMapping"]}},{"question":"What is the default view resolver in Spring MVC?","answers":["XmlViewResolver","ViewResolverAdapter","ResourceBundleViewResolver","InternalResourceViewResolver"],"correct":3,"translations":{"it":["Qual è il view resolver predefinito in Spring MVC?","XmlViewResolver","ViewResolverAdapter","ResourceBundleViewResolver","InternalResourceViewResolver"]}},{"question":"Identify the correct way to bind a form object in Spring MVC.","answers":["Using @RequestParam","Using @ModelAttribute","Using @RequestBody","Using @PathVariable"],"correct":1,"code":"public String submitForm(@ModelAttribute(\"form\") FormObject formObject) { \n    // logic\n    return \"success\"; \n}","translations":{"it":["Cosa farà il seguente comando AWS CLI?","Identifica il modo corretto di associare un oggetto form in Spring MVC.","public String submitForm(@ModelAttribute(\"form\") FormObject formObject) { \n    // logica\n    return \"success\"; \n}","Usando @RequestParam","Usando @ModelAttribute","Usando @RequestBody","Usando @PathVariable"]}},{"question":"When using Spring MVC, which annotation ensures that a method is called before request processing?","answers":["@BeforeRequest","@PreProcess","@PreHandle","@RequestInterceptor"],"correct":2,"code":"public class MyInterceptor extends HandlerInterceptorAdapter { \n    @Override\n    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception { \n        // logic\n        return true; \n    } \n}","translations":{"it":["In un template CloudFormation, qual è lo scopo della sezione 'Resources'?","Quando usi Spring MVC, quale annotazione garantisce che un metodo venga chiamato prima dell'elaborazione della richiesta?","public class MyInterceptor extends HandlerInterceptorAdapter { \n    @Override\n    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception { \n        // logica\n        return true; \n    } \n}","@BeforeRequest","@PreProcess","@PreHandle","@RequestInterceptor"]}},{"question":"Which method signature is correct for handling POST requests in a Spring MVC controller?","answers":["handlePostRequest()","public String handlePostRequest(String formObject)","public String handlePostRequest(FormObject formObject)","public String handlePostRequest(@RequestBody FormObject formObject)"],"correct":3,"code":"@RequestMapping(value = \"/submit\", method = RequestMethod.POST) \npublic String handlePostRequest(@RequestBody FormObject formObject) { \n    // process form\n    return \"result\"; \n}","translations":{"it":["Quale sarà il risultato della seguente policy JSON?","Quale firma del metodo è corretta per gestire le richieste POST in un controller Spring MVC?","@RequestMapping(value = \"/submit\", method = RequestMethod.POST) \npublic String handlePostRequest(@RequestBody FormObject formObject) { \n    // elaborare il form\n    return \"result\"; \n}","handlePostRequest()","public String handlePostRequest(String formObject)","public String handlePostRequest(FormObject formObject)","public String handlePostRequest(@RequestBody FormObject formObject)"]}},{"question":"How would you configure a view resolver in Spring MVC using Java configuration?","answers":["Using an XML-based configuration","Using Java-based configuration","Using property files","None of the above"],"correct":1,"code":"@Bean\npublic InternalResourceViewResolver viewResolver() { \n    InternalResourceViewResolver resolver = new InternalResourceViewResolver(); \n    resolver.setPrefix(\"/WEB-INF/views/\"); \n    resolver.setSuffix(\".jsp\"); \n    return resolver; \n}","translations":{"it":["Cosa creerà il seguente codice CloudFormation?","Come configureresti un view resolver in Spring MVC usando la configurazione Java?","@Bean\npublic InternalResourceViewResolver viewResolver() { \n    InternalResourceViewResolver resolver = new InternalResourceViewResolver(); \n    resolver.setPrefix(\"/WEB-INF/views/\"); \n    resolver.setSuffix(\".jsp\"); \n    return resolver; \n}","Usando una configurazione basata su XML","Usando la configurazione basata su Java","Usando file di proprietà","Nessuna delle precedenti"]}},{"question":"How would you handle file uploads in a Spring MVC application?","answers":["Using @RequestBody with a byte array","Using @RequestParam with MultipartFile","Using @ModelAttribute with a file input element","Using @RequestPart with a byte array"],"correct":1,"code":"@PostMapping(\"/upload\")\npublic String handleFileUpload(@RequestParam(\"file\") MultipartFile file) { \n    if (!file.isEmpty()) { \n        try { \n            byte[] bytes = file.getBytes(); \n            // Save file to a specific location\n        } catch (IOException e) { \n            e.printStackTrace(); \n        } \n    } \n    return \"uploadStatus\"; \n}","translations":{"it":["Cosa ottiene la seguente policy AWS IAM?","Come gestiresti il caricamento di file in un'applicazione Spring MVC?","@PostMapping(\"/upload\")\npublic String handleFileUpload(@RequestParam(\"file\") MultipartFile file) { \n    if (!file.isEmpty()) { \n        try { \n            byte[] bytes = file.getBytes(); \n            // Salvare il file in una posizione specifica\n        } catch (IOException e) { \n            e.printStacktrace(); \n        } \n    } \n    return \"uploadStatus\"; \n}","Usando @RequestBody con un array di byte","Usando @RequestParam con MultipartFile","Usando @ModelAttribute con un elemento di input file","Usando @RequestPart con un array di byte"]}}]
+[
+  {
+    "question": "Which annotation is used to map web requests onto specific handler methods in Spring MVC?",
+    "answers": [
+      "@RequestBody",
+      "@ModelAttribute",
+      "@RequestMapping",
+      "@Autowired"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Quale annotazione viene utilizzata per mappare le richieste web su metodi specifici del gestore in Spring MVC?",
+        "@RequestBody",
+        "@ModelAttribute",
+        "@RequestMapping",
+        "@Autowired"
+      ]
+    }
+  },
+  {
+    "question": "What is a DispatcherServlet in Spring MVC?",
+    "answers": [
+      "A servlet used to handle security configurations",
+      "A convenience class used to create service objects",
+      "A central servlet that dispatches requests to the appropriate handlers",
+      "A support class for handling database transactions"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Che cos'è un DispatcherServlet in Spring MVC?",
+        "Un servlet utilizzato per gestire le configurazioni di sicurezza",
+        "Una classe di convenienza usata per creare oggetti di servizio",
+        "Un servlet centrale che instrada le richieste ai gestori appropriati",
+        "Una classe di supporto per gestire le transazioni del database"
+      ]
+    }
+  },
+  {
+    "question": "How can you handle exceptions in Spring MVC?",
+    "answers": [
+      "Using @ExceptionHandler in the controller",
+      "Using @ControllerAdvice for global exception handling",
+      "Configuring exception resolvers in the application context",
+      "All of the above"
+    ],
+    "correct": 3,
+    "translations": {
+      "it": [
+        "Come puoi gestire le eccezioni in Spring MVC?",
+        "Usando @ExceptionHandler nel controller",
+        "Usando @ControllerAdvice per la gestione globale delle eccezioni",
+        "Configurando i risolutori di eccezioni nel contesto dell'applicazione",
+        "Tutte le precedenti"
+      ]
+    }
+  },
+  {
+    "question": "Which class would you extend to create a custom HandlerInterceptor in Spring MVC?",
+    "answers": [
+      "HandlerInterceptorAdapter",
+      "RequestMappingHandlerAdapter",
+      "SimpleUrlHandlerMapping",
+      "AbstractHandlerMapping"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Quale classe estenderesti per creare un HandlerInterceptor personalizzato in Spring MVC?",
+        "HandlerInterceptorAdapter",
+        "RequestMappingHandlerAdapter",
+        "SimpleUrlHandlerMapping",
+        "AbstractHandlerMapping"
+      ]
+    }
+  },
+  {
+    "question": "What is the default view resolver in Spring MVC?",
+    "answers": [
+      "XmlViewResolver",
+      "ViewResolverAdapter",
+      "ResourceBundleViewResolver",
+      "InternalResourceViewResolver"
+    ],
+    "correct": 3,
+    "translations": {
+      "it": [
+        "Qual è il resolver di viste predefinito in Spring MVC?",
+        "XmlViewResolver",
+        "ViewResolverAdapter",
+        "ResourceBundleViewResolver",
+        "InternalResourceViewResolver"
+      ]
+    }
+  },
+  {
+    "question": "Identify the correct way to bind a form object in Spring MVC.",
+    "answers": [
+      "Using @RequestParam",
+      "Using @ModelAttribute",
+      "Using @RequestBody",
+      "Using @PathVariable"
+    ],
+    "correct": 1,
+    "code": "public String submitForm(@ModelAttribute(\"form\") FormObject formObject) { \n    // logic\n    return \"success\"; \n}",
+    "translations": {
+      "it": [
+        "Individua il modo corretto per associare un oggetto form in Spring MVC.",
+        "Cosa farà il seguente comando AWS CLI?",
+        "Identifica il modo corretto di associare un oggetto form in Spring MVC.",
+        "public String submitForm(@ModelAttribute(\"form\") FormObject formObject) { \n    // logica\n    return \"success\"; \n}",
+        "Usando @RequestParam",
+        "Usando @ModelAttribute",
+        "Usando @RequestBody",
+        "Usando @PathVariable"
+      ]
+    }
+  },
+  {
+    "question": "When using Spring MVC, which annotation ensures that a method is called before request processing?",
+    "answers": [
+      "@BeforeRequest",
+      "@PreProcess",
+      "@PreHandle",
+      "@RequestInterceptor"
+    ],
+    "correct": 2,
+    "code": "public class MyInterceptor extends HandlerInterceptorAdapter { \n    @Override\n    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception { \n        // logic\n        return true; \n    } \n}",
+    "translations": {
+      "it": [
+        "Quando si utilizza Spring MVC, quale annotazione garantisce che un metodo venga chiamato prima dell'elaborazione della richiesta?",
+        "@BeforeRequest",
+        "@PreProcess",
+        "@PreHandle",
+        "@RequestInterceptor"
+      ]
+    }
+  },
+  {
+    "question": "Which method signature is correct for handling POST requests in a Spring MVC controller?",
+    "answers": [
+      "handlePostRequest()",
+      "public String handlePostRequest(String formObject)",
+      "public String handlePostRequest(FormObject formObject)",
+      "public String handlePostRequest(@RequestBody FormObject formObject)"
+    ],
+    "correct": 3,
+    "code": "@RequestMapping(value = \"/submit\", method = RequestMethod.POST) \npublic String handlePostRequest(@RequestBody FormObject formObject) { \n    // process form\n    return \"result\"; \n}",
+    "translations": {
+      "it": [
+        "Quale firma del metodo è corretta per gestire le richieste POST in un controller Spring MVC?",
+        "handlePostRequest()",
+        "public String handlePostRequest(String formObject)",
+        "public String handlePostRequest(FormObject formObject)",
+        "public String handlePostRequest(@RequestBody FormObject formObject)"
+      ]
+    }
+  },
+  {
+    "question": "How would you configure a view resolver in Spring MVC using Java configuration?",
+    "answers": [
+      "Using an XML-based configuration",
+      "Using Java-based configuration",
+      "Using property files",
+      "None of the above"
+    ],
+    "correct": 1,
+    "code": "@Bean\npublic InternalResourceViewResolver viewResolver() { \n    InternalResourceViewResolver resolver = new InternalResourceViewResolver(); \n    resolver.setPrefix(\"/WEB-INF/views/\"); \n    resolver.setSuffix(\".jsp\"); \n    return resolver; \n}",
+    "translations": {
+      "it": [
+        "Come configureresti un view resolver in Spring MVC utilizzando la configurazione Java?",
+        "Usando una configurazione basata su XML",
+        "Usando la configurazione basata su Java",
+        "Usando file di proprietà",
+        "Nessuna delle precedenti"
+      ]
+    }
+  },
+  {
+    "question": "How would you handle file uploads in a Spring MVC application?",
+    "answers": [
+      "Using @RequestBody with a byte array",
+      "Using @RequestParam with MultipartFile",
+      "Using @ModelAttribute with a file input element",
+      "Using @RequestPart with a byte array"
+    ],
+    "correct": 1,
+    "code": "@PostMapping(\"/upload\")\npublic String handleFileUpload(@RequestParam(\"file\") MultipartFile file) { \n    if (!file.isEmpty()) { \n        try { \n            byte[] bytes = file.getBytes(); \n            // Save file to a specific location\n        } catch (IOException e) { \n            e.printStackTrace(); \n        } \n    } \n    return \"uploadStatus\"; \n}",
+    "translations": {
+      "it": [
+        "Come gestiresti il caricamento di file in un'applicazione Spring MVC?",
+        "Usando @RequestBody con un array di byte",
+        "Usando @RequestParam con MultipartFile",
+        "Usando @ModelAttribute con un elemento di input file",
+        "Usando @RequestPart con un array di byte"
+      ]
+    }
+  }
+]

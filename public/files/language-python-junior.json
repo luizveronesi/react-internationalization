@@ -1,1 +1,134 @@
-[{"question":"What does the foolowing code output?","answers":["5","6","8","9"],"correct":2,"code":"print(2 ** 3)","translations":{"it":["Qual è l'output di print(2 ** 3)?","5","6","8","9"]}},{"question":"What is the primary use of the 'def' keyword in Python?","answers":["To define a new variable","To define a new class","To define a new function","To define a new list"],"correct":2,"translations":{"it":["Qual è l'uso principale della parola chiave 'def' in Python?","Per definire una nuova variabile","Per definire una nuova classe","Per definire una nuova funzione","Per definire una nuova lista"]}},{"question":"What is the output of the following code?","answers":["HelloWorld","Hello World","Hello + World","Error"],"correct":1,"code":"print('Hello ' + 'World')","translations":{"it":["Qual è l'output del seguente codice?","HelloWorld","Hello World","Hello + World","Errore"]}},{"question":"Which of the following is a mutable data type in Python?","answers":["Tuple","String","List","Integer"],"correct":2,"translations":{"it":["Quale dei seguenti è un tipo di dato mutevole in Python?","Tupla","Stringa","Lista","Intero"]}},{"question":"What will be the output of the following code?","answers":["3","4","5","Error"],"correct":1,"code":"print(len([1, 2, 3, 4]))","translations":{"it":["Quale sarà l'output del seguente codice?","3","4","5","Errore"]}},{"question":"Which method can be used to convert a string into a list in Python?","answers":["split()","join()","append()","index()"],"correct":0,"translations":{"it":["Quale metodo può essere utilizzato per convertire una stringa in una lista in Python?","split()","join()","append()","index()"]}},{"question":"What is the output of the following code?","answers":["1","2","3","Error"],"correct":1,"code":"x = [1, 2, 3]\nprint(x[1])","translations":{"it":["Qual è l'output del seguente codice?","1","2","3","Errore"]}},{"question":"Which of the following can be used to handle exceptions in Python?","answers":["for","if","try","def"],"correct":2,"translations":{"it":["Quale dei seguenti può essere utilizzato per gestire le eccezioni in Python?","for","if","try","def"]}},{"question":"What will be the output of the following code?","answers":["0 1 2","1 2 3","1 2 3 4","0 1 2 3"],"correct":0,"code":"for i in range(3):\n  print(i)","translations":{"it":["Quale sarà l'output del seguente codice?","0 1 2","1 2 3","1 2 3 4","0 1 2 3"]}},{"question":"How do you start a comment in Python?","answers":["//","#","/*","%"],"correct":1,"translations":{"it":["Come si inizia un commento in Python?","//","#","/*","%"]}}]
+[
+  {
+    "question": "What does the foolowing code output?",
+    "answers": ["5", "6", "8", "9"],
+    "correct": 2,
+    "code": "print(2 ** 3)",
+    "translations": {
+      "it": ["Qual è l'output del seguente codice?", "5", "6", "8", "9"]
+    }
+  },
+  {
+    "question": "What is the primary use of the 'def' keyword in Python?",
+    "answers": [
+      "To define a new variable",
+      "To define a new class",
+      "To define a new function",
+      "To define a new list"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Qual è l'uso principale della parola chiave 'def' in Python?",
+        "Per definire una nuova variabile",
+        "Per definire una nuova classe",
+        "Per definire una nuova funzione",
+        "Per definire una nuova lista"
+      ]
+    }
+  },
+  {
+    "question": "What is the output of the following code?",
+    "answers": ["HelloWorld", "Hello World", "Hello + World", "Error"],
+    "correct": 1,
+    "code": "print('Hello ' + 'World')",
+    "translations": {
+      "it": [
+        "Qual è l'output del codice seguente?",
+        "HelloWorld",
+        "Hello World",
+        "Hello + World",
+        "Errore"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following is a mutable data type in Python?",
+    "answers": ["Tuple", "String", "List", "Integer"],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Quale delle seguenti è un tipo di dato mutabile in Python?",
+        "Tuple",
+        "String",
+        "List",
+        "Integer"
+      ]
+    }
+  },
+  {
+    "question": "What will be the output of the following code?",
+    "answers": ["3", "4", "5", "Error"],
+    "correct": 1,
+    "code": "print(len([1, 2, 3, 4]))",
+    "translations": {
+      "it": [
+        "Quale sarà l'output del codice seguente?",
+        "3",
+        "4",
+        "5",
+        "Errore"
+      ]
+    }
+  },
+  {
+    "question": "Which method can be used to convert a string into a list in Python?",
+    "answers": ["split()", "join()", "append()", "index()"],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Quale metodo può essere usato per convertire una stringa in una lista in Python?",
+        "split()",
+        "join()",
+        "append()",
+        "index()"
+      ]
+    }
+  },
+  {
+    "question": "What is the output of the following code?",
+    "answers": ["1", "2", "3", "Error"],
+    "correct": 1,
+    "code": "x = [1, 2, 3]\nprint(x[1])",
+    "translations": {
+      "it": ["Qual è l'output del seguente codice?", "1", "2", "3", "Errore"]
+    }
+  },
+  {
+    "question": "Which of the following can be used to handle exceptions in Python?",
+    "answers": ["for", "if", "try", "def"],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Quale delle seguenti può essere utilizzata per gestire le eccezioni in Python?",
+        "for",
+        "if",
+        "try",
+        "def"
+      ]
+    }
+  },
+  {
+    "question": "What will be the output of the following code?",
+    "answers": ["0 1 2", "1 2 3", "1 2 3 4", "0 1 2 3"],
+    "correct": 0,
+    "code": "for i in range(3):\n  print(i)",
+    "translations": {
+      "it": [
+        "Quale sarà l'output del codice seguente?",
+        "0 1 2",
+        "1 2 3",
+        "1 2 3 4",
+        "0 1 2 3"
+      ]
+    }
+  },
+  {
+    "question": "How do you start a comment in Python?",
+    "answers": ["//", "#", "/*", "%"],
+    "correct": 1,
+    "translations": {
+      "it": ["Come si inizia un commento in Python?", "//", "#", "/*", "%"]
+    }
+  }
+]

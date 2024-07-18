@@ -10,7 +10,7 @@
     "correct": 1,
     "translations": {
       "it": [
-        "Cos'è Spring Boot?",
+        "Che cos'è Spring Boot?",
         "Un framework per lo sviluppo di applicazioni Python",
         "Un contenitore di inversione di controllo per la piattaforma Java",
         "Uno strumento di gestione della configurazione per Kubernetes",
@@ -106,11 +106,11 @@
     "code": "import org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\nimport org.springframework.web.bind.annotation.GetMapping;\nimport org.springframework.web.bind.annotation.RestController;\n\n@SpringBootApplication\n@RestController\npublic class HelloWorldApplication {\n    public static void main(String[] args) {\n        SpringApplication.run(HelloWorldApplication.class, args);\n    }\n\n    @GetMapping(\"/\")\n    public String sayHello() {\n        return \"Hello, World!\";\n    }\n}",
     "translations": {
       "it": [
-        "Cosa restituirà la seguente applicazione Spring Boot quando si accede all'URL radice (/)?",
-        "Ciao, Mondo!",
+        "Cosa restituirà la seguente applicazione Spring Boot quando viene acceduta all'URL radice (/)?",
+        "Hello, World!",
         "Errore 404",
         "Risposta vuota",
-        "Benvenuto in Spring Boot!"
+        "Welcome to Spring Boot!"
       ]
     }
   },
@@ -146,7 +146,7 @@
     "code": "import org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\n\n@SpringBootApplication\npublic class MyApp {\n    public static void main(String[] args) {\n        SpringApplication.run(MyApp.class, args);\n    }\n}",
     "translations": {
       "it": [
-        "Nel codice dell'applicazione fornito, qual è il ruolo di @SpringBootApplication?",
+        "Nel codice dell'applicazione fornito, qual è il ruolo dell'annotazione @SpringBootApplication?",
         "Segna l'applicazione come un'applicazione Spring Boot",
         "Disabilita l'auto-configurazione",
         "Crea una scansione dei componenti per il pacchetto di base",
@@ -186,9 +186,9 @@
     "code": "import org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\nimport org.springframework.web.bind.annotation.GetMapping;\nimport org.springframework.web.bind.annotation.RestController;\n\n@SpringBootApplication\n@RestController\npublic class GreetingApplication {\n    public static void main(String[] args) {\n        SpringApplication.run(GreetingApplication.class, args);\n    }\n\n    @GetMapping(\"/greeting\")\n    public String greet() {\n        return \"Greetings from Spring Boot!\";\n    }\n}",
     "translations": {
       "it": [
-        "Cosa restituirà la seguente applicazione Spring Boot quando si accede all'URL /greeting?",
-        "Ciao, Mondo!",
-        "Saluti da Spring Boot!",
+        "Cosa restituirà la seguente applicazione Spring Boot quando viene acceduta all'URL /greeting?",
+        "Hello, World!",
+        "Greetings from Spring Boot!",
         "Errore 404",
         "Risposta vuota"
       ]

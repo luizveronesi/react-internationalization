@@ -1,1 +1,194 @@
-[{"question":"What is Hibernate in the context of Java?","answers":["A transaction management tool","A framework for building web applications","An Object-Relational Mapping (ORM) framework","A network communication library"],"correct":2,"translations":{"it":["Cos'è Hibernate nel contesto di Java?","Uno strumento di gestione delle transazioni","Un framework per la creazione di applicazioni web","Un framework di Object-Relational Mapping (ORM)","Una libreria di comunicazione di rete"]}},{"question":"Which of these annotations are commonly used with Hibernate?","answers":["@RequestMapping","@Entity","@GetMapping","@ManyToOne"],"correct":1,"translations":{"it":["Quali di queste annotazioni sono comunemente utilizzate con Hibernate?","@RequestMapping","@Entity","@GetMapping","@ManyToOne"]}},{"question":"What is the role of the @Entity annotation in JPA?","answers":["It defines a method as a controller method","It marks a class as a JPA entity","It specifies a database column","It configures dependency injection"],"correct":1,"translations":{"it":["Qual è il ruolo dell'annotazione @Entity in JPA?","Definisce un metodo come metodo del controller","Contrassegna una classe come entità JPA","Specifica una colonna del database","Configura l'iniezione di dipendenze"]}},{"question":"What does the @Table annotation do in JPA?","answers":["Specifies the primary key of an entity","Maps the entity to a database table","Defines a Java method as a service","Marks a class as part of the persistence context"],"correct":1,"translations":{"it":["Cosa fa l'annotazione @Table in JPA?","Specifica la chiave primaria di un'entità","Mappa l'entità a una tabella del database","Definisce un metodo Java come un servizio","Contrassegna una classe come parte del contesto di persistenza"]}},{"question":"Which annotation is used to specify the primary key of an entity in JPA?","answers":["@Id","@Primary","@Key","@Unique"],"correct":0,"translations":{"it":["Quale annotazione viene utilizzata per specificare la chiave primaria di un'entità in JPA?","@Id","@Primary","@Key","@Unique"]}},{"question":"Analyze the following code and identify the issue.","answers":["The @GeneratedValue annotation is incorrect","The roles field should be annotated with @ManyToMany","The id field must be annotated with @Unique","The @Entity annotation should be placed above the class declaration"],"correct":1,"code":"@Entity\npublic class User {\n  @Id\n  @GeneratedValue(strategy = GenerationType.AUTO)\n  private Long id;\n  private String name;\n  @ManyToOne\n  private List<Role> roles;\n}","translations":{"it":["Cosa farà il seguente comando AWS CLI?","Analizza il seguente codice e identifica il problema.","@Entity\npublic class User {\n  @Id\n  @GeneratedValue(strategy = GenerationType.AUTO)\n  private Long id;\n  private String name;\n  @ManyToOne\n  private List<Role> roles;\n}","L'annotazione @GeneratedValue è errata","Il campo roles dovrebbe essere annotato con @ManyToMany","Il campo id deve essere annotato con @Unique","L'annotazione @Entity dovrebbe essere posizionata sopra la dichiarazione della classe"]}},{"question":"Review the following code. What will be the result?","answers":["The code will compile without errors","The code will throw a syntax error because of the @Id annotation","The code lacks getter and setter methods and will fail at runtime","The @GeneratedValue strategy is incorrectly used"],"correct":0,"code":"@Entity\npublic class Product {\n  @Id\n  @GeneratedValue(strategy = GenerationType.IDENTITY)\n  private Long id;\n  private String name;\n  private Double price;\n}","translations":{"it":["In un template CloudFormation, qual è lo scopo della sezione 'Resources'?","Rivedi il seguente codice. Quale sarà il risultato?","@Entity\npublic class Product {\n  @Id\n  @GeneratedValue(strategy = GenerationType.IDENTITY)\n  private Long id;\n  private String name;\n  private Double price;\n}","Il codice verrà compilato senza errori","Il codice genererà un errore di sintassi a causa dell'annotazione @Id","Il codice manca dei metodi getter e setter e fallirà a runtime","La strategia @GeneratedValue è usata in modo errato"]}},{"question":"What does the orphanRemoval attribute do in @OneToMany annotation in JPA?","answers":["Specifies fetch type","Specifies cascade type","Removes an entity if it is no longer referenced","Specifies the join column"],"correct":2,"translations":{"it":["Cosa fa l'attributo orphanRemoval nell'annotazione @OneToMany in JPA?","Specifica il tipo di fetch","Specifica il tipo di cascading","Rimuove un'entità se non è più referenziata","Specifica la colonna di join"]}},{"question":"What is the role of the @JoinColumn annotation in JPA?","answers":["Specifies the column for joining associations","Marks a column as unique","Specifies the primary key","Indicates a mapping between Java objects"],"correct":0,"translations":{"it":["Qual è il ruolo dell'annotazione @JoinColumn in JPA?","Specifica la colonna per unire le associazioni","Contrassegna una colonna come univoca","Specifica la chiave primaria","Indica un mapping tra oggetti Java"]}},{"question":"Analyze the following code and identify the issue.","answers":["The name of the table should be upper case","The GeneratedValue strategy should be SEQUENCE","The field names are not in camelCase","There is no issue with this code"],"correct":3,"code":"@Entity\n@Table(name = \"students\")\npublic class Student {\n  @Id\n  @GeneratedValue(strategy = GenerationType.AUTO)\n  private Long studentId;\n  private String studentName;\n  private Integer age;\n}","translations":{"it":["Cosa ottiene la seguente policy AWS IAM?","Analizza il seguente codice e identifica il problema.","@Entity\n@Table(name = \"students\")\npublic class Student {\n  @Id\n  @GeneratedValue(strategy = GenerationType.AUTO)\n  private Long studentId;\n  private String studentName;\n  private Integer age;\n}","Il nome della tabella dovrebbe essere in maiuscolo","La strategia GeneratedValue dovrebbe essere SEQUENCE","I nomi dei campi non sono in camelCase","Non c'è alcun problema con questo codice"]}}]
+[
+  {
+    "question": "What is Hibernate in the context of Java?",
+    "answers": [
+      "A transaction management tool",
+      "A framework for building web applications",
+      "An Object-Relational Mapping (ORM) framework",
+      "A network communication library"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Cos'è Hibernate nel contesto di Java?",
+        "Uno strumento di gestione delle transazioni",
+        "Un framework per la creazione di applicazioni web",
+        "Un framework di Object-Relational Mapping (ORM)",
+        "Una libreria di comunicazione di rete"
+      ]
+    }
+  },
+  {
+    "question": "Which of these annotations are commonly used with Hibernate?",
+    "answers": ["@RequestMapping", "@Entity", "@GetMapping", "@ManyToOne"],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Quali di queste annotazioni sono comunemente usate con Hibernate?",
+        "@RequestMapping",
+        "@Entity",
+        "@GetMapping",
+        "@ManyToOne"
+      ]
+    }
+  },
+  {
+    "question": "What is the role of the @Entity annotation in JPA?",
+    "answers": [
+      "It defines a method as a controller method",
+      "It marks a class as a JPA entity",
+      "It specifies a database column",
+      "It configures dependency injection"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Qual è il ruolo dell'annotazione @Entity in JPA?",
+        "Definisce un metodo come metodo del controller",
+        "Contrassegna una classe come entità JPA",
+        "Specifica una colonna del database",
+        "Configura l'iniezione di dipendenze"
+      ]
+    }
+  },
+  {
+    "question": "What does the @Table annotation do in JPA?",
+    "answers": [
+      "Specifies the primary key of an entity",
+      "Maps the entity to a database table",
+      "Defines a Java method as a service",
+      "Marks a class as part of the persistence context"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "A cosa serve l'annotazione @Table in JPA?",
+        "Specifica la chiave primaria di un'entità",
+        "Mappa l'entità a una tabella del database",
+        "Definisce un metodo Java come un servizio",
+        "Contrassegna una classe come parte del contesto di persistenza"
+      ]
+    }
+  },
+  {
+    "question": "Which annotation is used to specify the primary key of an entity in JPA?",
+    "answers": ["@Id", "@Primary", "@Key", "@Unique"],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Quale annotazione è utilizzata per specificare la chiave primaria di un'entità in JPA?",
+        "@Id",
+        "@Primary",
+        "@Key",
+        "@Unique"
+      ]
+    }
+  },
+  {
+    "question": "Analyze the following code and identify the issue.",
+    "answers": [
+      "The @GeneratedValue annotation is incorrect",
+      "The roles field should be annotated with @ManyToMany",
+      "The id field must be annotated with @Unique",
+      "The @Entity annotation should be placed above the class declaration"
+    ],
+    "correct": 1,
+    "code": "@Entity\npublic class User {\n  @Id\n  @GeneratedValue(strategy = GenerationType.AUTO)\n  private Long id;\n  private String name;\n  @ManyToOne\n  private List<Role> roles;\n}",
+    "translations": {
+      "it": [
+        "Analizza il seguente codice e individua il problema.",
+        "Cosa farà il seguente comando AWS CLI?",
+        "Analizza il seguente codice e identifica il problema.",
+        "@Entity\npublic class User {\n  @Id\n  @GeneratedValue(strategy = GenerationType.AUTO)\n  private Long id;\n  private String name;\n  @ManyToOne\n  private List<Role> roles;\n}",
+        "L'annotazione @GeneratedValue è errata",
+        "Il campo roles dovrebbe essere annotato con @ManyToMany",
+        "Il campo id deve essere annotato con @Unique",
+        "L'annotazione @Entity dovrebbe essere posizionata sopra la dichiarazione della classe"
+      ]
+    }
+  },
+  {
+    "question": "Review the following code. What will be the result?",
+    "answers": [
+      "The code will compile without errors",
+      "The code will throw a syntax error because of the @Id annotation",
+      "The code lacks getter and setter methods and will fail at runtime",
+      "The @GeneratedValue strategy is incorrectly used"
+    ],
+    "correct": 0,
+    "code": "@Entity\npublic class Product {\n  @Id\n  @GeneratedValue(strategy = GenerationType.IDENTITY)\n  private Long id;\n  private String name;\n  private Double price;\n}",
+    "translations": {
+      "it": [
+        "Rivedi il seguente codice. Quale sarà il risultato?",
+        "In un template CloudFormation, qual è lo scopo della sezione 'Resources'?",
+        "Rivedi il seguente codice. Quale sarà il risultato?",
+        "@Entity\npublic class Product {\n  @Id\n  @GeneratedValue(strategy = GenerationType.IDENTITY)\n  private Long id;\n  private String name;\n  private Double price;\n}",
+        "Il codice verrà compilato senza errori",
+        "Il codice genererà un errore di sintassi a causa dell'annotazione @Id",
+        "Il codice manca dei metodi getter e setter e fallirà a runtime",
+        "La strategia @GeneratedValue è usata in modo errato"
+      ]
+    }
+  },
+  {
+    "question": "What does the orphanRemoval attribute do in @OneToMany annotation in JPA?",
+    "answers": [
+      "Specifies fetch type",
+      "Specifies cascade type",
+      "Removes an entity if it is no longer referenced",
+      "Specifies the join column"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Cosa fa l'attributo orphanRemoval nell'annotazione @OneToMany in JPA?",
+        "Specifica il tipo di fetch",
+        "Specifica il tipo di cascading",
+        "Rimuove un'entità se non è più referenziata",
+        "Specifica la colonna di join"
+      ]
+    }
+  },
+  {
+    "question": "What is the role of the @JoinColumn annotation in JPA?",
+    "answers": [
+      "Specifies the column for joining associations",
+      "Marks a column as unique",
+      "Specifies the primary key",
+      "Indicates a mapping between Java objects"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Qual è il ruolo dell'annotazione @JoinColumn in JPA?",
+        "Specifica la colonna per unire le associazioni",
+        "Contrassegna una colonna come univoca",
+        "Specifica la chiave primaria",
+        "Indica un mapping tra oggetti Java"
+      ]
+    }
+  },
+  {
+    "question": "Analyze the following code and identify the issue.",
+    "answers": [
+      "The name of the table should be upper case",
+      "The GeneratedValue strategy should be SEQUENCE",
+      "The field names are not in camelCase",
+      "There is no issue with this code"
+    ],
+    "correct": 3,
+    "code": "@Entity\n@Table(name = \"students\")\npublic class Student {\n  @Id\n  @GeneratedValue(strategy = GenerationType.AUTO)\n  private Long studentId;\n  private String studentName;\n  private Integer age;\n}",
+    "translations": {
+      "it": [
+        "Analizza il seguente codice e individua il problema.",
+        "Cosa ottiene la seguente policy AWS IAM?",
+        "Analizza il seguente codice e identifica il problema.",
+        "@Entity\n@Table(name = \"students\")\npublic class Student {\n  @Id\n  @GeneratedValue(strategy = GenerationType.AUTO)\n  private Long studentId;\n  private String studentName;\n  private Integer age;\n}",
+        "Il nome della tabella dovrebbe essere in maiuscolo",
+        "La strategia GeneratedValue dovrebbe essere SEQUENCE",
+        "I nomi dei campi non sono in camelCase",
+        "Non c'è alcun problema con questo codice"
+      ]
+    }
+  }
+]

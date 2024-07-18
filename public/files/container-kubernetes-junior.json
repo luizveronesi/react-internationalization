@@ -10,7 +10,7 @@
     "correct": 1,
     "translations": {
       "it": [
-        "Che cos'è Kubernetes?",
+        "Cos'è Kubernetes?",
         "Un tipo di database",
         "Una piattaforma di orchestrazione dei container",
         "Un fornitore di servizi cloud",
@@ -81,7 +81,7 @@
     "correct": 2,
     "translations": {
       "it": [
-        "Come ottenere un elenco di tutti i pod in un cluster Kubernetes?",
+        "Come si ottiene un elenco di tutti i pod in un cluster Kubernetes?",
         "kubectl pods list",
         "kubectl get all",
         "kubectl get pods",
@@ -100,7 +100,7 @@
     "correct": 0,
     "translations": {
       "it": [
-        "Quale comando recupera i log di un pod specifico?",
+        "Quale comando recupera i log di un determinato pod?",
         "kubectl logs <pod-name>",
         "kubectl get logs <pod-name>",
         "kubectl fetch logs <pod-name>",
@@ -133,7 +133,7 @@
     "correct": 1,
     "translations": {
       "it": [
-        "Quale formato di file è comunemente usato per scrivere definizioni delle risorse di Kubernetes?",
+        "Quale formato di file è comunemente utilizzato per scrivere le definizioni delle risorse di Kubernetes?",
         "JSON",
         "YAML",
         "XML",
@@ -153,7 +153,7 @@
     "code": "apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: nginx-deployment\nspec:\n  replicas: 2\n  selector:\n    matchLabels:\n      app: nginx",
     "translations": {
       "it": [
-        "In quale file è scritta questa configurazione di Kubernetes?",
+        "In quale file è scritta questa configurazione Kubernetes?",
         "config.json",
         "deployment.yaml",
         "settings.xml",
@@ -172,7 +172,7 @@
     "correct": 1,
     "translations": {
       "it": [
-        "Analizza il seguente comando: kubectl create -f my-pod.yaml. Qual è lo scopo di questo comando?",
+        "Analizza il seguente comando: `kubectl create -f my-pod.yaml`. Qual è lo scopo di questo comando?",
         "Per eliminare un pod definito in my-pod.yaml",
         "Per creare un pod come definito in my-pod.yaml",
         "Per aggiornare un pod come definito in my-pod.yaml",

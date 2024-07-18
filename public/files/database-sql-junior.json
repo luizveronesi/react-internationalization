@@ -1,1 +1,177 @@
-[{"question":"Which SQL command is used to retrieve data from a database?","answers":["SELECT","UPDATE","DELETE","INSERT"],"correct":0,"translations":{"it":["Quale comando SQL viene utilizzato per recuperare dati da un database?","SELECT","UPDATE","DELETE","INSERT"]}},{"question":"Which SQL clause is used to filter the results?","answers":["ORDER BY","GROUP BY","WHERE","HAVING"],"correct":2,"translations":{"it":["Quale clausola SQL viene utilizzata per filtrare i risultati?","ORDER BY","GROUP BY","WHERE","HAVING"]}},{"question":"What does the SQL command 'DELETE FROM table_name WHERE condition' do?","answers":["Deletes the database","Deletes the table","Deletes all data from the table","Deletes specific rows from the table where condition is met"],"correct":3,"translations":{"it":["Cosa fa il comando SQL 'DELETE FROM table_name WHERE condition'?","Elimina il database","Elimina la tabella","Elimina tutti i dati dalla tabella","Elimina righe specifiche dalla tabella dove la condizione è soddisfatta"]}},{"question":"Which SQL keyword is used to sort the result-set?","answers":["SORT","ORDER BY","SORT BY","GROUP BY"],"correct":1,"translations":{"it":["Quale parola chiave SQL viene utilizzata per ordinare il set di risultati?","SORT","ORDER BY","SORT BY","GROUP BY"]}},{"question":"What is the function of the JOIN operation in SQL?","answers":["Insert new records","Update existing records","Delete existing records","Combine rows from two or more tables based on a related column"],"correct":3,"translations":{"it":["Qual è la funzione dell'operazione JOIN in SQL?","Inserire nuovi record","Aggiornare i record esistenti","Eliminare i record esistenti","Combinare righe da due o più tabelle in base a una colonna correlata"]}},{"question":"What is the result of the following SQL query?","answers":["It deletes the table 'students'.","It selects and displays all columns from the 'students' table.","It updates the columns of the 'students' table.","It inserts new data into the 'students' table."],"correct":1,"code":"SELECT * FROM students;","translations":{"it":["Qual è il risultato della seguente query SQL?","Elimina la tabella 'students'.","Seleziona e visualizza tutte le colonne della tabella 'students'.","Aggiorna le colonne della tabella 'students'.","Inserisce nuovi dati nella tabella 'students'."]}},{"question":"What change does the following SQL command make to a table?","answers":["It drops the table 'employees_transaction'.","It adds a new column named 'bio' with the data type TEXT.","It adds a constraint to an existing column.","It renames the table."],"correct":1,"code":"ALTER TABLE employees_transaction ADD COLUMN bio TEXT;","translations":{"it":["Quale modifica apporta il seguente comando SQL a una tabella?","Elimina la tabella 'employees_transaction'.","Aggiunge una nuova colonna denominata 'bio' con il tipo di dato TESTO.","Aggiunge un vincolo a una colonna esistente.","Rinomina la tabella."]}},{"question":"How many rows will be returned by the following SQL query?","answers":["0","1","2","All rows from the 'employees' table where the salary is greater than 50000"],"correct":3,"code":"SELECT * FROM employees WHERE salary > 50000;","translations":{"it":["Quante righe verranno restituite dalla seguente query SQL?","0","1","2","Tutte le righe della tabella 'employees' in cui lo stipendio è superiore a 50000"]}},{"question":"What does the following SQL query do?","answers":["Selects employees with a salary less than 40000","Selects employees with a salary greater than or equal to 40000","Selects employees with a salary of 40000","Selects employees with a salary greater than 40000"],"correct":0,"code":"SELECT * FROM employees WHERE salary < 40000;","translations":{"it":["Cosa fa la seguente query SQL?","Seleziona i dipendenti con uno stipendio inferiore a 40000","Seleziona i dipendenti con uno stipendio superiore o uguale a 40000","Seleziona i dipendenti con uno stipendio di 40000","Seleziona i dipendenti con uno stipendio superiore a 40000"]}},{"question":"Which column is being updated in the following SQL query?","answers":["name","age","salary","position"],"correct":2,"code":"UPDATE employees SET salary = 60000 WHERE id = 3;","translations":{"it":["Quale colonna viene aggiornata nella seguente query SQL?","name","age","salary","position"]}}]
+[
+  {
+    "question": "Which SQL command is used to retrieve data from a database?",
+    "answers": ["SELECT", "UPDATE", "DELETE", "INSERT"],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Quale comando SQL viene utilizzato per recuperare dati da un database?",
+        "SELECT",
+        "UPDATE",
+        "DELETE",
+        "INSERT"
+      ]
+    }
+  },
+  {
+    "question": "Which SQL clause is used to filter the results?",
+    "answers": ["ORDER BY", "GROUP BY", "WHERE", "HAVING"],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Quale clausola SQL viene utilizzata per filtrare i risultati?",
+        "ORDER BY",
+        "GROUP BY",
+        "WHERE",
+        "HAVING"
+      ]
+    }
+  },
+  {
+    "question": "What does the SQL command 'DELETE FROM table_name WHERE condition' do?",
+    "answers": [
+      "Deletes the database",
+      "Deletes the table",
+      "Deletes all data from the table",
+      "Deletes specific rows from the table where condition is met"
+    ],
+    "correct": 3,
+    "translations": {
+      "it": [
+        "Cosa fa il comando SQL 'DELETE FROM table_name WHERE condition'?",
+        "Elimina il database",
+        "Elimina la tabella",
+        "Elimina tutti i dati dalla tabella",
+        "Elimina righe specifiche dalla tabella dove la condizione è soddisfatta"
+      ]
+    }
+  },
+  {
+    "question": "Which SQL keyword is used to sort the result-set?",
+    "answers": ["SORT", "ORDER BY", "SORT BY", "GROUP BY"],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Quale parola chiave SQL viene utilizzata per ordinare il result-set?",
+        "SORT",
+        "ORDER BY",
+        "SORT BY",
+        "GROUP BY"
+      ]
+    }
+  },
+  {
+    "question": "What is the function of the JOIN operation in SQL?",
+    "answers": [
+      "Insert new records",
+      "Update existing records",
+      "Delete existing records",
+      "Combine rows from two or more tables based on a related column"
+    ],
+    "correct": 3,
+    "translations": {
+      "it": [
+        "Qual è la funzione dell'operazione JOIN in SQL?",
+        "Inserire nuovi record",
+        "Aggiornare i record esistenti",
+        "Eliminare i record esistenti",
+        "Combinare righe da due o più tabelle in base a una colonna correlata"
+      ]
+    }
+  },
+  {
+    "question": "What is the result of the following SQL query?",
+    "answers": [
+      "It deletes the table 'students'.",
+      "It selects and displays all columns from the 'students' table.",
+      "It updates the columns of the 'students' table.",
+      "It inserts new data into the 'students' table."
+    ],
+    "correct": 1,
+    "code": "SELECT * FROM students;",
+    "translations": {
+      "it": [
+        "Qual è il risultato della seguente query SQL?",
+        "Elimina la tabella 'students'.",
+        "Seleziona e visualizza tutte le colonne della tabella 'students'.",
+        "Aggiorna le colonne della tabella 'students'.",
+        "Inserisce nuovi dati nella tabella 'students'."
+      ]
+    }
+  },
+  {
+    "question": "What change does the following SQL command make to a table?",
+    "answers": [
+      "It drops the table 'employees_transaction'.",
+      "It adds a new column named 'bio' with the data type TEXT.",
+      "It adds a constraint to an existing column.",
+      "It renames the table."
+    ],
+    "correct": 1,
+    "code": "ALTER TABLE employees_transaction ADD COLUMN bio TEXT;",
+    "translations": {
+      "it": [
+        "Quale modifica apporta il seguente comando SQL a una tabella?",
+        "Elimina la tabella 'employees_transaction'.",
+        "Aggiunge una nuova colonna denominata 'bio' con il tipo di dato TESTO.",
+        "Aggiunge un vincolo a una colonna esistente.",
+        "Rinomina la tabella."
+      ]
+    }
+  },
+  {
+    "question": "How many rows will be returned by the following SQL query?",
+    "answers": [
+      "0",
+      "1",
+      "2",
+      "All rows from the 'employees' table where the salary is greater than 50000"
+    ],
+    "correct": 3,
+    "code": "SELECT * FROM employees WHERE salary > 50000;",
+    "translations": {
+      "it": [
+        "Quante righe verranno restituite dalla seguente query SQL?",
+        "0",
+        "1",
+        "2",
+        "Tutte le righe della tabella 'employees' in cui lo stipendio è superiore a 50000"
+      ]
+    }
+  },
+  {
+    "question": "What does the following SQL query do?",
+    "answers": [
+      "Selects employees with a salary less than 40000",
+      "Selects employees with a salary greater than or equal to 40000",
+      "Selects employees with a salary of 40000",
+      "Selects employees with a salary greater than 40000"
+    ],
+    "correct": 0,
+    "code": "SELECT * FROM employees WHERE salary < 40000;",
+    "translations": {
+      "it": [
+        "Cosa fa la seguente query SQL?",
+        "Seleziona i dipendenti con uno stipendio inferiore a 40000",
+        "Seleziona i dipendenti con uno stipendio superiore o uguale a 40000",
+        "Seleziona i dipendenti con uno stipendio di 40000",
+        "Seleziona i dipendenti con uno stipendio superiore a 40000"
+      ]
+    }
+  },
+  {
+    "question": "Which column is being updated in the following SQL query?",
+    "answers": ["name", "age", "salary", "position"],
+    "correct": 2,
+    "code": "UPDATE employees SET salary = 60000 WHERE id = 3;",
+    "translations": {
+      "it": [
+        "Quale colonna viene aggiornata nella seguente query SQL?",
+        "name",
+        "age",
+        "salary",
+        "position"
+      ]
+    }
+  }
+]

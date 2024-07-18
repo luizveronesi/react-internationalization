@@ -10,13 +10,11 @@
     "correct": 0,
     "translations": {
       "it": [
-        "Cos'è Spring Boot?",
-        [
-          "Un framework per applicazioni web",
-          "Uno strumento per la gestione del database",
-          "Uno strumento di configurazione del server",
-          "Uno strumento di automazione della build"
-        ]
+        "Che cos'è Spring Boot?",
+        "Un framework per applicazioni web",
+        "Uno strumento per la gestione del database",
+        "Uno strumento di configurazione del server",
+        "Uno strumento di automazione della build"
       ]
     }
   },
@@ -31,8 +29,11 @@
     "correct": 2,
     "translations": {
       "it": [
-        "Quale annotazione si usa per contrassegnare una classe Application di Spring Boot?",
-        ["@Component", "@Service", "@SpringBootApplication", "@Repository"]
+        "Quale annotazione viene utilizzata per contrassegnare una classe Spring Boot Application?",
+        "@Component",
+        "@Service",
+        "@SpringBootApplication",
+        "@Repository"
       ]
     }
   },
@@ -43,7 +44,10 @@
     "translations": {
       "it": [
         "Qual è la porta predefinita per un'applicazione Spring Boot?",
-        ["8080", "8000", "8888", "8008"]
+        "8080",
+        "8000",
+        "8888",
+        "8008"
       ]
     }
   },
@@ -59,12 +63,10 @@
     "translations": {
       "it": [
         "Come si specifica una porta diversa in un'applicazione Spring Boot?",
-        [
-          "Utilizzando application.properties",
-          "Configurando il file server.xml",
-          "Modificando il file port.properties",
-          "Impostando una variabile in index.html"
-        ]
+        "Utilizzando application.properties",
+        "Configurando il file server.xml",
+        "Modificando il file port.properties",
+        "Impostando una variabile in index.html"
       ]
     }
   },
@@ -79,19 +81,16 @@
     "correct": 1,
     "translations": {
       "it": [
-        "Quale annotazione si usa per abilitare l'auto-configurazione in un'applicazione Spring Boot?",
-        [
-          "@AutoConfigure",
-          "@EnableAutoConfiguration",
-          "@AutoConfig",
-          "@Configurable"
-        ]
+        "Quale annotazione viene utilizzata per abilitare l'auto-configurazione in un'applicazione Spring Boot?",
+        "@AutoConfigure",
+        "@EnableAutoConfiguration",
+        "@AutoConfig",
+        "@Configurable"
       ]
     }
   },
   {
     "question": "Analyze the following code:",
-    "code": "import org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\n\n@SpringBootApplication\npublic class Application {\n    public static void main(String[] args) {\n        SpringApplication.run(Application.class, args);\n    }\n}\n",
     "answers": [
       "This will not compile",
       "This runs but throws an exception",
@@ -99,21 +98,19 @@
       "This is a Maven configuration file"
     ],
     "correct": 2,
+    "code": "import org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\n\n@SpringBootApplication\npublic class Application {\n    public static void main(String[] args) {\n        SpringApplication.run(Application.class, args);\n    }\n}\n",
     "translations": {
       "it": [
         "Analizza il seguente codice:",
-        [
-          "Questo non verrà compilato",
-          "Questo viene eseguito ma genera un'eccezione",
-          "Questo avvia un'applicazione Spring Boot",
-          "Questo è un file di configurazione Maven"
-        ]
+        "Questo non verrà compilato",
+        "Questo viene eseguito ma genera un'eccezione",
+        "Questo avvia un'applicazione Spring Boot",
+        "Questo è un file di configurazione Maven"
       ]
     }
   },
   {
     "question": "What is the purpose of SpringApplication.run() method?",
-    "code": "public class Application {\n    public static void main(String[] args) {\n        SpringApplication.run(Application.class, args);\n    }\n}\n",
     "answers": [
       "To stop the Spring Boot application",
       "To configure the database access",
@@ -121,21 +118,19 @@
       "To compile the application code"
     ],
     "correct": 2,
+    "code": "public class Application {\n    public static void main(String[] args) {\n        SpringApplication.run(Application.class, args);\n    }\n}\n",
     "translations": {
       "it": [
         "Qual è lo scopo del metodo SpringApplication.run()?",
-        [
-          "Per fermare l'applicazione Spring Boot",
-          "Per configurare l'accesso al database",
-          "Per avviare l'applicazione Spring Boot",
-          "Per compilare il codice dell'applicazione"
-        ]
+        "Per fermare l'applicazione Spring Boot",
+        "Per configurare l'accesso al database",
+        "Per avviare l'applicazione Spring Boot",
+        "Per compilare il codice dell'applicazione"
       ]
     }
   },
   {
     "question": "Given the following class, what will be the URL to access 'helloWorld' method?",
-    "code": "@RestController\npublic class HelloWorldController {\n    @GetMapping(\"/hello\")\n    public String helloWorld() {\n        return \"Hello, World!\";\n    }\n}\n",
     "answers": [
       "http://localhost:8080/helloWorld",
       "http://localhost:8080/hello",
@@ -143,21 +138,19 @@
       "http://localhost:8080/greet"
     ],
     "correct": 1,
+    "code": "@RestController\npublic class HelloWorldController {\n    @GetMapping(\"/hello\")\n    public String helloWorld() {\n        return \"Hello, World!\";\n    }\n}\n",
     "translations": {
       "it": [
-        "Data la seguente classe, quale sarà l'URL per accedere al metodo 'helloWorld'?",
-        [
-          "http://localhost:8080/helloWorld",
-          "http://localhost:8080/hello",
-          "http://localhost:8080/",
-          "http://localhost:8080/greet"
-        ]
+        "Dato la seguente classe, quale sarà l'URL per accedere al metodo 'helloWorld'?",
+        "http://localhost:8080/helloWorld",
+        "http://localhost:8080/hello",
+        "http://localhost:8080/",
+        "http://localhost:8080/greet"
       ]
     }
   },
   {
     "question": "What is the purpose of the @RequestMapping annotation?",
-    "code": "@RequestMapping(\"/home\")\npublic String home() {\n    return \"home\";\n}\n",
     "answers": [
       "To map HTTP requests to handler methods",
       "To define a database schema",
@@ -165,21 +158,19 @@
       "To configure security settings"
     ],
     "correct": 0,
+    "code": "@RequestMapping(\"/home\")\npublic String home() {\n    return \"home\";\n}\n",
     "translations": {
       "it": [
         "Qual è lo scopo dell'annotazione @RequestMapping?",
-        [
-          "Per mappare le richieste HTTP ai metodi handler",
-          "Per definire uno schema di database",
-          "Per iterare su una raccolta",
-          "Per configurare le impostazioni di sicurezza"
-        ]
+        "Per mappare le richieste HTTP ai metodi handler",
+        "Per definire uno schema di database",
+        "Per iterare su una raccolta",
+        "Per configurare le impostazioni di sicurezza"
       ]
     }
   },
   {
     "question": "Look at the following code snippet. What does it do?",
-    "code": "import org.springframework.web.bind.annotation.GetMapping;\nimport org.springframework.web.bind.annotation.RequestMapping;\nimport org.springframework.web.bind.annotation.RestController;\n\n@RestController\n@RequestMapping(\"/api\")\npublic class ApiController {\n    @GetMapping(\"/status\")\n    public String getStatus() {\n        return \"Running\";\n    }\n}\n",
     "answers": [
       "Maps '/api/status' endpoint to return \"Running\"",
       "Maps '/status' endpoint to return \"Running\"",
@@ -187,15 +178,14 @@
       "Maps '/api' endpoint to return \"status\""
     ],
     "correct": 0,
+    "code": "import org.springframework.web.bind.annotation.GetMapping;\nimport org.springframework.web.bind.annotation.RequestMapping;\nimport org.springframework.web.bind.annotation.RestController;\n\n@RestController\n@RequestMapping(\"/api\")\npublic class ApiController {\n    @GetMapping(\"/status\")\n    public String getStatus() {\n        return \"Running\";\n    }\n}\n",
     "translations": {
       "it": [
-        "Guarda il seguente snippet di codice. Cosa fa?",
-        [
-          "Mappa l'endpoint '/api/status' per restituire \"Running\"",
-          "Mappa l'endpoint '/status' per restituire \"Running\"",
-          "Mappa l'endpoint '/running' per restituire \"status\"",
-          "Mappa l'endpoint '/api' per restituire \"status\""
-        ]
+        "Guarda il seguente frammento di codice. Cosa fa?",
+        "Mappa l'endpoint '/api/status' per restituire \"Running\"",
+        "Mappa l'endpoint '/status' per restituire \"Running\"",
+        "Mappa l'endpoint '/running' per restituire \"status\"",
+        "Mappa l'endpoint '/api' per restituire \"status\""
       ]
     }
   }
