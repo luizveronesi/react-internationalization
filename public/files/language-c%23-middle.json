@@ -1,0 +1,175 @@
+[
+  {
+    "question": "What is the purpose of using the 'async' keyword in C#?",
+    "answers": [
+      "To make a method asynchronous",
+      "To declare a method that runs synchronously",
+      "To define a method as static",
+      "To designate a method as private"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Qual è lo scopo di utilizzare la parola chiave 'async' in C#?",
+        "Per rendere un metodo asincrono",
+        "Per dichiarare un metodo che viene eseguito in modo sincrono",
+        "Per definire un metodo come statico",
+        "Per designare un metodo come privato"
+      ]
+    }
+  },
+  {
+    "question": "What is the primary benefit of using LINQ in C#?",
+    "answers": [
+      "It improves performance of loops",
+      "It simplifies the querying of data",
+      "It provides a new way to handle exceptions",
+      "It is necessary for defining classes"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Qual è il principale vantaggio dell'utilizzo di LINQ in C#?",
+        "Migliora le prestazioni dei cicli",
+        "Semplifica l'interrogazione dei dati",
+        "Fornisce un nuovo modo per gestire le eccezioni",
+        "È necessario per definire le classi"
+      ]
+    }
+  },
+  {
+    "question": "What will be the output of the following code?",
+    "answers": ["Compile-time error", "0", "7", "20"],
+    "correct": 1,
+    "code": "int x = 5;\nx -= x;\nConsole.WriteLine(x);",
+    "translations": {
+      "it": [
+        "Quale sarà l'output del seguente codice?",
+        "Errore di compilazione",
+        "0",
+        "7",
+        "20"
+      ]
+    }
+  },
+  {
+    "question": "What does the 'yield return' statement do in C#?",
+    "answers": [
+      "Terminates loop execution",
+      "Returns multiple values from a method",
+      "Generates a value to be returned to the caller",
+      "Defines a delegate"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Che cosa fa l'istruzione 'yield return' in C#?",
+        "Termina l'esecuzione del ciclo",
+        "Restituisce più valori da un metodo",
+        "Genera un valore da restituire al chiamante",
+        "Definisce un delegato"
+      ]
+    }
+  },
+  {
+    "question": "In the context of garbage collection, what is a 'finalizer' in C#?",
+    "answers": [
+      "A method used to free unmanaged resources before the object is reclaimed by garbage collection.",
+      "A constructor used for initializing objects.",
+      "A method that forces garbage collection.",
+      "A method to create a shallow copy of an object."
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Nel contesto della garbage collection, cos'è un 'finalizzatore' in C#?",
+        "Un metodo utilizzato per liberare risorse non gestite prima che l'oggetto venga recuperato dalla garbage collection.",
+        "Un costruttore utilizzato per inizializzare gli oggetti.",
+        "Un metodo che forza la garbage collection.",
+        "Un metodo per creare una copia superficiale di un oggetto."
+      ]
+    }
+  },
+  {
+    "question": "What does the 'var' keyword in C# signify?",
+    "answers": [
+      "Explicitly defines a variable's type",
+      "Automatically infers a variable's type",
+      "Declares a constant value",
+      "Creates an instance of a class"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Che cosa indica la parola chiave 'var' in C#?",
+        "Definisce esplicitamente il tipo di una variabile",
+        "Deduce automaticamente il tipo di una variabile",
+        "Dichiara un valore costante",
+        "Crea un'istanza di una classe"
+      ]
+    }
+  },
+  {
+    "question": "What will be the output of the following code snippet?",
+    "answers": ["5", "10", "120", "Compile-time error"],
+    "correct": 2,
+    "code": "int CalculateFactorial(int n)\n{\n    if (n <= 1) return 1;\n    else return n * CalculateFactorial(n - 1);\n}\n\nConsole.WriteLine(CalculateFactorial(5));",
+    "translations": {
+      "it": [
+        "Quale sarà l'output del seguente frammento di codice?",
+        "5",
+        "10",
+        "120",
+        "Errore di compilazione"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following is NOT a valid access modifier in C#?",
+    "answers": ["internal", "protected", "sealed", "public"],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Quale delle seguenti NON è un modificatore di accesso valido in C#?",
+        "internal",
+        "protected",
+        "sealed",
+        "public"
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of the 'using' statement in C#?",
+    "answers": [
+      "It frees resources used by an object",
+      "It includes namespaces",
+      "It starts a loop",
+      "It declares a variable"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Qual è lo scopo dell'istruzione 'using' in C#?",
+        "Libera le risorse utilizzate da un oggetto",
+        "Include namespace",
+        "Inizia un ciclo",
+        "Dichiara una variabile"
+      ]
+    }
+  },
+  {
+    "question": "Identify the output of the following C# code snippet.",
+    "answers": ["2", "4", "6", "Runtime Exception"],
+    "correct": 1,
+    "code": "int[] numbers = {1, 2, 3};\nint sum = 0;\nforeach (int num in numbers)\n{\n    sum += num;\n}\nConsole.WriteLine(sum / numbers.Length);",
+    "translations": {
+      "it": [
+        "Identifica l'output del seguente frammento di codice C#.",
+        "2",
+        "4",
+        "6",
+        "Eccezione di Runtime"
+      ]
+    }
+  }
+]

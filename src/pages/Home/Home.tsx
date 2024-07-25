@@ -30,13 +30,14 @@ export default function Home() {
       .replace(/-/g, '')
       .replace(/\s+/g, '-')
       .toLowerCase();
+    const encFilename = encodeURIComponent(`${filename}-${level}`);
 
-    fetch(`files/${filename}-${level}.json`)
+    fetch(`files/${encFilename}.json`)
       .then((response) => response.json())
       .then((data) => setQuestions(data))
       .catch((error) => {
         console.error(error);
-        alert(`t('alert.loading.file') ${filename}-${level}.json`);
+        alert(`${t('alert.loading.file')} ${filename}-${level}.json`);
       });
   }, [theme, level]);
 

@@ -1,0 +1,168 @@
+[
+  {
+    "question": "What will be the output of the following C# code snippet?",
+    "answers": ["10", "20", "30", "40"],
+    "correct": 2,
+    "code": "using System;\n\nclass Program\n{\n    static void Main(string[] args)\n    {\n        int[] numbers = { 10, 20, 30 };\n        Console.WriteLine(numbers[0] + numbers[1] + numbers[2]);\n    }\n}",
+    "translations": {
+      "it": [
+        "Qual è l'output del seguente snippet di codice C#?",
+        "10",
+        "20",
+        "30",
+        "40"
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of the Common Language Runtime (CLR)?",
+    "answers": [
+      "To interpret SQL queries",
+      "To compile HTML code",
+      "To execute .NET programs",
+      "To manage hardware devices"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Qual è lo scopo del Common Language Runtime (CLR)?",
+        "Interpretare le query SQL",
+        "Compilare il codice HTML",
+        "Eseguire programmi .NET",
+        "Gestire dispositivi hardware"
+      ]
+    }
+  },
+  {
+    "question": "How do you handle exceptions in C#?",
+    "answers": [
+      "Using the 'try-catch' block",
+      "Using 'if-else' statements",
+      "Using SQL commands",
+      "Using HTML tags"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Come si gestiscono le eccezioni in C#?",
+        "Utilizzando il blocco 'try-catch'",
+        "Utilizzando le istruzioni 'if-else'",
+        "Utilizzando i comandi SQL",
+        "Utilizzando i tag HTML"
+      ]
+    }
+  },
+  {
+    "question": "What is ASP.NET primarily used for?",
+    "answers": [
+      "Building desktop applications",
+      "Developing web applications",
+      "Creating databases",
+      "Designing hardware"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "A cosa serve principalmente ASP.NET?",
+        "Creazione di applicazioni desktop",
+        "Sviluppare applicazioni web",
+        "Creare database",
+        "Progettare hardware"
+      ]
+    }
+  },
+  {
+    "question": "What does 'MVC' stand for in ASP.NET MVC?",
+    "answers": [
+      "Model-View-Controller",
+      "Machine-Virtual-Computer",
+      "Multi-View-Coding",
+      "Model-Virtual-Container"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Cosa significa 'MVC' in ASP.NET MVC?",
+        "Model-View-Controller",
+        "Machine-Virtual-Computer",
+        "Multi-View-Coding",
+        "Model-Virtual-Container"
+      ]
+    }
+  },
+  {
+    "question": "What will be the output of the following C# code snippet?",
+    "answers": ["3", "4", "5", "Compilation error"],
+    "correct": 0,
+    "code": "using System;\n\nclass Program\n{\n    static void Main(string[] args)\n    {\n        int[] numbers = new int[] { 1, 2, 3, 4 };\n        int result = numbers[1] + numbers[2];\n        Console.WriteLine(result);\n    }\n}",
+    "translations": {
+      "it": [
+        "Qual è l'output del seguente snippet di codice C#?",
+        "3",
+        "4",
+        "5",
+        "Errore di compilazione"
+      ]
+    }
+  },
+  {
+    "question": "What will be the output of the following C# code snippet?",
+    "answers": ["5", "10", "15", "20"],
+    "correct": 2,
+    "code": "using System;\n\nclass Program\n{\n    static void Main(string[] args)\n    {\n        int a = 5;\n        int b = 10;\n        int c = a + b;\n        Console.WriteLine(c - a);\n    }\n}",
+    "translations": {
+      "it": [
+        "Qual è l'output del seguente snippet di codice C#?",
+        "5",
+        "10",
+        "15",
+        "20"
+      ]
+    }
+  },
+  {
+    "question": "What will be the output of the following C# code snippet?",
+    "answers": ["0", "1", "2", "3"],
+    "correct": 2,
+    "code": "using System;\n\nclass Program\n{\n    static void Main(string[] args)\n    {\n        int[] array = new int[3];\n        array[1] = 1;\n        array[2] = array[1] + 1;\n        Console.WriteLine(array[2]);\n    }\n}",
+    "translations": {
+      "it": [
+        "Quale sarà l'output del seguente frammento di codice C#?",
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  },
+  {
+    "question": "Identify the correct output of this code.",
+    "answers": ["0", "null", "-1", "1"],
+    "correct": 0,
+    "code": "class Program {\n\tstatic void Main(string[] args) {\n\t\tint x;\n\t\tx = 0;\n\t\tConsole.WriteLine(x);\n\t}\n}",
+    "translations": {
+      "it": [
+        "Identifica l'output corretto di questo codice.",
+        "0",
+        "null",
+        "-1",
+        "1"
+      ]
+    }
+  },
+  {
+    "question": "What will be the output of the following C# code snippet when executed?",
+    "answers": ["123", "246", "135", "Compilation error"],
+    "correct": 2,
+    "code": "using System;\n\nclass Program\n{\n    static void Main(string[] args)\n    {\n        int[] numbers = { 1, 2, 3, 4, 5 };\n        int result = numbers[0] + numbers[2] + numbers[4];\n        Console.WriteLine(result);\n    }\n}",
+    "translations": {
+      "it": [
+        "Qual è l'output del seguente snippet di codice C# quando viene eseguito?",
+        "123",
+        "246",
+        "135",
+        "Errore di compilazione"
+      ]
+    }
+  }
+]

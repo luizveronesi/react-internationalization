@@ -18,6 +18,7 @@ export const HomeTexts = {
     'modal.recover.title': 'Continue last interview',
     'modal.recover.text':
       'Oops! It looks like your browser closed unexpectedly. Would you like to continue where you left off?',
+    'alert.loading.file': 'Error loading file: ',
   },
   it: {
     'dropzone.text.default':
@@ -39,5 +40,6 @@ export const HomeTexts = {
     'modal.recover.title': "Continua l'ultimo colloquio",
     'modal.recover.text':
       'Oops! Sembra che il tuo browser si sia chiuso inaspettatamente. Vorresti continuare da dove avevi lasciato?',
+    'alert.loading.file': 'Errore nel caricamento del file: ',
   },
 };

@@ -1,0 +1,185 @@
+[
+  {
+    "question": "Which of the following is NOT a part of the .NET Framework?",
+    "answers": [
+      "Common Language Runtime (CLR)",
+      "Framework Class Library (FCL)",
+      ".NET Core",
+      "ASP.NET"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Quale dei seguenti NON fa parte del .NET Framework?",
+        "Common Language Runtime (CLR)",
+        "Framework Class Library (FCL)",
+        ".NET Core",
+        "ASP.NET"
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of the Global Assembly Cache (GAC) in .NET?",
+    "answers": [
+      "It stores all .NET applications",
+      "It stores shared assemblies",
+      "It stores the .NET base classes",
+      "It stores private assemblies"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Qual è lo scopo della Global Assembly Cache (GAC) in .NET?",
+        "Conserva tutte le applicazioni .NET",
+        "Conserva le assembly condivise",
+        "Conserva le classi di base .NET",
+        "Conserva le assembly private"
+      ]
+    }
+  },
+  {
+    "question": "What does IL stand for in .NET?",
+    "answers": [
+      "Intermediate Language",
+      "Internet Language",
+      "Internal Language",
+      "Incorporated Language"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Cosa significa IL in .NET?",
+        "Linguaggio Intermedio",
+        "Linguaggio Internet",
+        "Linguaggio Interno",
+        "Linguaggio Incorporato"
+      ]
+    }
+  },
+  {
+    "question": "In .NET, what is the use of the 'using' statement?",
+    "answers": [
+      "Creates an alias for a namespace",
+      "Handles memory allocation",
+      "Disposes of objects automatically",
+      "Imports namespaces"
+    ],
+    "correct": 3,
+    "code": "using System;\nusing System.Collections.Generic;",
+    "translations": {
+      "it": [
+        "In .NET, qual è l'uso della dichiarazione 'using'?",
+        "Crea un alias per un namespace",
+        "Gestisce l'allocazione della memoria",
+        "Elimina automaticamente gli oggetti",
+        "Importa namespace"
+      ]
+    }
+  },
+  {
+    "question": "Which feature of .NET allows multiple versions of the same assembly to coexist on the same system?",
+    "answers": [
+      "Versioning",
+      "Assembly Binding Redirections",
+      "Side-by-Side Execution",
+      "Type Safety"
+    ],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Quale caratteristica di .NET consente a più versioni della stessa assembly di coesistere sullo stesso sistema?",
+        "Versioning",
+        "Assembly Binding Redirections",
+        "Esecuzione Fianco a Fianco",
+        "Sicurezza del Tipo"
+      ]
+    }
+  },
+  {
+    "question": "What will be the output of the following .NET code snippet?",
+    "answers": ["1", "2", "3", "4"],
+    "correct": 3,
+    "code": "using System;\n\nclass Program\n{\n    static void Main()\n    {\n        int x = 5;\n        int y = x-- - --x;\n        Console.WriteLine(y);\n    }\n}",
+    "translations": {
+      "it": [
+        "Qual è l'output del seguente snippet di codice .NET?",
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of the .NET Common Language Runtime (CLR)?",
+    "answers": [
+      "To compile .NET applications",
+      "To manage the execution of .NET programs",
+      "To provide a graphical user interface",
+      "To serve as a database manager"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Qual è lo scopo della Common Language Runtime (CLR) di .NET?",
+        "Compilare applicazioni .NET",
+        "Gestire l'esecuzione dei programmi .NET",
+        "Fornire un'interfaccia utente grafica",
+        "Servire come gestore del database"
+      ]
+    }
+  },
+  {
+    "question": "What keyword is used in .NET to define an abstract method?",
+    "answers": ["virtual", "override", "abstract", "sealed"],
+    "correct": 2,
+    "code": "public abstract class Animal {\n  public abstract void MakeSound();\n}",
+    "translations": {
+      "it": [
+        "Quale parola chiave viene utilizzata in .NET per definire un metodo astratto?",
+        "virtuale",
+        "override",
+        "astratto",
+        "sealed"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following statements about .NET Core is true?",
+    "answers": [
+      ".NET Core is platform-specific.",
+      ".NET Core supports only web applications.",
+      ".NET Core cannot run on Linux.",
+      ".NET Core is open source."
+    ],
+    "correct": 3,
+    "translations": {
+      "it": [
+        "Quale delle seguenti affermazioni su .NET Core è vera?",
+        ".NET Core è specifico per piattaforma.",
+        ".NET Core supporta solo applicazioni web.",
+        ".NET Core non può essere eseguito su Linux.",
+        ".NET Core è open source."
+      ]
+    }
+  },
+  {
+    "question": "What is the difference between 'Task' and 'Thread' in .Net?",
+    "answers": [
+      "There is no difference; 'Task' is just a newer naming convention for 'Thread'.",
+      "Tasks are used for I/O-bound operations, while Threads are used for CPU-bound operations.",
+      "A Task represents a single operation that does not return a value, while a Thread always returns a value.",
+      "Tasks use the thread pool behind the scenes and are generally more lightweight and efficient than Threads."
+    ],
+    "correct": 3,
+    "translations": {
+      "it": [
+        "Qual è la differenza tra 'Task' e 'Thread' in .Net?",
+        "Non c'è differenza; 'Task' è solo una nuova convenzione di denominazione per 'Thread'.",
+        "I Task sono utilizzati per operazioni legate all'I/O, mentre i Thread sono utilizzati per operazioni legate alla CPU.",
+        "Un Task rappresenta una singola operazione che non restituisce un valore, mentre un Thread restituisce sempre un valore.",
+        "I Task utilizzano il thread pool dietro le quinte e sono generalmente più leggeri ed efficienti dei Thread."
+      ]
+    }
+  }
+]

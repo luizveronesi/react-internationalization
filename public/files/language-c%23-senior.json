@@ -1,0 +1,176 @@
+[
+  {
+    "question": "What is the purpose of the 'async' and 'await' keywords in C#?",
+    "answers": [
+      "To handle exceptions",
+      "To enable asynchronous programming",
+      "To declare a property",
+      "To end a loop"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Qual è lo scopo delle parole chiave 'async' e 'await' in C#?",
+        "Per gestire le eccezioni",
+        "Per abilitare la programmazione asincrona",
+        "Per dichiarare una proprietà",
+        "Per terminare un ciclo"
+      ]
+    }
+  },
+  {
+    "question": "Which of these operations can be performed using LINQ in C#?",
+    "answers": [
+      "Querying collections",
+      "Reading files",
+      "Drawing graphics",
+      "Sending emails"
+    ],
+    "correct": 0,
+    "translations": {
+      "it": [
+        "Quale di queste operazioni può essere eseguita utilizzando LINQ in C#?",
+        "Interrogare collezioni",
+        "Leggere file",
+        "Disegnare grafica",
+        "Inviare email"
+      ]
+    }
+  },
+  {
+    "question": "What can be achieved by using delegates in C#?",
+    "answers": [
+      "Inheritance",
+      "Encapsulation",
+      "Polymorphism",
+      "Event handling"
+    ],
+    "correct": 3,
+    "translations": {
+      "it": [
+        "Cosa può essere ottenuto utilizzando i delegati in C#?",
+        "Ereditarietà",
+        "Incapsulamento",
+        "Polimorfismo",
+        "Gestione eventi"
+      ]
+    }
+  },
+  {
+    "question": "In C#, what is a Lambda Expression?",
+    "answers": [
+      "A type of collection",
+      "A syntax for writing anonymous functions",
+      "A way to declare an interface",
+      "A method to perform exception handling"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "In C#, cos'è un'espressione Lambda?",
+        "Un tipo di collezione",
+        "Una sintassi per scrivere funzioni anonime",
+        "Un modo per dichiarare un'interfaccia",
+        "Un metodo per gestire le eccezioni"
+      ]
+    }
+  },
+  {
+    "question": "What will be the output of the following C# code?",
+    "answers": ["5", "6", "7", "8"],
+    "correct": 2,
+    "code": "using System;\n\nclass Program\n{\n    static void Main()\n    {\n        int x = 5;\n        int y = 0;\n        try\n        {\n            x = x / y;\n        }\n        catch (DivideByZeroException ex)\n        {\n            Console.WriteLine(\"Exception: \" + ex.Message);\n        }\n        finally\n        {\n            Console.WriteLine(x + 2);\n        }\n    }\n}",
+    "translations": {
+      "it": ["Qual è l'output di questo codice C#?", "5", "6", "7", "8"]
+    }
+  },
+  {
+    "question": "What will be displayed when the following C# code is executed?",
+    "answers": [
+      "Exception: Object reference not set to an instance of an object",
+      "Null",
+      "NullReferenceException",
+      "Program will not compile"
+    ],
+    "correct": 0,
+    "code": "class MyClass\n{\n    public string Name { get; set; }\n}\n\nclass Program\n{\n    static void Main()\n    {\n        MyClass obj = null;\n        try\n        {\n            Console.WriteLine(obj.Name.Length);\n        }\n        catch (NullReferenceException ex)\n        {\n            Console.WriteLine(\"Exception: \" + ex.Message);\n        }\n    }\n}",
+    "translations": {
+      "it": [
+        "Cosa verrà mostrato quando il seguente codice C# verrà eseguito?",
+        "Eccezione: riferimento a un oggetto non impostato su un'istanza di un oggetto",
+        "Null",
+        "NullReferenceException",
+        "Il programma non verrà compilato"
+      ]
+    }
+  },
+  {
+    "question": "What would you use a 'using' statement for in C#?",
+    "answers": [
+      "Managing memory allocation",
+      "Ensuring proper cleanup of resources",
+      "Implementing interfaces",
+      "Declaring events"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Per cosa useresti l'istruzione 'using' in C#?",
+        "Gestire l'allocazione della memoria",
+        "Assicurare una corretta pulizia delle risorse",
+        "Implementare interfacce",
+        "Dichiarare eventi"
+      ]
+    }
+  },
+  {
+    "question": "What will be the output of the following C# code snippet?",
+    "answers": ["10", "5", "Compilation error", "Unhandled exception"],
+    "correct": 3,
+    "code": "using System;\n\nclass Program\n{\n    static void Main()\n    {\n        int? num = null;\n        int result = num.Value;\n        Console.WriteLine(result);\n    }\n}",
+    "translations": {
+      "it": [
+        "Qual è l'output del seguente snippet di codice C#?",
+        "10",
+        "5",
+        "Errore di compilazione",
+        "Eccezione non gestita"
+      ]
+    }
+  },
+  {
+    "question": "What will be the output of the following C# code snippet?",
+    "answers": ["1", "10", "0", "Compilation error"],
+    "correct": 2,
+    "code": "using System;\n\nclass Program\n{\n    static void Main()\n    {\n        int x = 0;\n        try\n        {\n            int y = 10 / x;\n        }\n        catch (DivideByZeroException)\n        {\n            x = 10;\n        }\n        finally\n        {\n            x++;\n        }\n        Console.WriteLine(x);\n    }\n}",
+    "translations": {
+      "it": [
+        "Qual è l'output del seguente snippet di codice C#?",
+        "1",
+        "10",
+        "0",
+        "Errore di compilazione"
+      ]
+    }
+  },
+  {
+    "question": "What is the output of the following C# code snippet?",
+    "answers": [
+      "Base Class",
+      "Derived Class",
+      "Compilation error",
+      "Runtime error"
+    ],
+    "correct": 0,
+    "code": "using System;\n\nclass BaseClass\n{\n    public BaseClass()\n    {\n        PrintMessage();\n    }\n\n    public virtual void PrintMessage()\n    {\n        Console.WriteLine(\"Base Class\");\n    }\n}\n\nclass DerivedClass : BaseClass\n{\n    public string message = \"Derived Class\";\n\n    public override void PrintMessage()\n    {\n        Console.WriteLine(message);\n    }\n}\n\nclass Program\n{\n    static void Main()\n    {\n        BaseClass obj = new DerivedClass();\n    }\n}",
+    "translations": {
+      "it": [
+        "Qual è l'output del seguente snippet di codice C#?",
+        "Classe base",
+        "Classe derivata",
+        "Errore di compilazione",
+        "Errore di runtime"
+      ]
+    }
+  }
+]

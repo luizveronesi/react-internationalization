@@ -1,0 +1,165 @@
+[
+  {
+    "question": "What is the purpose of the 'using' statement in C#?",
+    "answers": [
+      "To execute code once",
+      "To manage resource cleanup",
+      "To define an interface",
+      "To include namespaces"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Qual è lo scopo della dichiarazione 'using' in C#?",
+        "Eseguire il codice una volta",
+        "Gestire la pulizia delle risorse",
+        "Definire un'interfaccia",
+        "Includere i namespace"
+      ]
+    }
+  },
+  {
+    "question": "Which keyword is used to define a method in a class?",
+    "answers": ["def", "function", "method", "void"],
+    "correct": 3,
+    "translations": {
+      "it": [
+        "Quale parola chiave viene utilizzata per definire un metodo in una classe?",
+        "def",
+        "function",
+        "method",
+        "void"
+      ]
+    }
+  },
+  {
+    "question": "How do you declare an integer array with 5 elements in C#?",
+    "answers": [
+      "int[] array = new int(5);",
+      "int[] array = new int[5];",
+      "int array[5] = new int[];",
+      "int array = new int[];"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Come si dichiara un array di interi con 5 elementi in C#?",
+        "int[] array = new int(5);",
+        "int[] array = new int[5];",
+        "int array[5] = new int[];",
+        "int array = new int[];"
+      ]
+    }
+  },
+  {
+    "question": "What access modifier allows a member to be accessible within its class and by derived class instances?",
+    "answers": ["public", "private", "protected", "internal"],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Quale modificatore di accesso consente a un membro di essere accessibile all'interno della sua classe e dalle istanze delle classi derivate?",
+        "public",
+        "private",
+        "protected",
+        "internal"
+      ]
+    }
+  },
+  {
+    "question": "Where is the 'Main' method in a C# application?",
+    "answers": [
+      "In any class",
+      "In a static class",
+      "In the compiler",
+      "In an instance class"
+    ],
+    "correct": 1,
+    "code": "\nclass Program {\n    static void Main(string[] args)\n    {\n        // code\n    }\n}\n",
+    "translations": {
+      "it": [
+        "Dove si trova il metodo 'Main' in un'applicazione C#?",
+        "In qualsiasi classe",
+        "In una classe statica",
+        "Nel compilatore",
+        "In una classe di istanza"
+      ]
+    }
+  },
+  {
+    "question": "What will be the output of this code?",
+    "answers": ["10", "15", "20", "Compilation error"],
+    "correct": 2,
+    "code": "\nclass Program {\n    static void Main(string[] args)\n    {\n        int x = 10;\n        x += 5;\n        Console.WriteLine(x);\n    }\n}\n",
+    "translations": {
+      "it": [
+        "Quale sarà l'output di questo codice?",
+        "10",
+        "15",
+        "20",
+        "Errore di compilazione"
+      ]
+    }
+  },
+  {
+    "question": "Which collection class guarantees that its elements are unique?",
+    "answers": ["List", "Dictionary", "Queue", "HashSet"],
+    "correct": 3,
+    "translations": {
+      "it": [
+        "Quale classe di collezioni garantisce che i suoi elementi siano unici?",
+        "List",
+        "Dictionary",
+        "Queue",
+        "HashSet"
+      ]
+    }
+  },
+  {
+    "question": "What does the 'readonly' modifier do?",
+    "answers": [
+      "Allows modification at runtime",
+      "Allows modification only in the constructor",
+      "Prevents all modifications",
+      "Allows modification only in methods"
+    ],
+    "correct": 1,
+    "translations": {
+      "it": [
+        "Cosa fa il modificatore 'readonly'?",
+        "Consente la modifica a runtime",
+        "Consente la modifica solo nel costruttore",
+        "Previene tutte le modifiche",
+        "Consente la modifica solo nei metodi"
+      ]
+    }
+  },
+  {
+    "question": "What is the output of the following code?",
+    "answers": ["True", "False", "Compilation error", "null"],
+    "correct": 1,
+    "code": "\nclass Program {\n    static void Main(string[] args)\n    {\n        Console.WriteLine(10 > 20);\n    }\n}\n",
+    "translations": {
+      "it": [
+        "Quale sarà l'output del seguente codice?",
+        "Vero",
+        "Falso",
+        "Errore di compilazione",
+        "null"
+      ]
+    }
+  },
+  {
+    "question": "Which keyword is used to inherit a class in C#?",
+    "answers": ["implements", "inherits", "extends", "base"],
+    "correct": 2,
+    "translations": {
+      "it": [
+        "Quale parola chiave viene utilizzata per ereditare una classe in C#?",
+        "implements",
+        "inherits",
+        "extends",
+        "base"
+      ]
+    }
+  }
+]
